@@ -10,6 +10,7 @@ df = pd.read_csv("DataSet/train.csv")
 
 # Splitting the 'is_fraud?' column
 labels = df["is_fraud?"].copy().to_numpy()
+labels = labels.astype(int)
 df = df.drop("is_fraud?", axis=1)
 df = df.set_index(df.columns[0])
 
@@ -49,18 +50,18 @@ df = df.drop("zip", axis=1)
 print(df.dtypes)
 
 # Split Datas for train & test
-X_train, y_train, X_test, y_test = train_test_split(df, labels, test_size=0.1, random_state=1225)
+X_train, X_test, y_train, y_test = train_test_split(df, labels, test_size=0.1, random_state=1225)
 
 # Count fraud or not
-num_not_fraud = np.count_nonzero(X_test == 0)
-num_fraud = np.count_nonzero(X_test == 1)
+num_not_fraud = np.count_nonzero(y_train == 0)
+num_fraud = np.count_nonzero(y_train == 1)
 
 scale_pos_weight = num_not_fraud / num_fraud # scale_pos_weight = number of negative instances / number of positive instances
 
 # DMatrix
-dtrain = xgboost.DMatrix(data=X_train, label=X_test, enable_categorical=True)
+dtrain = xgboost.DMatrix(data=X_train, label=y_train, enable_categorical=True)
 
-
+'''
 # Define Objective function
 def Objective(trial):
     # Set Hyper-parameter bounds
@@ -75,12 +76,12 @@ def Objective(trial):
         "subsample": trial.suggest_float("subsample", 0.5, 1, step=0.05),
         "colsample_bytree": trial.suggest_float("colsample_bytree", 0.2, 1),
         "gamma": 0, # default
-        "min_child_weight": trial.suggest_int("min_child_weight", 1, 5000, step=50),
+        "min_child_weight": trial.suggest_int("min_child_weight", 1, 5001, step=50),
         'lambda': trial.suggest_float('lambda', 1e-3, 10.0, log=True),
         'alpha': trial.suggest_float('alpha', 1e-3, 10.0, log=True),
 
-        "device": "cuda",
-        "tree_method": "hist",
+        #"device": "cuda",
+        "tree_method": "gpu_hist",
         "scale_pos_weight": scale_pos_weight
     }
 
@@ -92,8 +93,8 @@ def Objective(trial):
     all_scores = []
     for _ in range(3):
         # Build XGBoost Classifier and Training
-        model = xgboost.XGBClassifier(**param)
-        model.fit(X_train, y_train, eval_set=[(X_test, y_test)], early_stopping_rounds=100, verbose=True)
+        model = xgboost.XGBClassifier(**param, early_stopping_rounds=100, enable_categorical=True)
+        model.fit(X_train, y_train, eval_set=[(X_test, y_test)], verbose=True)
 
         # Predict & Validate
         y_pred = model.predict(X_test)
@@ -104,14 +105,19 @@ def Objective(trial):
 
     # Note Metric
     with open("XGBoost_Hyper.txt", 'a') as f:
-        f.write(f"F1 Score: {np.mean(all_scores)} \n")
+        f.write(f"F1 Score: {np.mean(all_scores)} \n\n")
 
     return np.mean(all_scores)
 
 
-# Create Optuna study object
-study = optuna.create_study(direction="maximize")
-study.optimize(Objective, n_startup_trials=50, n_trials=550)
+# Create Optuna sampler and study object
+sampler = optuna.samplers.TPESampler(n_startup_trials=50)
+study = optuna.create_study(sampler=sampler, 
+    study_name="xgboost_for_card_fraud_1", 
+    direction="maximize", 
+    storage="sqlite:///xgboostdb/1.db", 
+    load_if_exists=True)
+study.optimize(Objective, n_trials=550)
 
 # Print best hyper-parameter set
 with open("XGBoost_Hyper.txt",'a') as f:
@@ -120,3 +126,4 @@ with open("XGBoost_Hyper.txt",'a') as f:
 
 print(f"Best Hyper-parameter set: \n{study.best_params}\n")
 print(f"Best value: {study.best_value}")
+'''
