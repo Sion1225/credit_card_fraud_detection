@@ -61,7 +61,7 @@ scale_pos_weight = num_not_fraud / num_fraud # scale_pos_weight = number of nega
 # DMatrix
 dtrain = xgboost.DMatrix(data=X_train, label=y_train, enable_categorical=True)
 
-'''
+
 # Define Objective function
 def Objective(trial):
     # Set Hyper-parameter bounds
@@ -80,7 +80,7 @@ def Objective(trial):
         'lambda': trial.suggest_float('lambda', 1e-3, 10.0, log=True),
         'alpha': trial.suggest_float('alpha', 1e-3, 10.0, log=True),
 
-        #"device": "cuda",
+        "device": "gpu",
         "tree_method": "gpu_hist",
         "scale_pos_weight": scale_pos_weight
     }
@@ -117,7 +117,7 @@ study = optuna.create_study(sampler=sampler,
     direction="maximize", 
     storage="sqlite:///xgboostdb/1.db", 
     load_if_exists=True)
-study.optimize(Objective, n_trials=550)
+study.optimize(Objective, n_trials=550, n_jobs=-1)
 
 # Print best hyper-parameter set
 with open("XGBoost_Hyper.txt",'a') as f:
@@ -126,4 +126,3 @@ with open("XGBoost_Hyper.txt",'a') as f:
 
 print(f"Best Hyper-parameter set: \n{study.best_params}\n")
 print(f"Best value: {study.best_value}")
-'''
