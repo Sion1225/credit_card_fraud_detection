@@ -67,25 +67,25 @@ def Objective(trial):
     # Set Hyper-parameter bounds
     param = {
         'iterations': trial.suggest_int('iterations', 100, 1200, step=25),
-        'learning_rate': trial.suggest_float('learning_rate', 1e-4, 1.0, log=True),
+        'learning_rate': trial.suggest_float('learning_rate', 1e-3, 1.2, log=True),
         'depth': trial.suggest_int('depth', 3, 11),
         'l2_leaf_reg': trial.suggest_float('l2_leaf_reg', 1e-3, 10, log=True),
-        'border_count': trial.suggest_int('border_count', 1, 255),
+        'border_count': trial.suggest_int('border_count', 100, 350),
         "bagging_temperature": trial.suggest_float("bagging_temperature", 0, 8),
-        "random_strength": trial.suggest_float("random_strength", 0, 8),
+        "random_strength": trial.suggest_float("random_strength", 0, 6),
+        'eval_metric': 'F1',
         #"rsm": trial.suggest_float("rsm", 0.2, 1),
 
         "cat_features": ["user_id","card_id","errors?","merchant_id","merchant_city","merchant_state","mcc","use_chip","zip_1"],
         "nan_mode": "Forbidden",
         "boosting_type": "Ordered",
         'scale_pos_weight': scale_pos_weight,
-        'eval_metric': 'F1',
         'custom_metric': ['Logloss'],
         'task_type': 'GPU'
     }
 
     # Note Hyperparameter set
-    with open("CatBoost_Hyper.txt", 'a') as f:
+    with open("/catboostdb/CatBoost_Hyper_2.txt", 'a') as f:
         f.write(str(param) + '\n')
 
     # try 3 times
@@ -103,7 +103,7 @@ def Objective(trial):
         all_scores.append(model_metric)
 
     # Note Metric
-    with open("CatBoost_Hyper.txt", 'a') as f:
+    with open("/catboostdb/CatBoost_Hyper_2.txt", 'a') as f:
         f.write(f"F1 Score: {np.mean(all_scores)} \n\n")
 
     return np.mean(all_scores)
@@ -111,14 +111,14 @@ def Objective(trial):
 # Create Optuna sampler and study object
 sampler = optuna.samplers.TPESampler(n_startup_trials=50)
 study = optuna.create_study(sampler=sampler, 
-    study_name="catboost_for_card_fraud_1", 
+    study_name="catboost_for_card_fraud_2", 
     direction="maximize", 
-    storage="sqlite:///catboostdb/1.db", 
+    storage="sqlite:///catboostdb/2.db", 
     load_if_exists=True)
 study.optimize(Objective, n_trials=550, n_jobs=1)
 
 # Print best hyper-parameter set
-with open("CatBoost_Hyper.txt",'a') as f:
+with open("/catboostdb/CatBoost_Hyper_2.txt",'a') as f:
     f.write(f"Best Hyper-parameter set: \n{study.best_params}\n")
     f.write(f"Best value: {study.best_value}")
 
