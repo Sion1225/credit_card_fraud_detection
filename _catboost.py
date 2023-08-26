@@ -72,7 +72,11 @@ def Objective(trial):
         'l2_leaf_reg': trial.suggest_float('l2_leaf_reg', 1e-3, 10, log=True),
         'border_count': trial.suggest_int('border_count', 100, 350),
         "bagging_temperature": trial.suggest_float("bagging_temperature", 0, 8),
+<<<<<<< Updated upstream
         "random_strength": trial.suggest_float("random_strength", 0, 6),
+=======
+        "random_strength": trial.suggest_float("random_strength", 0, 8),
+>>>>>>> Stashed changes
         'eval_metric': 'F1',
         #"rsm": trial.suggest_float("rsm", 0.2, 1),
 
@@ -109,13 +113,13 @@ def Objective(trial):
     return np.mean(all_scores)
 
 # Create Optuna sampler and study object
-sampler = optuna.samplers.TPESampler(n_startup_trials=50)
+sampler = optuna.samplers.TPESampler(n_startup_trials=40)
 study = optuna.create_study(sampler=sampler, 
     study_name="catboost_for_card_fraud_2", 
     direction="maximize", 
     storage="sqlite:///catboostdb/2.db", 
     load_if_exists=True)
-study.optimize(Objective, n_trials=550, n_jobs=1)
+study.optimize(Objective, n_trials=440, n_jobs=1)
 
 # Print best hyper-parameter set
 with open("/catboostdb/CatBoost_Hyper_2.txt",'a') as f:
