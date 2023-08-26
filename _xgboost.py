@@ -68,25 +68,25 @@ def Objective(trial):
     param = {
         "booster": "gbtree",
         "objective": "binary:logistic",
-        "eval_metric": trial.suggest_categorical("eval_metric", ["logloss", "error"]),
+        "eval_metric": "logloss",
 
-        "learning_rate": trial.suggest_float("learning_rate", 1e-4, 1.0, log=True),
-        "n_estimators": trial.suggest_int("n_estimators", 100, 1200, step=25),
-        "max_depth": trial.suggest_int("max_depth", 3, 11),
+        "learning_rate": trial.suggest_float("learning_rate", 1e-3, 1.2, log=True),
+        "n_estimators": trial.suggest_int("n_estimators", 500, 1500, step=25),
+        "max_depth": trial.suggest_int("max_depth", 5, 15),
         "subsample": trial.suggest_float("subsample", 0.5, 1, step=0.05),
-        "colsample_bytree": trial.suggest_float("colsample_bytree", 0.2, 1),
-        "gamma": 0, # default
-        "min_child_weight": trial.suggest_int("min_child_weight", 1, 5001, step=50),
+        "colsample_bytree": trial.suggest_float("colsample_bytree", 0.5, 1),
+        "gamma": trail.suggest_float("gamma", 0, 10), # default
+        "min_child_weight": trial.suggest_int("min_child_weight", 1, 201, step=5),
         'lambda': trial.suggest_float('lambda', 1e-3, 10.0, log=True),
         'alpha': trial.suggest_float('alpha', 1e-3, 10.0, log=True),
 
-        "device": "gpu",
-        "tree_method": "gpu_hist",
+        "device": "cuda",
+        "tree_method": "gpu_hist", #gpu_
         "scale_pos_weight": scale_pos_weight
     }
 
     # Note Hyperparameter set
-    with open("XGBoost_Hyper.txt", 'a') as f:
+    with open("/xgboostdb/XGBoost_Hyper_2.txt", 'a') as f:
         f.write(str(param) + '\n')
 
     # try 3 times
@@ -104,7 +104,7 @@ def Objective(trial):
         all_scores.append(model_metric)
 
     # Note Metric
-    with open("XGBoost_Hyper.txt", 'a') as f:
+    with open("/xgboostdb/XGBoost_Hyper_2.txt", 'a') as f:
         f.write(f"F1 Score: {np.mean(all_scores)} \n\n")
 
     return np.mean(all_scores)
@@ -113,14 +113,14 @@ def Objective(trial):
 # Create Optuna sampler and study object
 sampler = optuna.samplers.TPESampler(n_startup_trials=50)
 study = optuna.create_study(sampler=sampler, 
-    study_name="xgboost_for_card_fraud_1", 
+    study_name="xgboost_for_card_fraud_2", 
     direction="maximize", 
-    storage="sqlite:///xgboostdb/1.db", 
+    storage="sqlite:///xgboostdb/2.db", 
     load_if_exists=True)
-study.optimize(Objective, n_trials=550, n_jobs=-1)
+study.optimize(Objective, n_trials=550, n_jobs=1)
 
 # Print best hyper-parameter set
-with open("XGBoost_Hyper.txt",'a') as f:
+with open("/xgboostdb/XGBoost_Hyper_2.txt",'a') as f:
     f.write(f"Best Hyper-parameter set: \n{study.best_params}\n")
     f.write(f"Best value: {study.best_value}")
 

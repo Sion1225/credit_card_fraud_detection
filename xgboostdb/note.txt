@@ -1,0 +1,14 @@
+1
+"learning_rate": trial.suggest_float("learning_rate", 1e-4, 1.0, log=True),
+"n_estimators": trial.suggest_int("n_estimators", 100, 1200, step=25),
+"max_depth": trial.suggest_int("max_depth", 3, 11),
+"subsample": trial.suggest_float("subsample", 0.5, 1, step=0.05),
+"colsample_bytree": trial.suggest_float("colsample_bytree", 0.2, 1),
+"gamma": 0, # default
+"min_child_weight": trial.suggest_int("min_child_weight", 1, 5001, step=50),
+'lambda': trial.suggest_float('lambda', 1e-3, 10.0, log=True),
+'alpha': trial.suggest_float('alpha', 1e-3, 10.0, log=True),
+
+error 삭제, 트리수 확장, 깊이 확장, 학습률최소치 증가, colsample_bytree 최소치 약간 증가, gamma 추가
+
+2
