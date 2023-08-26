@@ -7,5 +7,31 @@
 "bagging_temperature": trial.suggest_float("bagging_temperature", 0, 8),
 "random_strength": trial.suggest_float("random_strength", 0, 8),
 'eval_metric': 'F1',
+"boosting_type": "Ordered",
+
+bossting_type 변경. border_count증가
 
 2
+'iterations': trial.suggest_int('iterations', 100, 1200, step=25),
+'learning_rate': trial.suggest_float('learning_rate', 1e-3, 1.2, log=True),
+'depth': trial.suggest_int('depth', 3, 11),
+'l2_leaf_reg': trial.suggest_float('l2_leaf_reg', 1e-3, 10, log=True),
+'border_count': trial.suggest_int('border_count', 100, 350),
+"bagging_temperature": trial.suggest_float("bagging_temperature", 0, 8),
+"random_strength": trial.suggest_float("random_strength", 0, 6),
+'eval_metric': 'F1',
+"boosting_type": "Plain", # Ordered or Plain
+
+유의믜한 성능향상 있음.
+ramdom_strength 상한 감소, depth 증가, border_count 상한 소폭 증가, l2_leaf_reg대폭 감소
+
+3
+'iterations': trial.suggest_int('iterations', 200, 1200, step=25),
+'learning_rate': trial.suggest_float('learning_rate', 1e-3, 1.2, log=True),
+'depth': trial.suggest_int('depth', 6, 15),
+'l2_leaf_reg': trial.suggest_float('l2_leaf_reg', 0, 1),
+'border_count': trial.suggest_int('border_count', 200, 380),
+"bagging_temperature": trial.suggest_float("bagging_temperature", 0, 6),
+"random_strength": trial.suggest_float("random_strength", 0, 4),
+'eval_metric': 'F1',
+"boosting_type": "Plain", # Ordered or Plain
