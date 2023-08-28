@@ -109,13 +109,13 @@ def Objective(trial):
     return np.mean(all_scores)
 
 # Create Optuna sampler and study object
-sampler = optuna.samplers.TPESampler(n_startup_trials=40)
+sampler = optuna.samplers.TPESampler(n_startup_trials=30)
 study = optuna.create_study(sampler=sampler, 
     study_name="catboost_for_card_fraud_4", 
     direction="maximize", 
     storage="sqlite:///catboostdb/4.db", 
     load_if_exists=True)
-study.optimize(Objective, n_trials=440, n_jobs=1)
+study.optimize(Objective, n_trials=330, n_jobs=1)
 
 # Print best hyper-parameter set
 with open("catboostdb/CatBoost_Hyper_4.txt",'a') as f:
