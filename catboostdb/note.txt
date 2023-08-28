@@ -35,3 +35,14 @@ ramdom_strength 상한 감소, depth 증가, border_count 상한 소폭 증가, 
 "random_strength": trial.suggest_float("random_strength", 0, 4),
 'eval_metric': 'F1',
 "boosting_type": "Plain", # Ordered or Plain
+
+4
+'iterations': trial.suggest_int('iterations', 600, 1500, step=25),
+'learning_rate': trial.suggest_float('learning_rate', 5e-3, 0.05),
+'depth': trial.suggest_int('depth', 7, 15),
+'l2_leaf_reg': trial.suggest_float('l2_leaf_reg', 0.4, 1),
+'border_count': trial.suggest_int('border_count', 250, 450),
+"bagging_temperature": trial.suggest_float("bagging_temperature", 0, 5),
+"random_strength": trial.suggest_float("random_strength", 0, 4),
+'eval_metric': 'F1',
+"boosting_type": "Plain", # Ordered or Plain

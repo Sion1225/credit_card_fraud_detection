@@ -1,0 +1,376 @@
+{'iterations': 675, 'learning_rate': 0.022918698532651736, 'depth': 8, 'l2_leaf_reg': 0.7792803069781217, 'border_count': 324, 'bagging_temperature': 3.541265109349477, 'random_strength': 3.688577684944991, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5300767918088737 
+
+{'iterations': 825, 'learning_rate': 0.019010811210080237, 'depth': 15, 'l2_leaf_reg': 0.9658982319833048, 'border_count': 364, 'bagging_temperature': 0.6617672965839133, 'random_strength': 2.713224115659253, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5987567109352925 
+
+{'iterations': 1100, 'learning_rate': 0.010889727558520888, 'depth': 11, 'l2_leaf_reg': 0.6735453556436548, 'border_count': 291, 'bagging_temperature': 1.6525049566165417, 'random_strength': 3.5826627361127596, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5642164309921701 
+
+{'iterations': 1150, 'learning_rate': 0.0153178273273759, 'depth': 8, 'l2_leaf_reg': 0.7645779715755026, 'border_count': 418, 'bagging_temperature': 4.8064391154112815, 'random_strength': 2.0913069550708583, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5044955044955044 
+
+{'iterations': 1225, 'learning_rate': 0.037920911242268866, 'depth': 14, 'l2_leaf_reg': 0.9974470965270986, 'border_count': 412, 'bagging_temperature': 1.4835814756336356, 'random_strength': 2.102298307092231, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5932988286570416 
+
+{'iterations': 1000, 'learning_rate': 0.04168864788256032, 'depth': 13, 'l2_leaf_reg': 0.7443107297545091, 'border_count': 284, 'bagging_temperature': 2.2101985806163453, 'random_strength': 3.1954392243709053, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5817034700315457 
+
+{'iterations': 700, 'learning_rate': 0.02081822265086038, 'depth': 7, 'l2_leaf_reg': 0.7565976109568813, 'border_count': 328, 'bagging_temperature': 3.6107398927518592, 'random_strength': 0.41701621219483487, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5057258880409687 
+
+{'iterations': 1325, 'learning_rate': 0.03091384639506252, 'depth': 12, 'l2_leaf_reg': 0.5057364855178044, 'border_count': 418, 'bagging_temperature': 1.327630364336883, 'random_strength': 0.13600190004310608, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5857383201760064 
+
+{'iterations': 875, 'learning_rate': 0.04201030889486349, 'depth': 13, 'l2_leaf_reg': 0.7721734460238525, 'border_count': 332, 'bagging_temperature': 2.906339717702525, 'random_strength': 1.030393904938642, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5868310598111228 
+
+{'iterations': 875, 'learning_rate': 0.046668099165845994, 'depth': 12, 'l2_leaf_reg': 0.5151740634570126, 'border_count': 418, 'bagging_temperature': 3.084058645492638, 'random_strength': 0.18364807860341914, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5810098933573172 
+
+{'iterations': 1400, 'learning_rate': 0.017110425929539312, 'depth': 13, 'l2_leaf_reg': 0.5974036344752277, 'border_count': 366, 'bagging_temperature': 3.1050601889330194, 'random_strength': 0.40479981281277677, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5888799786153435 
+
+{'iterations': 900, 'learning_rate': 0.011654150399851092, 'depth': 10, 'l2_leaf_reg': 0.9150608664331075, 'border_count': 331, 'bagging_temperature': 1.1323725635718307, 'random_strength': 0.8837518237016422, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5590929912963811 
+
+{'iterations': 1250, 'learning_rate': 0.022817611355373246, 'depth': 7, 'l2_leaf_reg': 0.8789397500123136, 'border_count': 403, 'bagging_temperature': 4.722054352942381, 'random_strength': 2.9584033614223713, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5184168080598291 
+
+{'iterations': 1075, 'learning_rate': 0.031736113823067014, 'depth': 9, 'l2_leaf_reg': 0.87603722061511, 'border_count': 308, 'bagging_temperature': 1.120277246050942, 'random_strength': 3.7419758743145115, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5563909774436091 
+
+{'iterations': 675, 'learning_rate': 0.0056551303448805785, 'depth': 15, 'l2_leaf_reg': 0.7353000776650742, 'border_count': 305, 'bagging_temperature': 0.43026279503708464, 'random_strength': 2.2411815147426677, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.4676554118018302 
+
+{'iterations': 1150, 'learning_rate': 0.049188256648083906, 'depth': 9, 'l2_leaf_reg': 0.808273197361838, 'border_count': 252, 'bagging_temperature': 0.8411702285611555, 'random_strength': 2.8313749337733367, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5275614443208253 
+
+{'iterations': 975, 'learning_rate': 0.04180182861920521, 'depth': 14, 'l2_leaf_reg': 0.6322396813157114, 'border_count': 262, 'bagging_temperature': 0.4634142611658226, 'random_strength': 3.9742654246009086, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.549785058673173 
+
+{'iterations': 1075, 'learning_rate': 0.010007887905012034, 'depth': 10, 'l2_leaf_reg': 0.7017878939920591, 'border_count': 420, 'bagging_temperature': 0.2088239265376629, 'random_strength': 2.3286733338811714, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5498990805113254 
+
+{'iterations': 1000, 'learning_rate': 0.026936529619566378, 'depth': 14, 'l2_leaf_reg': 0.7709521888495143, 'border_count': 376, 'bagging_temperature': 3.9702366074694337, 'random_strength': 0.6049807464862988, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5868852459016393 
+
+{'iterations': 825, 'learning_rate': 0.02421543341632456, 'depth': 7, 'l2_leaf_reg': 0.9949633886494587, 'border_count': 279, 'bagging_temperature': 0.8176885060861577, 'random_strength': 3.0217026523893775, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5266125364926985 
+
+{'iterations': 1025, 'learning_rate': 0.023073343445617848, 'depth': 11, 'l2_leaf_reg': 0.9428154399556842, 'border_count': 309, 'bagging_temperature': 1.4178071205608251, 'random_strength': 2.5101287609828478, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5613461089039494 
+
+{'iterations': 1250, 'learning_rate': 0.04246002687168657, 'depth': 15, 'l2_leaf_reg': 0.6334378876277054, 'border_count': 419, 'bagging_temperature': 2.0737521008333912, 'random_strength': 3.579606518496555, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5793997463717064 
+
+{'iterations': 1275, 'learning_rate': 0.007705650243570783, 'depth': 13, 'l2_leaf_reg': 0.9586655367821876, 'border_count': 288, 'bagging_temperature': 2.862492397991001, 'random_strength': 2.0868333345090044, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.48172268907563015 
+
+{'iterations': 1325, 'learning_rate': 0.04809726015573158, 'depth': 10, 'l2_leaf_reg': 0.6102487302532543, 'border_count': 422, 'bagging_temperature': 1.9104519985131285, 'random_strength': 2.993077898415093, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5661394258933802 
+
+{'iterations': 675, 'learning_rate': 0.01381303207470378, 'depth': 12, 'l2_leaf_reg': 0.9859319981369391, 'border_count': 396, 'bagging_temperature': 3.0386938854130516, 'random_strength': 0.1978649060482427, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5764661748155558 
+
+{'iterations': 1400, 'learning_rate': 0.032415614002093585, 'depth': 15, 'l2_leaf_reg': 0.8314128902363525, 'border_count': 327, 'bagging_temperature': 0.8830421278071138, 'random_strength': 1.1603525903234662, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5998841922408801 
+
+{'iterations': 1350, 'learning_rate': 0.04237914720297377, 'depth': 12, 'l2_leaf_reg': 0.8092500723627858, 'border_count': 256, 'bagging_temperature': 4.509843482914196, 'random_strength': 1.9696644052493064, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5219861140332422 
+
+{'iterations': 750, 'learning_rate': 0.013249379671651115, 'depth': 13, 'l2_leaf_reg': 0.8678878855517691, 'border_count': 365, 'bagging_temperature': 2.7839194755985153, 'random_strength': 1.1057956620108622, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5837637399019997 
+
+{'iterations': 950, 'learning_rate': 0.04097836900377818, 'depth': 13, 'l2_leaf_reg': 0.48559733887155165, 'border_count': 340, 'bagging_temperature': 1.4029708270418917, 'random_strength': 1.9384857885085065, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5773487773487774 
+
+{'iterations': 875, 'learning_rate': 0.039453116438096535, 'depth': 11, 'l2_leaf_reg': 0.7653451843850163, 'border_count': 293, 'bagging_temperature': 1.8986779904336348, 'random_strength': 1.4847928881327288, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5492814303496661 
+
+{'iterations': 675, 'learning_rate': 0.01312258380267525, 'depth': 14, 'l2_leaf_reg': 0.5819869964777165, 'border_count': 389, 'bagging_temperature': 0.31475084934753317, 'random_strength': 2.6828514674734953, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6034192825112108 
+
+{'iterations': 625, 'learning_rate': 0.03902970282297542, 'depth': 10, 'l2_leaf_reg': 0.4360583712817242, 'border_count': 276, 'bagging_temperature': 1.433911191562286, 'random_strength': 0.9551500843749015, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5568875819950238 
+
+{'iterations': 875, 'learning_rate': 0.03534992942778695, 'depth': 9, 'l2_leaf_reg': 0.8245654837802436, 'border_count': 317, 'bagging_temperature': 2.880308513747825, 'random_strength': 3.603387343506798, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5435976279376235 
+
+{'iterations': 1125, 'learning_rate': 0.03673939009205179, 'depth': 13, 'l2_leaf_reg': 0.8228598926439228, 'border_count': 306, 'bagging_temperature': 4.047797103190479, 'random_strength': 1.667185027802443, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5636074789197116 
+
+{'iterations': 1050, 'learning_rate': 0.04139077431396933, 'depth': 10, 'l2_leaf_reg': 0.893109021069076, 'border_count': 399, 'bagging_temperature': 1.853329828409524, 'random_strength': 0.6787072391606381, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5601302628518261 
+
+{'iterations': 1475, 'learning_rate': 0.04247412195497648, 'depth': 12, 'l2_leaf_reg': 0.5786030583675565, 'border_count': 432, 'bagging_temperature': 2.9580563673868507, 'random_strength': 2.1141811582325056, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5846800683221653 
+
+{'iterations': 675, 'learning_rate': 0.033742004101205876, 'depth': 10, 'l2_leaf_reg': 0.6781412076553059, 'border_count': 450, 'bagging_temperature': 3.8541801214875453, 'random_strength': 0.8281642749951477, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5428539501620293 
+
+{'iterations': 700, 'learning_rate': 0.03398776581114949, 'depth': 10, 'l2_leaf_reg': 0.5035867663426662, 'border_count': 306, 'bagging_temperature': 2.698760463663121, 'random_strength': 2.8797081088000587, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5547277936962751 
+
+{'iterations': 1200, 'learning_rate': 0.02292984424457821, 'depth': 8, 'l2_leaf_reg': 0.79586502165031, 'border_count': 267, 'bagging_temperature': 0.47264880128298603, 'random_strength': 3.1015503586215756, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.520975012287418 
+
+{'iterations': 1075, 'learning_rate': 0.01038089309247852, 'depth': 9, 'l2_leaf_reg': 0.9649587614208306, 'border_count': 375, 'bagging_temperature': 1.068047165383173, 'random_strength': 0.5878938614664477, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5581860432593108 
+
+{'iterations': 1475, 'learning_rate': 0.017065067856856624, 'depth': 14, 'l2_leaf_reg': 0.9272972869287568, 'border_count': 349, 'bagging_temperature': 0.06162492450273449, 'random_strength': 2.597883858707714, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5984427141268075 
+
+{'iterations': 1500, 'learning_rate': 0.018875387420162176, 'depth': 14, 'l2_leaf_reg': 0.9288772795434804, 'border_count': 346, 'bagging_temperature': 0.21768205355132725, 'random_strength': 2.6349802458159406, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5955362003266196 
+
+{'iterations': 1500, 'learning_rate': 0.017259823120328723, 'depth': 15, 'l2_leaf_reg': 0.9299064571501533, 'border_count': 351, 'bagging_temperature': 0.04393577444957027, 'random_strength': 2.6413385787203016, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5121132165987047 
+
+{'iterations': 1425, 'learning_rate': 0.01909074684661621, 'depth': 14, 'l2_leaf_reg': 0.9073065921838162, 'border_count': 349, 'bagging_temperature': 0.024212689381221217, 'random_strength': 2.595224711718885, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.606429684180711 
+
+{'iterations': 1425, 'learning_rate': 0.015714526698973375, 'depth': 14, 'l2_leaf_reg': 0.8505513252848432, 'border_count': 357, 'bagging_temperature': 0.6709907718628224, 'random_strength': 2.5157499684401827, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5914052784302888 
+
+{'iterations': 1425, 'learning_rate': 0.017398404270638098, 'depth': 15, 'l2_leaf_reg': 0.914931652336575, 'border_count': 384, 'bagging_temperature': 0.1261847706841031, 'random_strength': 3.262257223845416, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6076603069860852 
+
+{'iterations': 1375, 'learning_rate': 0.01931196348060034, 'depth': 15, 'l2_leaf_reg': 0.8554495282526174, 'border_count': 386, 'bagging_temperature': 0.33750147156713384, 'random_strength': 3.280444529008326, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6012429541841305 
+
+{'iterations': 1400, 'learning_rate': 0.020004027510697808, 'depth': 15, 'l2_leaf_reg': 0.9053091569438565, 'border_count': 383, 'bagging_temperature': 0.2936465410093175, 'random_strength': 3.24309960374242, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5955467869222096 
+
+{'iterations': 1425, 'learning_rate': 0.021008386335087163, 'depth': 15, 'l2_leaf_reg': 0.8547657743250472, 'border_count': 390, 'bagging_temperature': 0.04355332717941346, 'random_strength': 2.7974504098558945, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.49551827166168705 
+
+{'iterations': 1350, 'learning_rate': 0.014452567632113493, 'depth': 15, 'l2_leaf_reg': 0.9017134091709219, 'border_count': 408, 'bagging_temperature': 0.5656891741155035, 'random_strength': 3.1124531702991507, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.47162673392181587 
+
+{'iterations': 1300, 'learning_rate': 0.02812677664380686, 'depth': 14, 'l2_leaf_reg': 0.8411445716459744, 'border_count': 375, 'bagging_temperature': 0.3314246828574937, 'random_strength': 3.333592082104441, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5963996152260548 
+
+{'iterations': 775, 'learning_rate': 0.018640429252873666, 'depth': 15, 'l2_leaf_reg': 0.8834285864179344, 'border_count': 360, 'bagging_temperature': 0.7031602922958164, 'random_strength': 3.3741704733439115, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5937940761636108 
+
+{'iterations': 1400, 'learning_rate': 0.015930210889723146, 'depth': 15, 'l2_leaf_reg': 0.9076979082259138, 'border_count': 387, 'bagging_temperature': 0.8808669207991815, 'random_strength': 2.775449447694826, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5994277539341918 
+
+{'iterations': 1375, 'learning_rate': 0.015673438718901787, 'depth': 14, 'l2_leaf_reg': 0.9066732683085379, 'border_count': 388, 'bagging_temperature': 0.9166074879504412, 'random_strength': 2.7746435167946157, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5987704601248701 
+
+{'iterations': 1450, 'learning_rate': 0.012472987523563702, 'depth': 15, 'l2_leaf_reg': 0.8787281777295821, 'border_count': 338, 'bagging_temperature': 0.6252248268218488, 'random_strength': 2.382296853986574, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.4703001916116671 
+
+{'iterations': 1375, 'learning_rate': 0.012043215474636474, 'depth': 15, 'l2_leaf_reg': 0.8618573051912488, 'border_count': 380, 'bagging_temperature': 0.4256671967384973, 'random_strength': 2.982804418829666, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.47114658612878874 
+
+{'iterations': 1425, 'learning_rate': 0.02126148842905113, 'depth': 14, 'l2_leaf_reg': 0.958083183542978, 'border_count': 368, 'bagging_temperature': 0.17768360655357113, 'random_strength': 2.814883344052962, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5889755163452332 
+
+{'iterations': 1225, 'learning_rate': 0.014952415834073335, 'depth': 15, 'l2_leaf_reg': 0.8372219126237671, 'border_count': 321, 'bagging_temperature': 0.9272616942457109, 'random_strength': 3.2173100407588158, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6143405134257893 
+
+{'iterations': 1200, 'learning_rate': 0.01793827147390913, 'depth': 14, 'l2_leaf_reg': 0.7424546476561491, 'border_count': 320, 'bagging_temperature': 0.002715165230575134, 'random_strength': 3.4243598647398685, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5976256052377821 
+
+{'iterations': 1300, 'learning_rate': 0.013984658350313348, 'depth': 15, 'l2_leaf_reg': 0.8412342329819201, 'border_count': 328, 'bagging_temperature': 0.3541009786601103, 'random_strength': 3.1843375425513902, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.46936566356354187 
+
+{'iterations': 1175, 'learning_rate': 0.010100379678437186, 'depth': 14, 'l2_leaf_reg': 0.8825270701733858, 'border_count': 336, 'bagging_temperature': 0.5576209625552193, 'random_strength': 3.4618396107428526, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6089916323925684 
+
+{'iterations': 1150, 'learning_rate': 0.008960240220301122, 'depth': 14, 'l2_leaf_reg': 0.8813307291000854, 'border_count': 342, 'bagging_temperature': 0.5479663630823756, 'random_strength': 3.4925044793858313, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.48747549553474184 
+
+{'iterations': 1225, 'learning_rate': 0.011189027608387803, 'depth': 15, 'l2_leaf_reg': 0.7869402766989518, 'border_count': 317, 'bagging_temperature': 1.224302054448318, 'random_strength': 3.288102698449081, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.4821289388709497 
+
+{'iterations': 1275, 'learning_rate': 0.0147360176256109, 'depth': 14, 'l2_leaf_reg': 0.8665276760023721, 'border_count': 333, 'bagging_temperature': 0.7128734774989802, 'random_strength': 3.7535456804437772, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.600083927822073 
+
+{'iterations': 1275, 'learning_rate': 0.01292187040270277, 'depth': 13, 'l2_leaf_reg': 0.9420764115182676, 'border_count': 332, 'bagging_temperature': 0.22978488230300612, 'random_strength': 3.7824882138633615, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.595171401894091 
+
+{'iterations': 1200, 'learning_rate': 0.014591655538640266, 'depth': 14, 'l2_leaf_reg': 0.8630613727140866, 'border_count': 354, 'bagging_temperature': 0.4358801906058943, 'random_strength': 3.76567463419845, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5951830180977004 
+
+{'iterations': 1325, 'learning_rate': 0.016750932745358542, 'depth': 13, 'l2_leaf_reg': 0.8057362088871406, 'border_count': 337, 'bagging_temperature': 0.6286485705140948, 'random_strength': 3.208590079298775, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5866281360830158 
+
+{'iterations': 1250, 'learning_rate': 0.011805686232375455, 'depth': 14, 'l2_leaf_reg': 0.8931940576508735, 'border_count': 299, 'bagging_temperature': 0.7619756088526296, 'random_strength': 3.4465378223479615, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6043787477339283 
+
+{'iterations': 1150, 'learning_rate': 0.009333854435175478, 'depth': 14, 'l2_leaf_reg': 0.8901237276795072, 'border_count': 296, 'bagging_temperature': 1.0317105738330417, 'random_strength': 3.4746469998176384, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.40438079191238413 
+
+{'iterations': 1225, 'learning_rate': 0.011291616105396507, 'depth': 13, 'l2_leaf_reg': 0.9760724576470596, 'border_count': 297, 'bagging_temperature': 0.3389261269163145, 'random_strength': 3.077075011895065, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5929847782925215 
+
+{'iterations': 1175, 'learning_rate': 0.005677965608082568, 'depth': 15, 'l2_leaf_reg': 0.9140363192764341, 'border_count': 370, 'bagging_temperature': 0.16547619077134898, 'random_strength': 3.3291108323413523, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.496186734458054 
+
+{'iterations': 1300, 'learning_rate': 0.013446136612897295, 'depth': 14, 'l2_leaf_reg': 0.863573600234575, 'border_count': 312, 'bagging_temperature': 0.7478716129360027, 'random_strength': 3.603224180795946, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6058539357772094 
+
+{'iterations': 1350, 'learning_rate': 0.011568430298990004, 'depth': 14, 'l2_leaf_reg': 0.8352131626315771, 'border_count': 312, 'bagging_temperature': 0.7865794335290975, 'random_strength': 3.6191876444239455, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5993386607880958 
+
+{'iterations': 600, 'learning_rate': 0.013273828876299411, 'depth': 15, 'l2_leaf_reg': 0.8891807258345015, 'border_count': 321, 'bagging_temperature': 0.5579529990308892, 'random_strength': 3.4647517314208125, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6002334312950947 
+
+{'iterations': 1250, 'learning_rate': 0.019647338538478824, 'depth': 14, 'l2_leaf_reg': 0.8227304004998437, 'border_count': 395, 'bagging_temperature': 0.9559450747354352, 'random_strength': 3.1478378332947106, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5995569094433675 
+
+{'iterations': 1300, 'learning_rate': 0.01568617971312211, 'depth': 13, 'l2_leaf_reg': 0.9212387220558216, 'border_count': 301, 'bagging_temperature': 1.1432790907450618, 'random_strength': 3.2850235085513955, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.591430454845089 
+
+{'iterations': 1100, 'learning_rate': 0.013652246160752746, 'depth': 14, 'l2_leaf_reg': 0.9457529013360517, 'border_count': 286, 'bagging_temperature': 0.7792820053971918, 'random_strength': 2.8893348599148183, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5996245642263341 
+
+{'iterations': 1375, 'learning_rate': 0.017911849529063842, 'depth': 15, 'l2_leaf_reg': 0.8573021384240188, 'border_count': 313, 'bagging_temperature': 0.45989318532490636, 'random_strength': 3.5542449646168466, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6057395143487859 
+
+{'iterations': 1250, 'learning_rate': 0.010477927126149093, 'depth': 13, 'l2_leaf_reg': 0.873901279946333, 'border_count': 315, 'bagging_temperature': 0.49360863653446096, 'random_strength': 3.8756778180348426, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5934036939313985 
+
+{'iterations': 1325, 'learning_rate': 0.016683769853101146, 'depth': 14, 'l2_leaf_reg': 0.7238475783014555, 'border_count': 325, 'bagging_temperature': 0.1398574764323911, 'random_strength': 3.5738555460868895, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.595890410958904 
+
+{'iterations': 1450, 'learning_rate': 0.017964010435427797, 'depth': 15, 'l2_leaf_reg': 0.7770790349191177, 'border_count': 311, 'bagging_temperature': 0.7785812294279664, 'random_strength': 3.655047650403025, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.46054987885810594 
+
+{'iterations': 1375, 'learning_rate': 0.0122599532185704, 'depth': 15, 'l2_leaf_reg': 0.8964787912433401, 'border_count': 406, 'bagging_temperature': 0.30941376101942386, 'random_strength': 3.386273198481121, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5001169043722234 
+
+{'iterations': 1450, 'learning_rate': 0.015407530222079397, 'depth': 15, 'l2_leaf_reg': 0.8492339214254662, 'border_count': 345, 'bagging_temperature': 0.47747870409432, 'random_strength': 3.539795259384074, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6044689495066744 
+
+{'iterations': 1175, 'learning_rate': 0.014888642252340763, 'depth': 15, 'l2_leaf_reg': 0.851109474000763, 'border_count': 346, 'bagging_temperature': 0.47752421472055223, 'random_strength': 3.550250922522281, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.607361963190184 
+
+{'iterations': 1450, 'learning_rate': 0.014906311047934283, 'depth': 15, 'l2_leaf_reg': 0.8437525127175682, 'border_count': 342, 'bagging_temperature': 1.2768103421806307, 'random_strength': 3.576426848810206, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.48486871384067637 
+
+{'iterations': 1175, 'learning_rate': 0.01631670347369151, 'depth': 15, 'l2_leaf_reg': 0.8177521328894418, 'border_count': 346, 'bagging_temperature': 0.47082010673719166, 'random_strength': 3.5140250528347976, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.607623092852616 
+
+{'iterations': 1125, 'learning_rate': 0.01805129402913037, 'depth': 15, 'l2_leaf_reg': 0.8276996824388214, 'border_count': 347, 'bagging_temperature': 0.12440968339097863, 'random_strength': 3.9734056912855693, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6095347832349128 
+
+{'iterations': 1175, 'learning_rate': 0.01786684861373184, 'depth': 15, 'l2_leaf_reg': 0.8117171038337286, 'border_count': 362, 'bagging_temperature': 0.12352100452476455, 'random_strength': 3.926165992490537, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5962750716332378 
+
+{'iterations': 1125, 'learning_rate': 0.02022067018113785, 'depth': 15, 'l2_leaf_reg': 0.8235863334059771, 'border_count': 353, 'bagging_temperature': 0.02080063945400193, 'random_strength': 3.6938268999809925, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5978820835718374 
+
+{'iterations': 1175, 'learning_rate': 0.018686941232733064, 'depth': 15, 'l2_leaf_reg': 0.7917573497430003, 'border_count': 348, 'bagging_temperature': 0.6327341023269913, 'random_strength': 3.9848807170098945, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6025775456489694 
+
+{'iterations': 1100, 'learning_rate': 0.0165649048355912, 'depth': 15, 'l2_leaf_reg': 0.8669170761725, 'border_count': 336, 'bagging_temperature': 0.26345329077777724, 'random_strength': 3.8816302598315393, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5974171813587873 
+
+{'iterations': 1125, 'learning_rate': 0.015553632685868755, 'depth': 15, 'l2_leaf_reg': 0.8459288660921501, 'border_count': 345, 'bagging_temperature': 0.47273440249973564, 'random_strength': 3.829139502793263, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.601933342951955 
+
+{'iterations': 1150, 'learning_rate': 0.01388331494520023, 'depth': 15, 'l2_leaf_reg': 0.8577091372758386, 'border_count': 358, 'bagging_temperature': 0.42916557943309963, 'random_strength': 3.7072612513697516, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5004162207158995 
+
+{'iterations': 1475, 'learning_rate': 0.016484466777595363, 'depth': 15, 'l2_leaf_reg': 0.8315735892745875, 'border_count': 330, 'bagging_temperature': 0.1243214507477915, 'random_strength': 3.502780036529528, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6044670624823296 
+
+{'iterations': 1025, 'learning_rate': 0.015178475080166983, 'depth': 15, 'l2_leaf_reg': 0.8776133717978417, 'border_count': 323, 'bagging_temperature': 0.5338943052781854, 'random_strength': 3.5852521359604785, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6045303707978646 
+
+{'iterations': 1050, 'learning_rate': 0.021563447291365938, 'depth': 15, 'l2_leaf_reg': 0.8739904136465728, 'border_count': 322, 'bagging_temperature': 0.6017390377500412, 'random_strength': 3.6795663864995376, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6014265335235377 
+
+{'iterations': 1000, 'learning_rate': 0.018141847309109213, 'depth': 14, 'l2_leaf_reg': 0.9134067145565679, 'border_count': 327, 'bagging_temperature': 0.9514963261691725, 'random_strength': 3.6296260069765243, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6058394160583942 
+
+{'iterations': 950, 'learning_rate': 0.018265589470745885, 'depth': 14, 'l2_leaf_reg': 0.91708971916484, 'border_count': 335, 'bagging_temperature': 0.9142540546394505, 'random_strength': 3.8344218386234914, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5974458634092171 
+
+{'iterations': 1225, 'learning_rate': 0.019345115193745144, 'depth': 14, 'l2_leaf_reg': 0.8935311234992966, 'border_count': 355, 'bagging_temperature': 0.23057372428024125, 'random_strength': 3.3856795671968123, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6024975445488985 
+
+{'iterations': 1100, 'learning_rate': 0.017515507658552247, 'depth': 14, 'l2_leaf_reg': 0.9101581417976857, 'border_count': 304, 'bagging_temperature': 0.998631452813783, 'random_strength': 3.9780741549128966, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6048341765036538 
+
+{'iterations': 975, 'learning_rate': 0.017348753472186798, 'depth': 14, 'l2_leaf_reg': 0.8123044219027118, 'border_count': 326, 'bagging_temperature': 0.6838300751297822, 'random_strength': 3.6659530357164303, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5900269541778975 
+
+{'iterations': 1075, 'learning_rate': 0.01756409421287155, 'depth': 14, 'l2_leaf_reg': 0.9049243635024269, 'border_count': 341, 'bagging_temperature': 0.8327412069658536, 'random_strength': 3.9874688539373513, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5990910342927972 
+
+{'iterations': 1200, 'learning_rate': 0.01877825411960614, 'depth': 13, 'l2_leaf_reg': 0.9378707978167894, 'border_count': 303, 'bagging_temperature': 1.0590060151403693, 'random_strength': 3.8889452359195245, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5970627503337784 
+
+{'iterations': 1125, 'learning_rate': 0.02044672796749706, 'depth': 14, 'l2_leaf_reg': 0.923474371029049, 'border_count': 317, 'bagging_temperature': 0.24450825650384472, 'random_strength': 3.773938652658771, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6056162678102089 
+
+{'iterations': 1175, 'learning_rate': 0.02023292351158407, 'depth': 15, 'l2_leaf_reg': 0.9251302136675323, 'border_count': 316, 'bagging_temperature': 0.3850130043571172, 'random_strength': 3.796862065922542, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6073557203081843 
+
+{'iterations': 1175, 'learning_rate': 0.016346634117904074, 'depth': 15, 'l2_leaf_reg': 0.8831374881377302, 'border_count': 332, 'bagging_temperature': 0.3866938600970718, 'random_strength': 3.5330019844055425, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6003415883859948 
+
+{'iterations': 1225, 'learning_rate': 0.01411817368325567, 'depth': 15, 'l2_leaf_reg': 0.8688229781604966, 'border_count': 309, 'bagging_temperature': 0.1243371179874488, 'random_strength': 3.4153673731279803, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.4773171261124376 
+
+{'iterations': 1200, 'learning_rate': 0.022037623735379618, 'depth': 11, 'l2_leaf_reg': 0.854291248888935, 'border_count': 351, 'bagging_temperature': 0.31955870702244804, 'random_strength': 3.232982745720648, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.56820496775181 
+
+{'iterations': 1275, 'learning_rate': 0.020089953129464874, 'depth': 12, 'l2_leaf_reg': 0.9520812225376425, 'border_count': 328, 'bagging_temperature': 0.5695249834595987, 'random_strength': 3.7355173780808935, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5842982567756712 
+
+{'iterations': 1350, 'learning_rate': 0.01293241463313358, 'depth': 15, 'l2_leaf_reg': 0.8997678665452392, 'border_count': 314, 'bagging_temperature': 0.3924545113589682, 'random_strength': 3.6320780918091162, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.446642685851319 
+
+{'iterations': 1025, 'learning_rate': 0.019235714112987082, 'depth': 15, 'l2_leaf_reg': 0.8385314746443164, 'border_count': 319, 'bagging_temperature': 0.702488335123873, 'random_strength': 3.051979336156996, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6017396264080994 
+
+{'iterations': 1125, 'learning_rate': 0.02064113200802232, 'depth': 14, 'l2_leaf_reg': 0.9146026974454913, 'border_count': 319, 'bagging_temperature': 0.16715591610266017, 'random_strength': 3.504763825834658, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6059747982443721 
+
+{'iterations': 1125, 'learning_rate': 0.020605687522303934, 'depth': 15, 'l2_leaf_reg': 0.9332114749863154, 'border_count': 339, 'bagging_temperature': 0.07815686265190186, 'random_strength': 3.3291484776770472, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6028104387725839 
+
+{'iterations': 1175, 'learning_rate': 0.024211654663877757, 'depth': 14, 'l2_leaf_reg': 0.921405148182791, 'border_count': 325, 'bagging_temperature': 0.21594419423879388, 'random_strength': 3.493734546252148, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5931808845679858 
+
+{'iterations': 1075, 'learning_rate': 0.018529916454276884, 'depth': 15, 'l2_leaf_reg': 0.9384039143136611, 'border_count': 365, 'bagging_temperature': 0.013583496187979133, 'random_strength': 3.190309070459986, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5859374999999999 
+
+{'iterations': 1150, 'learning_rate': 0.02196987129497231, 'depth': 14, 'l2_leaf_reg': 0.9700461930973038, 'border_count': 308, 'bagging_temperature': 0.4368581824655185, 'random_strength': 3.4029047509114556, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6103883708812525 
+
+{'iterations': 1100, 'learning_rate': 0.021897977404052534, 'depth': 14, 'l2_leaf_reg': 0.9762101853183959, 'border_count': 308, 'bagging_temperature': 0.18217346351906996, 'random_strength': 3.4212767343035875, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5949230353767216 
+
+{'iterations': 1150, 'learning_rate': 0.01973814732900349, 'depth': 13, 'l2_leaf_reg': 0.9617226594073212, 'border_count': 346, 'bagging_temperature': 0.36262987594769064, 'random_strength': 3.7897489995221036, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5978128797083839 
+
+{'iterations': 1150, 'learning_rate': 0.020918719472937053, 'depth': 14, 'l2_leaf_reg': 0.956033182168558, 'border_count': 329, 'bagging_temperature': 0.5226974106523294, 'random_strength': 3.274222385359028, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6001695394179147 
+
+{'iterations': 1225, 'learning_rate': 0.01629174234127477, 'depth': 14, 'l2_leaf_reg': 0.9467834068586362, 'border_count': 335, 'bagging_temperature': 0.866962260836968, 'random_strength': 3.341996441081438, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5957915004813644 
+
+{'iterations': 1000, 'learning_rate': 0.022069039658097096, 'depth': 14, 'l2_leaf_reg': 0.9138358822114261, 'border_count': 341, 'bagging_temperature': 0.2848559859503051, 'random_strength': 3.6847210229526093, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5990645401750628 
+
+{'iterations': 1200, 'learning_rate': 0.014696245405778106, 'depth': 15, 'l2_leaf_reg': 0.885024938662709, 'border_count': 313, 'bagging_temperature': 0.42309039678329097, 'random_strength': 3.542377387612091, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.43803226129646317 
+
+{'iterations': 1175, 'learning_rate': 0.017244848982199593, 'depth': 15, 'l2_leaf_reg': 0.8977275358917957, 'border_count': 322, 'bagging_temperature': 0.5798077446487552, 'random_strength': 3.5992465262870423, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.5960695602997313 
+
+{'iterations': 1400, 'learning_rate': 0.019088014249637176, 'depth': 8, 'l2_leaf_reg': 0.9985237074116318, 'border_count': 425, 'bagging_temperature': 0.13535819816623856, 'random_strength': 3.4495470107083914, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.544739429695182 
+
+{'iterations': 1425, 'learning_rate': 0.023169614632501015, 'depth': 14, 'l2_leaf_reg': 0.9270693070209857, 'border_count': 318, 'bagging_temperature': 0.6895367149205095, 'random_strength': 3.1339454053672258, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
+F1 Score: 0.6064279672963067 
+
+{'iterations': 1425, 'learning_rate': 0.022548627518545455, 'depth': 14, 'l2_leaf_reg': 0.9340007826073231, 'border_count': 318, 'bagging_temperature': 0.6833425779226701, 'random_strength': 3.1140118625964748, 'eval_metric': 'F1', 'boosting_type': 'Plain', 'cat_features': ['user_id', 'card_id', 'errors?', 'merchant_id', 'merchant_city', 'merchant_state', 'mcc', 'use_chip', 'zip_1'], 'nan_mode': 'Forbidden', 'scale_pos_weight': 13.479705048987812, 'custom_metric': ['Logloss'], 'task_type': 'GPU'}
