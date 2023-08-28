@@ -4,7 +4,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score
 from datetime import datetime
 import catboost
-import optuna
 
 # Read "train.csv" file
 df = pd.read_csv("DataSet/train.csv")
@@ -62,7 +61,7 @@ num_not_fraud = np.count_nonzero(y_train == 0)
 num_fraud = np.count_nonzero(y_train == 1)
 scale_pos_weight = num_not_fraud / num_fraud
 
-# Train Model with optimal hyper-parameter set
+# Set object with optimal hyper-parameter set
 ''' Optimal hyper-parameter set
 'iterations': 1225, 
 'learning_rate': 0.014952415834073335, 
@@ -90,6 +89,9 @@ model = catboost.CatBoostClassifier(
     custom_metric=["Logloss"],
     task_type="GPU"
     )
+
+# Data Seperated model
+# Train model
 model.fit(X_train, y_train, eval_set=[(X_test, y_test)], early_stopping_rounds=100, verbose=1)
 
 # Predict & Validate
@@ -98,4 +100,12 @@ model_metric = f1_score(y_test, y_pred)
 print(model_metric)
 
 # Save Model
-model.save_model("catboostdb/catboost_model_4_" + datetime.now().strftime("%Y%m%d-%H%M%S") + ".cbm")
+model.save_model("catboostdb/catboost_model_4_" + str(model_metric) + "_" + datetime.now().strftime("%Y%m%d-%H%M%S") + ".cbm")
+
+
+# Non data seperated model
+# Train model
+model.fit(df, labels, eval_set=[(X_test, y_test)], early_stopping_rounds=100, verbose=1)
+
+# Save Model
+model.save_model("catboostdb/catboost_full_data_model_4_" + str(model_metric) + "_" + datetime.now().strftime("%Y%m%d-%H%M%S") + ".cbm")
