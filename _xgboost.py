@@ -81,7 +81,7 @@ def Objective(trial):
         'alpha': trial.suggest_float('alpha', 1e-3, 10.0, log=True),
 
         "device": "cuda",
-        "tree_method": "gpu_hist", #gpu_
+        "tree_method": "hist", #gpu_
         "scale_pos_weight": scale_pos_weight
     }
 
@@ -94,7 +94,7 @@ def Objective(trial):
     for _ in range(3):
         # Build XGBoost Classifier and Training
         model = xgboost.XGBClassifier(**param, early_stopping_rounds=100, enable_categorical=True)
-        model.fit(X_train, y_train, eval_set=[(X_test, y_test)], verbose=True)
+        model.fit(X_train, y_train, eval_set=[(X_test, y_test)], verbose=False)
 
         # Predict & Validate
         y_pred = model.predict(X_test)

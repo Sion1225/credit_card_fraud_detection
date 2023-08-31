@@ -1,1 +1,13 @@
-{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 0.003299005350199832, 'n_estimators': 1400, 'max_depth': 11, 'subsample': 1.0, 'colsample_bytree': 0.7492444371429191, 'gamma': 2.491192116318204, 'min_child_weight': 191, 'lambda': 0.03911568020834267, 'alpha': 0.7717378264981039, 'device': 'cuda', 'tree_method': 'gpu_hist', 'scale_pos_weight': 13.479705048987812}
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 0.01861022923363564, 'n_estimators': 1250, 'max_depth': 5, 'subsample': 0.95, 'colsample_bytree': 0.872867263503457, 'gamma': 7.804500278731057, 'min_child_weight': 46, 'lambda': 0.004376009437786653, 'alpha': 0.12371546608243526, 'device': 'cuda', 'tree_method': 'gpu_hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.4764507606814248 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 0.00800227647157502, 'n_estimators': 1125, 'max_depth': 13, 'subsample': 0.65, 'colsample_bytree': 0.7194440524128307, 'gamma': 1.2926916164460467, 'min_child_weight': 121, 'lambda': 0.007466576384231126, 'alpha': 0.7679014668827722, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.49133768815677364 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 0.08170572738379914, 'n_estimators': 1375, 'max_depth': 15, 'subsample': 0.55, 'colsample_bytree': 0.7852840127523122, 'gamma': 7.339749395967821, 'min_child_weight': 111, 'lambda': 0.13288771361927448, 'alpha': 0.10518622507585491, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.5306430729391455 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 0.0011971368899930809, 'n_estimators': 875, 'max_depth': 11, 'subsample': 0.95, 'colsample_bytree': 0.5063480394054742, 'gamma': 1.8630070439125557, 'min_child_weight': 136, 'lambda': 9.21104800187836, 'alpha': 0.36236678358400815, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.4431755387732547 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 0.015791031167860597, 'n_estimators': 875, 'max_depth': 14, 'subsample': 0.95, 'colsample_bytree': 0.6965310380794736, 'gamma': 2.6386811592233173, 'min_child_weight': 166, 'lambda': 0.5803776771481245, 'alpha': 0.06492128853380412, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
