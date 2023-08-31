@@ -1,1 +1,4 @@
 catboost_info/
+*.tsv
+*.cbm
+*.tsv
