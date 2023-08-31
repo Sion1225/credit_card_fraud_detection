@@ -51,7 +51,7 @@ print(df.dtypes)
 
 # Load model
 model = catboost.CatBoostClassifier()
-model.load_model("catboostdb/catboost_full_data_model_4_0.6143405134257893_20230829-020535.cbm")
+model.load_model("catboostdb/catboost_model_5_0.6143405134257893_20230901-001150.cbm")
 
 # Test loaded model
 y_pred = model.predict(df)
@@ -60,4 +60,4 @@ y_pred = model.predict(df)
 output["ans"] = y_pred
 
 # Output to CSV
-output.to_csv("catboostdb/submit2.csv", header=False)
+output.to_csv("catboostdb/submit2_1.csv", header=False)
