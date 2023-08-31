@@ -46,19 +46,6 @@ df["zip_1"] = df["zip_1"].astype("int64")
 df["zip_1"] = df["zip_1"].astype("category")
 
 
-# Create additional data
-# User average amount
-user_avg_amount = df.groupby("user_id")["amount"].mean().reset_index()
-user_avg_amount.columns = ['user_id', 'user_avg_amount']
-
-# Merchant average amount
-merchant_avg_amount = df.groupby("merchant_id")["amount"].mean().reset_index()
-merchant_avg_amount.columns = ["merchant_id", "merchant_avg_amount"]
-
-# Add to Original Dataset
-df = pd.merge(df, user_avg_amount, on="user_id", how="left")
-df = pd.merge(df, merchant_avg_amount, on="merchant_id", how="left")
-
 # Print Data sample
 print(labels[:5])
 print(df.head(10))
@@ -74,64 +61,55 @@ num_not_fraud = np.count_nonzero(y_train == 0)
 num_fraud = np.count_nonzero(y_train == 1)
 scale_pos_weight = num_not_fraud / num_fraud
 
+# Create LightGBM Dataset
+dtrain = lgb.Dataset(data=X_train, label=y_train, categorical_feature='auto')
 
-# Define Objective function
+# Define Objective function for Optuna
 def Objective(trial):
-    # Set Hyper-parameter bounds
     param = {
-        'iterations': trial.suggest_int('iterations', 600, 1500, step=25),
-        'learning_rate': trial.suggest_float('learning_rate', 5e-3, 0.045),
-        'depth': trial.suggest_int('depth', 10, 16),
-        'l2_leaf_reg': trial.suggest_float('l2_leaf_reg', 0.5, 2),
-        'border_count': trial.suggest_int('border_count', 250, 450),
-        "bagging_temperature": trial.suggest_float("bagging_temperature", 0, 4),
-        "random_strength": trial.suggest_float("random_strength", 0, 5),
-        'eval_metric': 'F1',
-        "boosting_type": "Plain", # Ordered or Plain
-        #"rsm": trial.suggest_float("rsm", 0.2, 1),
-
-        "cat_features": ["user_id","card_id","errors?","merchant_id","merchant_city","merchant_state","mcc","use_chip","zip_1"],
-        "nan_mode": "Forbidden",
-        'scale_pos_weight': scale_pos_weight,
-        'custom_metric': ['Logloss'],
-        'task_type': 'GPU'
+        "objective": "binary",
+        "metric": "binary_logloss",
+        "boosting_type": "gbdt",
+        "learning_rate": trial.suggest_float("learning_rate", 1e-3, 1.2, log=True),
+        "n_estimators": trial.suggest_int("n_estimators", 500, 1500, step=25),
+        "max_depth": trial.suggest_int("max_depth", 5, 15),
+        "subsample": trial.suggest_float("subsample", 0.5, 1, step=0.05),
+        "colsample_bytree": trial.suggest_float("colsample_bytree", 0.5, 1),
+        "min_child_weight": trial.suggest_int("min_child_weight", 1, 201, step=5),
+        "reg_lambda": trial.suggest_float('lambda', 1e-3, 10.0, log=True),
+        "reg_alpha": trial.suggest_float('alpha', 1e-3, 10.0, log=True),
+        "scale_pos_weight": scale_pos_weight,
+        "device": "gpu"
     }
-
-    # Note Hyperparameter set
-    with open("catboostdb/CatBoost_Hyper_5.txt", 'a') as f:
+    
+    # Additional logging, if needed
+    with open("lightgbmdb/LightGBM_Hyper_1.txt", 'a') as f:
         f.write(str(param) + '\n')
-
-    # try 3 times
+    
     all_scores = []
     for _ in range(3):
-        # Build CatBoost Classifier and Training
-        model = catboost.CatBoostClassifier(**param)
-        model.fit(X_train, y_train, eval_set=[(X_test, y_test)], early_stopping_rounds=100, verbose=0)
-
-        # Predict & Validate
-        y_pred = model.predict(X_test)
+        model = lgb.train(param, dtrain, valid_sets=[dtrain], early_stopping_rounds=100, verbose_eval=True)
+        y_pred = np.round(model.predict(X_test))
         model_metric = f1_score(y_test, y_pred)
-
-        # Append Metric
         all_scores.append(model_metric)
-
-    # Note Metric
-    with open("catboostdb/CatBoost_Hyper_5.txt", 'a') as f:
+        
+    with open("lightgbmdb/LightGBM_Hyper_1.txt", 'a') as f:
         f.write(f"F1 Score: {np.mean(all_scores)} \n\n")
-
+        
     return np.mean(all_scores)
 
+
 # Create Optuna sampler and study object
-sampler = optuna.samplers.TPESampler(n_startup_trials=30)
+sampler = optuna.samplers.TPESampler(n_startup_trials=50)
 study = optuna.create_study(sampler=sampler, 
-    study_name="catboost_for_card_fraud_5", 
-    direction="maximize", 
-    storage="sqlite:///catboostdb/5.db", 
-    load_if_exists=True)
-study.optimize(Objective, n_trials=330, n_jobs=1)
+                            study_name="lightgbm_for_card_fraud_1", 
+                            direction="maximize", 
+                            storage="sqlite:///lightgbmdb/1.db", 
+                            load_if_exists=True)
+study.optimize(Objective, n_trials=550, n_jobs=1)
 
 # Print best hyper-parameter set
-with open("catboostdb/CatBoost_Hyper_5.txt",'a') as f:
+with open("lightgbmdb/LightGBM_Hyper_1.txt",'a') as f:
     f.write(f"Best Hyper-parameter set: \n{study.best_params}\n")
     f.write(f"Best value: {study.best_value}")
 
