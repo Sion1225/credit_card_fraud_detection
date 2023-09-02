@@ -98,12 +98,12 @@ def Objective(trial):
     }
 
     # Note Hyperparameter set
-    with open("catboostdb/CatBoost_Hyper_5.txt", 'a') as f:
+    with open("catboostdb/CatBoost_Hyper_11.txt", 'a') as f:
         f.write(str(param) + '\n')
 
     # try 3 times
     all_scores = []
-    for _ in range(3):
+    for _ in range(1):
         # Build CatBoost Classifier and Training
         model = catboost.CatBoostClassifier(**param)
         model.fit(X_train, y_train, eval_set=[(X_test, y_test)], early_stopping_rounds=100, verbose=0)
@@ -116,7 +116,7 @@ def Objective(trial):
         all_scores.append(model_metric)
 
     # Note Metric
-    with open("catboostdb/CatBoost_Hyper_5.txt", 'a') as f:
+    with open("catboostdb/CatBoost_Hyper_11.txt", 'a') as f:
         f.write(f"F1 Score: {np.mean(all_scores)} \n\n")
 
     return np.mean(all_scores)
@@ -124,14 +124,14 @@ def Objective(trial):
 # Create Optuna sampler and study object
 sampler = optuna.samplers.TPESampler(n_startup_trials=30)
 study = optuna.create_study(sampler=sampler, 
-    study_name="catboost_for_card_fraud_5", 
+    study_name="catboost_for_card_fraud_11", 
     direction="maximize", 
-    storage="sqlite:///catboostdb/5.db", 
+    storage="sqlite:///catboostdb/11.db", 
     load_if_exists=True)
 study.optimize(Objective, n_trials=330, n_jobs=1)
 
 # Print best hyper-parameter set
-with open("catboostdb/CatBoost_Hyper_5.txt",'a') as f:
+with open("catboostdb/CatBoost_Hyper_11.txt",'a') as f:
     f.write(f"Best Hyper-parameter set: \n{study.best_params}\n")
     f.write(f"Best value: {study.best_value}")
 

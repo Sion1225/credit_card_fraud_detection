@@ -46,6 +46,20 @@ df["zip_1"] = df["zip_1"].astype("int64")
 df["zip_1"] = df["zip_1"].astype("category")
 
 
+# Create additional data
+# User average amount
+user_avg_amount = df.groupby("user_id")["amount"].mean().reset_index()
+user_avg_amount.columns = ['user_id', 'user_avg_amount']
+
+# Merchant average amount
+merchant_avg_amount = df.groupby("merchant_id")["amount"].mean().reset_index()
+merchant_avg_amount.columns = ["merchant_id", "merchant_avg_amount"]
+
+# Add to Original Dataset
+df = pd.merge(df, user_avg_amount, on="user_id", how="left")
+df = pd.merge(df, merchant_avg_amount, on="merchant_id", how="left")
+
+
 # Print Data sample
 print(labels[:5])
 print(df.head(10))
@@ -63,25 +77,24 @@ scale_pos_weight = num_not_fraud / num_fraud
 
 # Set object with optimal hyper-parameter set
 ''' Optimal hyper-parameter set
-'iterations': 975, 
-'learning_rate': 0.02187085544269761, 
-'depth': 15, 
-'l2_leaf_reg': 0.9178338968051191, 
-'border_count': 389, 
-'bagging_temperature': 0.6078993464890605, 
-'random_strength': 3.560620937287024 
+'iterations': 700, 
+'learning_rate': 0.026067560703260176, 
+'depth': 16, 
+'l2_leaf_reg': 0.6250112975779198, 
+'border_count': 356, 
+'bagging_temperature': 0.09747102534316096, 
+'random_strength': 2.7071847149006034
 
-Best is trial 112 with value:
-F1 score: 0.6171646162858817
+Best is trial 129 with value: 0.620253164556962
 '''
 model = catboost.CatBoostClassifier(
-    iterations=1225, 
-    learning_rate=0.014952415834073335, 
-    depth=15, 
-    l2_leaf_reg=0.8372219126237671,
-    border_count=321,
-    bagging_temperature=0.9272616942457109,
-    random_strength=3.2173100407588158,
+    iterations=700, 
+    learning_rate=0.026067560703260176, 
+    depth=16, 
+    l2_leaf_reg=0.6250112975779198,
+    border_count=356,
+    bagging_temperature=0.09747102534316096,
+    random_strength=2.7071847149006034,
 
     eval_metric="F1",
     boosting_type="Plain", # Ordered or Plain
@@ -102,7 +115,7 @@ model_metric = f1_score(y_test, y_pred)
 print(model_metric)
 
 # Save Model
-model.save_model("catboostdb/catboost_model_5_" + str(model_metric) + "_" + datetime.now().strftime("%Y%m%d-%H%M%S") + ".cbm")
+model.save_model("catboostdb/catboost_model_11_" + str(model_metric) + "_" + datetime.now().strftime("%Y%m%d-%H%M%S") + ".cbm")
 
 
 # Non data seperated model
@@ -110,4 +123,4 @@ model.save_model("catboostdb/catboost_model_5_" + str(model_metric) + "_" + date
 model.fit(df, labels, eval_set=[(X_test, y_test)], early_stopping_rounds=100, verbose=1)
 
 # Save Model
-model.save_model("catboostdb/catboost_full_data_model_5_" + str(model_metric) + "_" + datetime.now().strftime("%Y%m%d-%H%M%S") + ".cbm")
+model.save_model("catboostdb/catboost_full_data_model_11_" + str(model_metric) + "_" + datetime.now().strftime("%Y%m%d-%H%M%S") + ".cbm")

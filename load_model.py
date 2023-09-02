@@ -43,6 +43,20 @@ df["zip_1"] = df["zip_1"].astype("int64")
 df["zip_1"] = df["zip_1"].astype("category")
 
 
+# Create additional data
+# User average amount
+user_avg_amount = df.groupby("user_id")["amount"].mean().reset_index()
+user_avg_amount.columns = ['user_id', 'user_avg_amount']
+
+# Merchant average amount
+merchant_avg_amount = df.groupby("merchant_id")["amount"].mean().reset_index()
+merchant_avg_amount.columns = ["merchant_id", "merchant_avg_amount"]
+
+# Add to Original Dataset
+df = pd.merge(df, user_avg_amount, on="user_id", how="left")
+df = pd.merge(df, merchant_avg_amount, on="merchant_id", how="left")
+
+
 # Print Data sample
 print(df.head(10))
 
@@ -51,7 +65,7 @@ print(df.dtypes)
 
 # Load model
 model = catboost.CatBoostClassifier()
-model.load_model("catboostdb/catboost_model_5_0.6143405134257893_20230901-001150.cbm")
+model.load_model("catboostdb/catboost_model_11_0.620253164556962_20230902-155044.cbm")
 
 # Test loaded model
 y_pred = model.predict(df)
@@ -60,4 +74,4 @@ y_pred = model.predict(df)
 output["ans"] = y_pred
 
 # Output to CSV
-output.to_csv("catboostdb/submit2_1.csv", header=False)
+output.to_csv("catboostdb/submit11_1.csv", header=False)
