@@ -1,0 +1,799 @@
+{'n_estimators': 419, 'max_depth': 3, 'min_samples_split': 0.5503407773169415, 'min_samples_leaf': 0.3489721940602861, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 10, 'min_impurity_decrease': 0.28818566858487327, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 342, 'max_depth': 4, 'min_samples_split': 0.9662726981084094, 'min_samples_leaf': 0.2601973269293679, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 7, 'min_impurity_decrease': 0.11979369231050441, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 97, 'max_depth': 15, 'min_samples_split': 0.3109279621422244, 'min_samples_leaf': 0.33253457516396523, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 66, 'min_impurity_decrease': 0.910256906693809, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 457, 'max_depth': 5, 'min_samples_split': 0.8699967455890893, 'min_samples_leaf': 0.37073976583444335, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 40, 'min_impurity_decrease': 0.884166586417061, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 96, 'max_depth': 17, 'min_samples_split': 0.404260105150672, 'min_samples_leaf': 0.22614026274022972, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 58, 'min_impurity_decrease': 0.028247457172313695, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 122, 'max_depth': 18, 'min_samples_split': 0.3620691294828079, 'min_samples_leaf': 0.3275043760911721, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 104, 'min_impurity_decrease': 0.66340749901745, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 150, 'max_depth': 3, 'min_samples_split': 0.35554833821300436, 'min_samples_leaf': 0.2387761674980581, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 53, 'min_impurity_decrease': 0.6524212888523443, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 465, 'max_depth': 4, 'min_samples_split': 0.6167667567986878, 'min_samples_leaf': 0.33841709611910287, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 22, 'min_impurity_decrease': 0.5911971377772047, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 215, 'max_depth': 30, 'min_samples_split': 0.6328334100746477, 'min_samples_leaf': 0.3882351638256788, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 7, 'min_impurity_decrease': 0.06933581193682858, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 252, 'max_depth': 5, 'min_samples_split': 0.3280381915583446, 'min_samples_leaf': 0.29291686826155616, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 6, 'min_impurity_decrease': 0.19537748386498455, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 259, 'max_depth': 7, 'min_samples_split': 0.491405280250519, 'min_samples_leaf': 0.12229407325132167, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 21, 'min_impurity_decrease': 0.5027381474393139, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 226, 'max_depth': 16, 'min_samples_split': 0.3121282051860579, 'min_samples_leaf': 0.1977487379988331, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 5, 'min_impurity_decrease': 0.3161938167147408, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 95, 'max_depth': 2, 'min_samples_split': 0.9893251761016556, 'min_samples_leaf': 0.4877794793466622, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 4, 'min_impurity_decrease': 0.7077230087351847, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 266, 'max_depth': 5, 'min_samples_split': 0.7869620672345492, 'min_samples_leaf': 0.13418522509282385, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 3, 'min_impurity_decrease': 0.7898508556178513, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 275, 'max_depth': 10, 'min_samples_split': 0.9881589801909146, 'min_samples_leaf': 0.17698626170982756, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 6, 'min_impurity_decrease': 0.3191141870812707, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 497, 'max_depth': 4, 'min_samples_split': 0.3037522497047291, 'min_samples_leaf': 0.47575401211105006, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 21, 'min_impurity_decrease': 0.5830903033544509, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 50, 'max_depth': 2, 'min_samples_split': 0.5479372456090263, 'min_samples_leaf': 0.10679183098158301, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 31, 'min_impurity_decrease': 0.8886926823397384, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 188, 'max_depth': 5, 'min_samples_split': 0.29023307261611847, 'min_samples_leaf': 0.3629063263211644, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 17, 'min_impurity_decrease': 0.35926702399900523, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 275, 'max_depth': 32, 'min_samples_split': 0.4067159950083349, 'min_samples_leaf': 0.38711312974161816, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 10, 'min_impurity_decrease': 0.7490155091710883, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 390, 'max_depth': 4, 'min_samples_split': 0.22902004762905653, 'min_samples_leaf': 0.30601295586542576, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 6, 'min_impurity_decrease': 0.5656952659541361, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 196, 'max_depth': 6, 'min_samples_split': 0.13568224105934773, 'min_samples_leaf': 0.12041964582932195, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 110, 'min_impurity_decrease': 0.8019480665937643, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 315, 'max_depth': 5, 'min_samples_split': 0.3467243894048767, 'min_samples_leaf': 0.2523855179802993, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 27, 'min_impurity_decrease': 0.41501871471901586, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 450, 'max_depth': 13, 'min_samples_split': 0.8393770854413373, 'min_samples_leaf': 0.16563068175048257, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 2, 'min_impurity_decrease': 0.9037973738431343, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 338, 'max_depth': 2, 'min_samples_split': 0.9474747989261875, 'min_samples_leaf': 0.13951127809055186, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 33, 'min_impurity_decrease': 0.7503854001179423, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 153, 'max_depth': 2, 'min_samples_split': 0.3504267837840406, 'min_samples_leaf': 0.18650579605146206, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 4, 'min_impurity_decrease': 0.40320568331078543, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 397, 'max_depth': 5, 'min_samples_split': 0.14256121281476566, 'min_samples_leaf': 0.35492039849117596, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 10, 'min_impurity_decrease': 0.2394500627691898, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 119, 'max_depth': 3, 'min_samples_split': 0.7433548712029747, 'min_samples_leaf': 0.4558622538354976, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 14, 'min_impurity_decrease': 0.18576232166731943, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 74, 'max_depth': 25, 'min_samples_split': 0.7011612750932333, 'min_samples_leaf': 0.1722841247505497, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 3, 'min_impurity_decrease': 0.4589794378346812, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 392, 'max_depth': 8, 'min_samples_split': 0.39667651213159916, 'min_samples_leaf': 0.2504283021356912, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 5, 'min_impurity_decrease': 0.5947960444369267, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 390, 'max_depth': 3, 'min_samples_split': 0.386475808866537, 'min_samples_leaf': 0.23560930792638884, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 91, 'min_impurity_decrease': 0.7628436641280465, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 463, 'max_depth': 6, 'min_samples_split': 0.6958825411701313, 'min_samples_leaf': 0.16105270645948264, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 75, 'min_impurity_decrease': 0.4031365936780933, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 282, 'max_depth': 18, 'min_samples_split': 0.3850338352689767, 'min_samples_leaf': 0.1239479081874224, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 15, 'min_impurity_decrease': 0.9679810941569239, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 188, 'max_depth': 15, 'min_samples_split': 0.9719208455345109, 'min_samples_leaf': 0.4902656331541634, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 49, 'min_impurity_decrease': 0.33402682305952636, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 436, 'max_depth': 7, 'min_samples_split': 0.22223665952077104, 'min_samples_leaf': 0.46364091212902414, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 4, 'min_impurity_decrease': 0.40758997371193095, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 102, 'max_depth': 10, 'min_samples_split': 0.364446710758364, 'min_samples_leaf': 0.21371014064709404, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 15, 'min_impurity_decrease': 0.7720116600736568, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 289, 'max_depth': 7, 'min_samples_split': 0.19549457373145546, 'min_samples_leaf': 0.1982350507711495, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 56, 'min_impurity_decrease': 0.3425134263705878, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 79, 'max_depth': 15, 'min_samples_split': 0.6028709363781564, 'min_samples_leaf': 0.17358824379349075, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 86, 'min_impurity_decrease': 0.028592655893710406, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 95, 'max_depth': 30, 'min_samples_split': 0.822877197792175, 'min_samples_leaf': 0.34345804364935356, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 2, 'min_impurity_decrease': 0.5136436842917506, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 270, 'max_depth': 5, 'min_samples_split': 0.6078478037277486, 'min_samples_leaf': 0.4785660471751516, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 8, 'min_impurity_decrease': 0.1904572611762283, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 232, 'max_depth': 9, 'min_samples_split': 0.7437623377339468, 'min_samples_leaf': 0.2423471789970404, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 41, 'min_impurity_decrease': 0.44056034459030446, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 360, 'max_depth': 22, 'min_samples_split': 0.9062589614911883, 'min_samples_leaf': 0.32028339095069613, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 124, 'min_impurity_decrease': 0.11335669215668698, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 425, 'max_depth': 13, 'min_samples_split': 0.45226904492751374, 'min_samples_leaf': 0.28105567426455297, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 79, 'min_impurity_decrease': 0.004305172800265419, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 144, 'max_depth': 21, 'min_samples_split': 0.4976107887402099, 'min_samples_leaf': 0.3235397252300855, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 63, 'min_impurity_decrease': 0.09331510733858289, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 494, 'max_depth': 4, 'min_samples_split': 0.8882225519545436, 'min_samples_leaf': 0.27732173237016916, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 47, 'min_impurity_decrease': 0.1270988394092067, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 416, 'max_depth': 3, 'min_samples_split': 0.910699477917122, 'min_samples_leaf': 0.3048807947339646, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 66, 'min_impurity_decrease': 0.04961086531640574, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 358, 'max_depth': 19, 'min_samples_split': 0.5586723507123652, 'min_samples_leaf': 0.3793059666485883, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 43, 'min_impurity_decrease': 0.2564218826447868, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 314, 'max_depth': 12, 'min_samples_split': 0.4564378317061829, 'min_samples_leaf': 0.33625346236095316, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 61, 'min_impurity_decrease': 0.06917305413819094, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 478, 'max_depth': 17, 'min_samples_split': 0.9967202042490056, 'min_samples_leaf': 0.28669686060661564, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 100, 'min_impurity_decrease': 0.0013207313020014988, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 369, 'max_depth': 22, 'min_samples_split': 0.31385756358303196, 'min_samples_leaf': 0.412047588416243, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 37, 'min_impurity_decrease': 0.15109169079997778, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 55, 'max_depth': 6, 'min_samples_split': 0.2690374237227355, 'min_samples_leaf': 0.31171042275470856, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 21, 'min_impurity_decrease': 0.6904975496701689, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 138, 'max_depth': 4, 'min_samples_split': 0.9376533022053235, 'min_samples_leaf': 0.261913508723397, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 24, 'min_impurity_decrease': 0.8465901346212975, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 161, 'max_depth': 24, 'min_samples_split': 0.2746082516268596, 'min_samples_leaf': 0.3001109559498129, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 75, 'min_impurity_decrease': 0.9678351735677075, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 69, 'max_depth': 19, 'min_samples_split': 0.42796692878909115, 'min_samples_leaf': 0.3298891956838354, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 127, 'min_impurity_decrease': 0.8214049213052764, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 123, 'max_depth': 26, 'min_samples_split': 0.34615463189715945, 'min_samples_leaf': 0.3506785432354985, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 53, 'min_impurity_decrease': 0.662057525568639, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 118, 'max_depth': 12, 'min_samples_split': 0.8637359407965658, 'min_samples_leaf': 0.3659081499324644, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 108, 'min_impurity_decrease': 0.8979874901815261, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 168, 'max_depth': 16, 'min_samples_split': 0.4977361942722235, 'min_samples_leaf': 0.3345731849535783, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 91, 'min_impurity_decrease': 0.7184191906190052, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 324, 'max_depth': 28, 'min_samples_split': 0.30797237198532407, 'min_samples_leaf': 0.31845243386100686, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 11, 'min_impurity_decrease': 0.8514011797227494, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 447, 'max_depth': 17, 'min_samples_split': 0.9445639354468749, 'min_samples_leaf': 0.268259192454058, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 32, 'min_impurity_decrease': 0.26354398494829057, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 246, 'max_depth': 20, 'min_samples_split': 0.423870138036605, 'min_samples_leaf': 0.29882541172553867, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 72, 'min_impurity_decrease': 0.07519425171914149, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 409, 'max_depth': 23, 'min_samples_split': 0.820464774105911, 'min_samples_leaf': 0.2893597915627461, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 56, 'min_impurity_decrease': 0.9931015900994068, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 98, 'max_depth': 14, 'min_samples_split': 0.6461736158793039, 'min_samples_leaf': 0.3682406430897458, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 19, 'min_impurity_decrease': 0.640513841427114, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 121, 'max_depth': 3, 'min_samples_split': 0.3349985244883409, 'min_samples_leaf': 0.23131058789995687, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 65, 'min_impurity_decrease': 0.7310473282987018, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 199, 'max_depth': 18, 'min_samples_split': 0.3841049810345877, 'min_samples_leaf': 0.2654254907559638, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 45, 'min_impurity_decrease': 0.5319983297408231, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 87, 'max_depth': 20, 'min_samples_split': 0.36471123597579036, 'min_samples_leaf': 0.2216262187588723, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 39, 'min_impurity_decrease': 0.7874524200354238, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 179, 'max_depth': 4, 'min_samples_split': 0.33916230269596537, 'min_samples_leaf': 0.34867101908251974, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 50, 'min_impurity_decrease': 0.6162787266215125, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 139, 'max_depth': 16, 'min_samples_split': 0.28945026428399256, 'min_samples_leaf': 0.25492233057361646, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 28, 'min_impurity_decrease': 0.9241948076075889, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 55, 'max_depth': 3, 'min_samples_split': 0.24904496451815547, 'min_samples_leaf': 0.24514763176975468, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 86, 'min_impurity_decrease': 0.5734975929062147, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 458, 'max_depth': 11, 'min_samples_split': 0.31266873614867796, 'min_samples_leaf': 0.40154079876973336, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 35, 'min_impurity_decrease': 0.6892985238280196, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 474, 'max_depth': 14, 'min_samples_split': 0.5281816676103784, 'min_samples_leaf': 0.33969272188006056, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 12, 'min_impurity_decrease': 0.5389941262528568, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 109, 'max_depth': 31, 'min_samples_split': 0.9675352437384614, 'min_samples_leaf': 0.27420549689601625, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 8, 'min_impurity_decrease': 0.4786939127599734, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 301, 'max_depth': 8, 'min_samples_split': 0.40922608544172523, 'min_samples_leaf': 0.29081525650144485, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 57, 'min_impurity_decrease': 0.29635477487675005, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 438, 'max_depth': 5, 'min_samples_split': 0.47089922145165963, 'min_samples_leaf': 0.30934991631390524, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 40, 'min_impurity_decrease': 0.5986354160708431, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 477, 'max_depth': 26, 'min_samples_split': 0.3752745171531904, 'min_samples_leaf': 0.35463643953353996, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 50, 'min_impurity_decrease': 0.7557309811183508, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 491, 'max_depth': 4, 'min_samples_split': 0.4372657500283737, 'min_samples_leaf': 0.3227101973795913, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 31, 'min_impurity_decrease': 0.6354640928770992, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 214, 'max_depth': 6, 'min_samples_split': 0.39314206420170617, 'min_samples_leaf': 0.36084117263325427, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 25, 'min_impurity_decrease': 0.3745781271688198, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 378, 'max_depth': 3, 'min_samples_split': 0.7847353731803512, 'min_samples_leaf': 0.32946009818228006, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 17, 'min_impurity_decrease': 0.1613413092401755, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 348, 'max_depth': 24, 'min_samples_split': 0.5547649076440784, 'min_samples_leaf': 0.34335872491378416, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 71, 'min_impurity_decrease': 0.5736441697789122, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 410, 'max_depth': 15, 'min_samples_split': 0.41155627284081975, 'min_samples_leaf': 0.3110831689734793, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 45, 'min_impurity_decrease': 0.2225844575323519, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 69, 'max_depth': 10, 'min_samples_split': 0.5249245232003169, 'min_samples_leaf': 0.20729584185415906, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 60, 'min_impurity_decrease': 0.030830705666095908, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 465, 'max_depth': 20, 'min_samples_split': 0.3574092229899063, 'min_samples_leaf': 0.37490389257154244, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 97, 'min_impurity_decrease': 0.4934505108819904, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 85, 'max_depth': 18, 'min_samples_split': 0.4780869406316647, 'min_samples_leaf': 0.2328968692027358, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 85, 'min_impurity_decrease': 0.6744285819960819, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 248, 'max_depth': 28, 'min_samples_split': 0.5821540925944014, 'min_samples_leaf': 0.3815210412229723, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 8, 'min_impurity_decrease': 0.10560145945282881, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 130, 'max_depth': 30, 'min_samples_split': 0.5884030787496516, 'min_samples_leaf': 0.364239198425993, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 36, 'min_impurity_decrease': 0.13197355874152356, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 427, 'max_depth': 26, 'min_samples_split': 0.6573254879285543, 'min_samples_leaf': 0.3927121418469953, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 6, 'min_impurity_decrease': 0.08355848922351578, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 153, 'max_depth': 22, 'min_samples_split': 0.3261683514439724, 'min_samples_leaf': 0.34738357360059396, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 67, 'min_impurity_decrease': 0.737883747575552, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 110, 'max_depth': 22, 'min_samples_split': 0.6233119994144696, 'min_samples_leaf': 0.3321804327579641, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 81, 'min_impurity_decrease': 0.06133031904499072, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 221, 'max_depth': 31, 'min_samples_split': 0.9751160546181868, 'min_samples_leaf': 0.3541336745169354, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 43, 'min_impurity_decrease': 0.7019229889660292, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 261, 'max_depth': 32, 'min_samples_split': 0.7128559681838871, 'min_samples_leaf': 0.2969222549677971, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 53, 'min_impurity_decrease': 0.09836083464376529, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 176, 'max_depth': 19, 'min_samples_split': 0.45182634135846833, 'min_samples_leaf': 0.25379828524265324, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 111, 'min_impurity_decrease': 0.04864004103079342, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 450, 'max_depth': 17, 'min_samples_split': 0.9274880253789333, 'min_samples_leaf': 0.2805343510037455, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 59, 'min_impurity_decrease': 0.16208415100840823, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 154, 'max_depth': 13, 'min_samples_split': 0.5101614654980859, 'min_samples_leaf': 0.37061884990011784, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 72, 'min_impurity_decrease': 0.20638893440060754, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 284, 'max_depth': 24, 'min_samples_split': 0.29334076581994856, 'min_samples_leaf': 0.3137944578614224, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 9, 'min_impurity_decrease': 0.13577616229489267, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 236, 'max_depth': 5, 'min_samples_split': 0.37134568229126563, 'min_samples_leaf': 0.3370539479185127, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 7, 'min_impurity_decrease': 0.1705287539850585, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 334, 'max_depth': 4, 'min_samples_split': 0.8909161431373455, 'min_samples_leaf': 0.3022635627633487, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 5, 'min_impurity_decrease': 0.5505698729274816, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 213, 'max_depth': 21, 'min_samples_split': 0.344832452159776, 'min_samples_leaf': 0.3245195854754514, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 10, 'min_impurity_decrease': 0.1185417266561964, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 500, 'max_depth': 28, 'min_samples_split': 0.32570789286311774, 'min_samples_leaf': 0.3182611781904383, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 47, 'min_impurity_decrease': 0.09276797656542671, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 294, 'max_depth': 16, 'min_samples_split': 0.9964519109770202, 'min_samples_leaf': 0.36115815535726065, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 6, 'min_impurity_decrease': 0.19546924439959934, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 273, 'max_depth': 14, 'min_samples_split': 0.40903365499203637, 'min_samples_leaf': 0.2618336120731999, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 7, 'min_impurity_decrease': 0.7171493885500992, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 103, 'max_depth': 11, 'min_samples_split': 0.3924520316897312, 'min_samples_leaf': 0.38701369456650553, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 12, 'min_impurity_decrease': 0.8757272658872169, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 486, 'max_depth': 6, 'min_samples_split': 0.5602268026623872, 'min_samples_leaf': 0.34486859113337387, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 79, 'min_impurity_decrease': 0.7908630542171275, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 201, 'max_depth': 4, 'min_samples_split': 0.8520258359877926, 'min_samples_leaf': 0.27298758469862583, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 40, 'min_impurity_decrease': 0.5993033687796478, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 312, 'max_depth': 9, 'min_samples_split': 0.5307292719946043, 'min_samples_leaf': 0.15635686776474544, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 64, 'min_impurity_decrease': 0.44744733166182404, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 246, 'max_depth': 7, 'min_samples_split': 0.429289989165883, 'min_samples_leaf': 0.1932575107745924, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 22, 'min_impurity_decrease': 0.515502721561387, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 257, 'max_depth': 5, 'min_samples_split': 0.35973141104279566, 'min_samples_leaf': 0.10350435196059204, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 28, 'min_impurity_decrease': 0.6235550465496995, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 464, 'max_depth': 21, 'min_samples_split': 0.4895472460813941, 'min_samples_leaf': 0.18268672608640657, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 33, 'min_impurity_decrease': 0.6596789570861629, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 91, 'max_depth': 23, 'min_samples_split': 0.5735710169971205, 'min_samples_leaf': 0.2842850922195974, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 19, 'min_impurity_decrease': 0.5587342338524449, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 130, 'max_depth': 17, 'min_samples_split': 0.4649649809665706, 'min_samples_leaf': 0.24413025913579356, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 51, 'min_impurity_decrease': 0.46720772536305966, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 437, 'max_depth': 13, 'min_samples_split': 0.5396585064839005, 'min_samples_leaf': 0.2232212888042913, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 54, 'min_impurity_decrease': 0.591956254408857, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 401, 'max_depth': 6, 'min_samples_split': 0.4396383471338083, 'min_samples_leaf': 0.11486191468475832, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 30, 'min_impurity_decrease': 0.9249966849586183, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 72, 'max_depth': 15, 'min_samples_split': 0.5143709307540902, 'min_samples_leaf': 0.14028953529998606, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 13, 'min_impurity_decrease': 0.6475895049765178, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 381, 'max_depth': 3, 'min_samples_split': 0.9586502160193365, 'min_samples_leaf': 0.328305079494765, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 9, 'min_impurity_decrease': 0.7741576793303447, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 219, 'max_depth': 19, 'min_samples_split': 0.3207105520985999, 'min_samples_leaf': 0.24090399652868683, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 15, 'min_impurity_decrease': 0.42064351981955717, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 191, 'max_depth': 16, 'min_samples_split': 0.33962729185225, 'min_samples_leaf': 0.20211988586769195, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 5, 'min_impurity_decrease': 0.3292897774375205, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 205, 'max_depth': 14, 'min_samples_split': 0.28203897331876426, 'min_samples_leaf': 0.21869967571026613, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 37, 'min_impurity_decrease': 0.24188921684885362, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 236, 'max_depth': 15, 'min_samples_split': 0.3765598510758432, 'min_samples_leaf': 0.21499129662812344, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 25, 'min_impurity_decrease': 0.38086777282380446, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 229, 'max_depth': 8, 'min_samples_split': 0.3027203488639201, 'min_samples_leaf': 0.20673129068589602, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 68, 'min_impurity_decrease': 0.2982925862749422, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 265, 'max_depth': 12, 'min_samples_split': 0.24740827873498106, 'min_samples_leaf': 0.18537269255508534, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 47, 'min_impurity_decrease': 0.5071772261628567, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 250, 'max_depth': 18, 'min_samples_split': 0.3517969244822383, 'min_samples_leaf': 0.23270312010219685, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 62, 'min_impurity_decrease': 0.8182541130004927, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 108, 'max_depth': 25, 'min_samples_split': 0.3990046034437199, 'min_samples_leaf': 0.2273546763439433, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 77, 'min_impurity_decrease': 0.6150901876737148, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 422, 'max_depth': 9, 'min_samples_split': 0.3061137936187669, 'min_samples_leaf': 0.2525712167913401, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 56, 'min_impurity_decrease': 0.14273390689110058, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 79, 'max_depth': 18, 'min_samples_split': 0.6044636050767458, 'min_samples_leaf': 0.23981682846172717, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 44, 'min_impurity_decrease': 0.1815754865693658, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 62, 'max_depth': 2, 'min_samples_split': 0.9205664241068379, 'min_samples_leaf': 0.4994856580290407, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 4, 'min_impurity_decrease': 0.5712911032022658, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 117, 'max_depth': 2, 'min_samples_split': 0.9326054098921784, 'min_samples_leaf': 0.4124330056692677, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 17, 'min_impurity_decrease': 0.6623530735269164, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 93, 'max_depth': 4, 'min_samples_split': 0.9515967986111913, 'min_samples_leaf': 0.43999334461789963, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 116, 'min_impurity_decrease': 0.027890892482294816, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 279, 'max_depth': 5, 'min_samples_split': 0.9941020972219157, 'min_samples_leaf': 0.3401956453871295, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 99, 'min_impurity_decrease': 0.6835512236500725, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 131, 'max_depth': 16, 'min_samples_split': 0.9826734784491485, 'min_samples_leaf': 0.35639215921628925, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 34, 'min_impurity_decrease': 0.11262667743350721, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 82, 'max_depth': 27, 'min_samples_split': 0.9663769478982037, 'min_samples_leaf': 0.2937605632125534, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 91, 'min_impurity_decrease': 0.07349550013692596, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 142, 'max_depth': 20, 'min_samples_split': 0.8939350856767151, 'min_samples_leaf': 0.30996506465226875, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 11, 'min_impurity_decrease': 0.698730092596062, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 99, 'max_depth': 29, 'min_samples_split': 0.6337814798281675, 'min_samples_leaf': 0.3496158981358713, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 5, 'min_impurity_decrease': 0.2867529979519088, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 163, 'max_depth': 3, 'min_samples_split': 0.8709081964764824, 'min_samples_leaf': 0.30546599396176605, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 7, 'min_impurity_decrease': 0.7477516798586417, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 451, 'max_depth': 24, 'min_samples_split': 0.5447776294906955, 'min_samples_leaf': 0.3331992895648991, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 3, 'min_impurity_decrease': 0.21010435199460464, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 295, 'max_depth': 5, 'min_samples_split': 0.8337430129632765, 'min_samples_leaf': 0.1286448657274512, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 3, 'min_impurity_decrease': 0.7105927932632653, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 267, 'max_depth': 7, 'min_samples_split': 0.6917293665018437, 'min_samples_leaf': 0.3185751810567293, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 39, 'min_impurity_decrease': 0.7374646196891539, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 258, 'max_depth': 4, 'min_samples_split': 0.8056458357157066, 'min_samples_leaf': 0.3707746224231319, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 27, 'min_impurity_decrease': 0.6788003617038391, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 241, 'max_depth': 11, 'min_samples_split': 0.9068564371539424, 'min_samples_leaf': 0.2578820448533477, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 49, 'min_impurity_decrease': 0.15617704074597902, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 118, 'max_depth': 31, 'min_samples_split': 0.8675321254179467, 'min_samples_leaf': 0.36059990294549876, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 72, 'min_impurity_decrease': 0.852015265899514, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 228, 'max_depth': 29, 'min_samples_split': 0.9499014211796417, 'min_samples_leaf': 0.2718630680112937, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 59, 'min_impurity_decrease': 0.23254329558021633, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 473, 'max_depth': 32, 'min_samples_split': 0.7772232100670526, 'min_samples_leaf': 0.16959211715309508, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 22, 'min_impurity_decrease': 0.645788592497981, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 178, 'max_depth': 21, 'min_samples_split': 0.3650717932734044, 'min_samples_leaf': 0.3389818693097251, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 16, 'min_impurity_decrease': 0.05099879838427333, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 307, 'max_depth': 26, 'min_samples_split': 0.3283053370426182, 'min_samples_leaf': 0.2472807046774035, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 103, 'min_impurity_decrease': 0.2597410794431957, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 252, 'max_depth': 5, 'min_samples_split': 0.5907892686206376, 'min_samples_leaf': 0.2662984808920022, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 20, 'min_impurity_decrease': 0.7628125945016097, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 269, 'max_depth': 6, 'min_samples_split': 0.9832831037493035, 'min_samples_leaf': 0.15381640419008616, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 6, 'min_impurity_decrease': 0.34083199454541885, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 273, 'max_depth': 17, 'min_samples_split': 0.9334096530800343, 'min_samples_leaf': 0.1971129898356667, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 125, 'min_impurity_decrease': 0.6279248098476561, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 286, 'max_depth': 14, 'min_samples_split': 0.9719602099083233, 'min_samples_leaf': 0.4805382532341607, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 14, 'min_impurity_decrease': 0.18358982110451874, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 343, 'max_depth': 10, 'min_samples_split': 0.6698845628172235, 'min_samples_leaf': 0.46505158673092356, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 66, 'min_impurity_decrease': 0.08511210003861798, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 109, 'max_depth': 19, 'min_samples_split': 0.9135805106834309, 'min_samples_leaf': 0.3469887127161364, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 88, 'min_impurity_decrease': 0.12386062746741003, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 319, 'max_depth': 15, 'min_samples_split': 0.563019459191769, 'min_samples_leaf': 0.1771834534510675, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 6, 'min_impurity_decrease': 0.3152484844653782, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 483, 'max_depth': 9, 'min_samples_split': 0.6186714805960751, 'min_samples_leaf': 0.2818817478689506, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 8, 'min_impurity_decrease': 0.3611711808008522, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 361, 'max_depth': 12, 'min_samples_split': 0.9466991183713857, 'min_samples_leaf': 0.1911818597257518, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 5, 'min_impurity_decrease': 0.3904017869551733, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 276, 'max_depth': 17, 'min_samples_split': 0.2713700877041513, 'min_samples_leaf': 0.22570245879502332, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 43, 'min_impurity_decrease': 0.4278273395438642, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 442, 'max_depth': 8, 'min_samples_split': 0.49747750464383056, 'min_samples_leaf': 0.379671533940936, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 52, 'min_impurity_decrease': 0.5409977737314668, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 500, 'max_depth': 4, 'min_samples_split': 0.29371234390102136, 'min_samples_leaf': 0.21382491218922445, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 24, 'min_impurity_decrease': 0.5880803747705396, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 461, 'max_depth': 13, 'min_samples_split': 0.33096236542963253, 'min_samples_leaf': 0.32959507690544376, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 18, 'min_impurity_decrease': 0.4834959051281379, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 489, 'max_depth': 23, 'min_samples_split': 0.382531367171859, 'min_samples_leaf': 0.11501802093073109, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 30, 'min_impurity_decrease': 0.5222127181304546, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 427, 'max_depth': 4, 'min_samples_split': 0.31995093805433317, 'min_samples_leaf': 0.49261707956968126, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 23, 'min_impurity_decrease': 0.27784341741307617, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 474, 'max_depth': 11, 'min_samples_split': 0.41489180356629923, 'min_samples_leaf': 0.20474834588744315, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 27, 'min_impurity_decrease': 0.6621528020155045, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 242, 'max_depth': 6, 'min_samples_split': 0.3420238052824252, 'min_samples_leaf': 0.23646406612267115, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 20, 'min_impurity_decrease': 0.2493477709564091, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 261, 'max_depth': 3, 'min_samples_split': 0.7333571618312748, 'min_samples_leaf': 0.3250927459799865, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 21, 'min_impurity_decrease': 0.5534961009837426, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 93, 'max_depth': 15, 'min_samples_split': 0.30731474982713936, 'min_samples_leaf': 0.1628559881187329, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 7, 'min_impurity_decrease': 0.31829212878225244, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 330, 'max_depth': 20, 'min_samples_split': 0.9918253447102559, 'min_samples_leaf': 0.2991861195036982, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 81, 'min_impurity_decrease': 0.6136519570200107, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 229, 'max_depth': 7, 'min_samples_split': 0.47360097842172916, 'min_samples_leaf': 0.4792311904122502, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 36, 'min_impurity_decrease': 0.2182625608619934, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 65, 'max_depth': 2, 'min_samples_split': 0.5805362082540092, 'min_samples_leaf': 0.12838789232671516, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 25, 'min_impurity_decrease': 0.914613296055508, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 154, 'max_depth': 5, 'min_samples_split': 0.5451969131866754, 'min_samples_leaf': 0.1420994423675297, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 32, 'min_impurity_decrease': 0.8929866863240411, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 52, 'max_depth': 2, 'min_samples_split': 0.5164537875877171, 'min_samples_leaf': 0.10037297943116792, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 41, 'min_impurity_decrease': 0.35425782263676625, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 80, 'max_depth': 25, 'min_samples_split': 0.6078709367971881, 'min_samples_leaf': 0.35700383642832095, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 4, 'min_impurity_decrease': 0.9385280870757109, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 129, 'max_depth': 16, 'min_samples_split': 0.6356013816346426, 'min_samples_leaf': 0.36620419676174465, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 47, 'min_impurity_decrease': 0.8642141638475725, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 400, 'max_depth': 18, 'min_samples_split': 0.5281993845702395, 'min_samples_leaf': 0.1189575868056655, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 30, 'min_impurity_decrease': 0.8228053686452266, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 284, 'max_depth': 13, 'min_samples_split': 0.9988805237142967, 'min_samples_leaf': 0.1077302867822193, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 9, 'min_impurity_decrease': 0.2717291005902849, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 212, 'max_depth': 10, 'min_samples_split': 0.9640807653734796, 'min_samples_leaf': 0.317319464765002, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 39, 'min_impurity_decrease': 0.8942961171439833, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 104, 'max_depth': 18, 'min_samples_split': 0.5695022998702646, 'min_samples_leaf': 0.17747733897667106, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 19, 'min_impurity_decrease': 0.7248542717319015, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 454, 'max_depth': 19, 'min_samples_split': 0.8825890543384889, 'min_samples_leaf': 0.1333835051665536, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 57, 'min_impurity_decrease': 0.942386740170668, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 223, 'max_depth': 5, 'min_samples_split': 0.29033955079634505, 'min_samples_leaf': 0.3748161798828601, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 15, 'min_impurity_decrease': 0.30058111672531457, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 188, 'max_depth': 4, 'min_samples_split': 0.8460280780874718, 'min_samples_leaf': 0.3429180944572647, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 17, 'min_impurity_decrease': 0.40720976731027203, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 148, 'max_depth': 14, 'min_samples_split': 0.2597781192158986, 'min_samples_leaf': 0.35439730030465943, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 18, 'min_impurity_decrease': 0.3479660892116755, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 171, 'max_depth': 12, 'min_samples_split': 0.34671322997507337, 'min_samples_leaf': 0.3883514881636677, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 22, 'min_impurity_decrease': 0.8725877634777598, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 189, 'max_depth': 3, 'min_samples_split': 0.44605566167334554, 'min_samples_leaf': 0.33668402715433576, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 5, 'min_impurity_decrease': 0.3263277871530751, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 254, 'max_depth': 6, 'min_samples_split': 0.36359409381821683, 'min_samples_leaf': 0.45795981981222456, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 75, 'min_impurity_decrease': 0.7004287923305347, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 207, 'max_depth': 22, 'min_samples_split': 0.5059445819688232, 'min_samples_leaf': 0.11072362027358167, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 6, 'min_impurity_decrease': 0.6451426089112825, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 237, 'max_depth': 5, 'min_samples_split': 0.4840759741115905, 'min_samples_leaf': 0.12111707809863684, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 7, 'min_impurity_decrease': 0.37214768978993107, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 122, 'max_depth': 17, 'min_samples_split': 0.28178608075480627, 'min_samples_leaf': 0.24847878995100772, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 63, 'min_impurity_decrease': 0.45670007005451746, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 470, 'max_depth': 8, 'min_samples_split': 0.30932533895871156, 'min_samples_leaf': 0.3650990024876759, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 13, 'min_impurity_decrease': 0.8052165965510076, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 294, 'max_depth': 5, 'min_samples_split': 0.419288193718488, 'min_samples_leaf': 0.39504609969133764, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 10, 'min_impurity_decrease': 0.7688732117531449, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 414, 'max_depth': 29, 'min_samples_split': 0.39374554246518984, 'min_samples_leaf': 0.4018495315333394, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 95, 'min_impurity_decrease': 0.02300452511719907, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 262, 'max_depth': 30, 'min_samples_split': 0.46113227989536976, 'min_samples_leaf': 0.37156979270595064, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 117, 'min_impurity_decrease': 0.7288244940283856, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 389, 'max_depth': 20, 'min_samples_split': 0.37115984253379936, 'min_samples_leaf': 0.4436300223821374, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 16, 'min_impurity_decrease': 0.6827436630001612, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 89, 'max_depth': 27, 'min_samples_split': 0.759412620238003, 'min_samples_leaf': 0.21234665735077835, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 8, 'min_impurity_decrease': 0.3094801164067102, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 247, 'max_depth': 32, 'min_samples_split': 0.5579289830829723, 'min_samples_leaf': 0.3506212940117424, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 54, 'min_impurity_decrease': 0.2786491658523299, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 196, 'max_depth': 16, 'min_samples_split': 0.8056843995268615, 'min_samples_leaf': 0.38097940700026867, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 12, 'min_impurity_decrease': 0.23762836362478462, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 98, 'max_depth': 4, 'min_samples_split': 0.5934741207516436, 'min_samples_leaf': 0.2919648487894863, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 24, 'min_impurity_decrease': 0.060827712020789584, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 115, 'max_depth': 27, 'min_samples_split': 0.9767665044433091, 'min_samples_leaf': 0.32518126135367287, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 49, 'min_impurity_decrease': 0.5811640932413489, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 277, 'max_depth': 2, 'min_samples_split': 0.4342984451624082, 'min_samples_leaf': 0.2618229065348848, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 108, 'min_impurity_decrease': 0.5061605312915448, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 266, 'max_depth': 32, 'min_samples_split': 0.35094127152173693, 'min_samples_leaf': 0.305991524297028, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 6, 'min_impurity_decrease': 0.5319272040856038, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 436, 'max_depth': 3, 'min_samples_split': 0.6714035666617872, 'min_samples_leaf': 0.23084414219664556, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 21, 'min_impurity_decrease': 0.6049127372787925, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 371, 'max_depth': 4, 'min_samples_split': 0.229427753772242, 'min_samples_leaf': 0.21847041481139512, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 34, 'min_impurity_decrease': 0.5590198999302908, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 137, 'max_depth': 30, 'min_samples_split': 0.3179872058962924, 'min_samples_leaf': 0.31343841827542057, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 7, 'min_impurity_decrease': 0.6335537512541208, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 353, 'max_depth': 25, 'min_samples_split': 0.9242298897910635, 'min_samples_leaf': 0.19395423796700484, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 20, 'min_impurity_decrease': 0.8393090208664259, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 445, 'max_depth': 21, 'min_samples_split': 0.6143927193395459, 'min_samples_leaf': 0.2869661974070069, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 69, 'min_impurity_decrease': 0.7500793577791482, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 390, 'max_depth': 28, 'min_samples_split': 0.40045925944812477, 'min_samples_leaf': 0.33829460732180777, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 44, 'min_impurity_decrease': 0.20230469946038504, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 62, 'max_depth': 7, 'min_samples_split': 0.1697948351381957, 'min_samples_leaf': 0.4163922928002948, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 28, 'min_impurity_decrease': 0.3318021422913784, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 74, 'max_depth': 15, 'min_samples_split': 0.27606702567537655, 'min_samples_leaf': 0.2751724641222699, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 25, 'min_impurity_decrease': 0.7810366464551258, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 433, 'max_depth': 23, 'min_samples_split': 0.3360166489156717, 'min_samples_leaf': 0.48548932067068734, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 4, 'min_impurity_decrease': 0.10601847504977546, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 221, 'max_depth': 6, 'min_samples_split': 0.2548598549325152, 'min_samples_leaf': 0.1099639932584069, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 92, 'min_impurity_decrease': 0.5793886075806703, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 197, 'max_depth': 9, 'min_samples_split': 0.1410961191299684, 'min_samples_leaf': 0.4713676650653018, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 102, 'min_impurity_decrease': 0.7937787635856051, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 182, 'max_depth': 16, 'min_samples_split': 0.17736241432483288, 'min_samples_leaf': 0.11524898534076405, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 84, 'min_impurity_decrease': 0.0008570350214116389, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 163, 'max_depth': 11, 'min_samples_split': 0.12200420813534604, 'min_samples_leaf': 0.15240992010568122, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 120, 'min_impurity_decrease': 0.8883034384920608, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 418, 'max_depth': 6, 'min_samples_split': 0.2337063279437428, 'min_samples_leaf': 0.4968083208268185, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 112, 'min_impurity_decrease': 0.4880530633164374, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 208, 'max_depth': 5, 'min_samples_split': 0.20847374874292532, 'min_samples_leaf': 0.125375677940045, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 11, 'min_impurity_decrease': 0.1354611824307311, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 214, 'max_depth': 26, 'min_samples_split': 0.9537216953267368, 'min_samples_leaf': 0.491083449059265, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 6, 'min_impurity_decrease': 0.17526348782204332, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 408, 'max_depth': 4, 'min_samples_split': 0.2950534355896254, 'min_samples_leaf': 0.172226121499658, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 60, 'min_impurity_decrease': 0.26399294495852094, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 233, 'max_depth': 13, 'min_samples_split': 0.3819071819148953, 'min_samples_leaf': 0.13169025963031342, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 9, 'min_impurity_decrease': 0.8347697891361254, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 251, 'max_depth': 17, 'min_samples_split': 0.6470377885586096, 'min_samples_leaf': 0.10223806668102056, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 3, 'min_impurity_decrease': 0.908565917565622, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 307, 'max_depth': 5, 'min_samples_split': 0.31578670815283927, 'min_samples_leaf': 0.23833434555077465, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 22, 'min_impurity_decrease': 0.4343878886879677, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 341, 'max_depth': 5, 'min_samples_split': 0.3606501568109693, 'min_samples_leaf': 0.25477233315839765, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 8, 'min_impurity_decrease': 0.3833803857668796, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 276, 'max_depth': 24, 'min_samples_split': 0.3325425306327106, 'min_samples_leaf': 0.24861113250438654, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 23, 'min_impurity_decrease': 0.3595885821466427, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 290, 'max_depth': 14, 'min_samples_split': 0.537258579899716, 'min_samples_leaf': 0.36164997340841964, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 127, 'min_impurity_decrease': 0.3042321799929233, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 326, 'max_depth': 18, 'min_samples_split': 0.49556612563132996, 'min_samples_leaf': 0.14365714677732971, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 27, 'min_impurity_decrease': 0.34119361554875205, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 378, 'max_depth': 8, 'min_samples_split': 0.5833187048043896, 'min_samples_leaf': 0.18537199319313205, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 38, 'min_impurity_decrease': 0.8075142718728434, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 484, 'max_depth': 2, 'min_samples_split': 0.3028401308309982, 'min_samples_leaf': 0.12024842927213811, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 77, 'min_impurity_decrease': 0.5982159895225323, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 85, 'max_depth': 19, 'min_samples_split': 0.7163714780352799, 'min_samples_leaf': 0.33048614344226546, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 33, 'min_impurity_decrease': 0.40514528021776586, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 465, 'max_depth': 15, 'min_samples_split': 0.26143768657054545, 'min_samples_leaf': 0.29856609769824494, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 105, 'min_impurity_decrease': 0.8623727636667068, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 0.8938171863607783, 'min_samples_leaf': 0.22426120646413633, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 18, 'min_impurity_decrease': 0.7539761129602431, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 447, 'max_depth': 12, 'min_samples_split': 0.38203801005027316, 'min_samples_leaf': 0.26660719337010313, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 2, 'min_impurity_decrease': 0.9252087388334611, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 268, 'max_depth': 16, 'min_samples_split': 0.8807321042624825, 'min_samples_leaf': 0.1668406871549795, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 14, 'min_impurity_decrease': 0.04122364901479586, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 456, 'max_depth': 5, 'min_samples_split': 0.3479320680588381, 'min_samples_leaf': 0.34690118439454753, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 5, 'min_impurity_decrease': 0.9639579384943462, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 257, 'max_depth': 14, 'min_samples_split': 0.8316541040013335, 'min_samples_leaf': 0.31709562734633345, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 2, 'min_impurity_decrease': 0.07191303242532843, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 299, 'max_depth': 6, 'min_samples_split': 0.7861161849836403, 'min_samples_leaf': 0.1991037807660614, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 51, 'min_impurity_decrease': 0.7185402979628654, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 202, 'max_depth': 4, 'min_samples_split': 0.90489171963231, 'min_samples_leaf': 0.1813403887305564, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 5, 'min_impurity_decrease': 0.8852916247860128, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 492, 'max_depth': 3, 'min_samples_split': 0.862462311460729, 'min_samples_leaf': 0.37404210626580736, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 6, 'min_impurity_decrease': 0.9063062599143509, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 366, 'max_depth': 7, 'min_samples_split': 0.8202023337685578, 'min_samples_leaf': 0.4246792218742363, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 64, 'min_impurity_decrease': 0.47003803123480364, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 476, 'max_depth': 30, 'min_samples_split': 0.44941657222606657, 'min_samples_leaf': 0.47177997710248293, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 7, 'min_impurity_decrease': 0.5247048512517244, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 242, 'max_depth': 15, 'min_samples_split': 0.4724183328713856, 'min_samples_leaf': 0.38925986029447246, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 3, 'min_impurity_decrease': 0.673600228686685, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 316, 'max_depth': 2, 'min_samples_split': 0.9809842822848546, 'min_samples_leaf': 0.16205763015234964, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 32, 'min_impurity_decrease': 0.7833331223167371, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 331, 'max_depth': 32, 'min_samples_split': 0.9393372384086346, 'min_samples_leaf': 0.39975901412135156, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 29, 'min_impurity_decrease': 0.7684028047191453, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 352, 'max_depth': 17, 'min_samples_split': 0.8557726396867359, 'min_samples_leaf': 0.13601710520228635, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 36, 'min_impurity_decrease': 0.6951424636720763, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 461, 'max_depth': 13, 'min_samples_split': 0.3214562950911131, 'min_samples_leaf': 0.15033929602453727, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 26, 'min_impurity_decrease': 0.747540939593106, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 108, 'max_depth': 14, 'min_samples_split': 0.965959098742581, 'min_samples_leaf': 0.38332031670277006, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 30, 'min_impurity_decrease': 0.6187033066456428, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 343, 'max_depth': 16, 'min_samples_split': 0.5702687293804475, 'min_samples_leaf': 0.4879101090549183, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 55, 'min_impurity_decrease': 0.8502416564224344, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 283, 'max_depth': 10, 'min_samples_split': 0.6034214861429822, 'min_samples_leaf': 0.12759321406418977, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 40, 'min_impurity_decrease': 0.5670670191123813, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 426, 'max_depth': 4, 'min_samples_split': 0.5172218596250271, 'min_samples_leaf': 0.35219400975895165, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 35, 'min_impurity_decrease': 0.7294667505687351, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 221, 'max_depth': 5, 'min_samples_split': 0.5449838175340718, 'min_samples_leaf': 0.28036408855639394, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 96, 'min_impurity_decrease': 0.542318258473033, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 168, 'max_depth': 12, 'min_samples_split': 0.3638975265514236, 'min_samples_leaf': 0.32189819330863434, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 10, 'min_impurity_decrease': 0.2946823661447405, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 147, 'max_depth': 2, 'min_samples_split': 0.34241382988644825, 'min_samples_leaf': 0.17339167165935288, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 4, 'min_impurity_decrease': 0.43781503366115804, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 127, 'max_depth': 2, 'min_samples_split': 0.29372328967823164, 'min_samples_leaf': 0.33412792277914527, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 24, 'min_impurity_decrease': 0.09044660615906804, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 183, 'max_depth': 7, 'min_samples_split': 0.4009002011812155, 'min_samples_leaf': 0.24034162732141076, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 20, 'min_impurity_decrease': 0.4013406772897372, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 136, 'max_depth': 17, 'min_samples_split': 0.33689664297246, 'min_samples_leaf': 0.36222612756394185, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 7, 'min_impurity_decrease': 0.37409803009171727, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 115, 'max_depth': 22, 'min_samples_split': 0.6263255412153776, 'min_samples_leaf': 0.30895455155548673, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 45, 'min_impurity_decrease': 0.41713406111537055, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 160, 'max_depth': 6, 'min_samples_split': 0.10551119316515103, 'min_samples_leaf': 0.19201465227277953, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 72, 'min_impurity_decrease': 0.8756326098960776, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 259, 'max_depth': 18, 'min_samples_split': 0.2095507580662941, 'min_samples_leaf': 0.2553921119759049, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 31, 'min_impurity_decrease': 0.14855999928024904, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 72, 'max_depth': 9, 'min_samples_split': 0.3152408389071152, 'min_samples_leaf': 0.1856144512505849, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 4, 'min_impurity_decrease': 0.31639356526572526, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 196, 'max_depth': 28, 'min_samples_split': 0.9981511841902138, 'min_samples_leaf': 0.44333419416218206, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 6, 'min_impurity_decrease': 0.3518357694718518, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 272, 'max_depth': 15, 'min_samples_split': 0.7492557120743188, 'min_samples_leaf': 0.3437504097405183, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 26, 'min_impurity_decrease': 0.027720443840839534, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 91, 'max_depth': 21, 'min_samples_split': 0.6566412905248104, 'min_samples_leaf': 0.4525168593797932, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 83, 'min_impurity_decrease': 0.4590930813265053, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 437, 'max_depth': 5, 'min_samples_split': 0.24057054177313864, 'min_samples_leaf': 0.2084710831754127, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 16, 'min_impurity_decrease': 0.7152730773571758, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 144, 'max_depth': 4, 'min_samples_split': 0.4237652762993463, 'min_samples_leaf': 0.2714087856540535, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 59, 'min_impurity_decrease': 0.6526813053234314, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 453, 'max_depth': 2, 'min_samples_split': 0.28148735534648733, 'min_samples_leaf': 0.13962161057229536, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 5, 'min_impurity_decrease': 0.8099902917511093, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 306, 'max_depth': 30, 'min_samples_split': 0.8420818508530524, 'min_samples_leaf': 0.29239268031301835, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 115, 'min_impurity_decrease': 0.6330538746284653, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 467, 'max_depth': 13, 'min_samples_split': 0.35923219555676933, 'min_samples_leaf': 0.4811148397939908, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 19, 'min_impurity_decrease': 0.4883754442515869, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 335, 'max_depth': 11, 'min_samples_split': 0.9228359176018462, 'min_samples_leaf': 0.2319032154102498, 'max_features': 'log2', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 22, 'min_impurity_decrease': 0.3290350622003715, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 173, 'max_depth': 3, 'min_samples_split': 0.3778391340119122, 'min_samples_leaf': 0.12172655542759209, 'max_features': 'sqrt', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 11, 'min_impurity_decrease': 0.6677134575822335, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 155, 'max_depth': 11, 'min_samples_split': 0.974501152815505, 'min_samples_leaf': 0.3707040961554553, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 13, 'min_impurity_decrease': 0.5906121294543724, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 56, 'max_depth': 19, 'min_samples_split': 0.48227077624816317, 'min_samples_leaf': 0.4258317794981078, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 8, 'min_impurity_decrease': 0.22911812022183833, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 409, 'max_depth': 5, 'min_samples_split': 0.9528808799033308, 'min_samples_leaf': 0.37962502998065567, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 28, 'min_impurity_decrease': 0.7882845703803569, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 359, 'max_depth': 20, 'min_samples_split': 0.3282088422627056, 'min_samples_leaf': 0.16659651739881734, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'entropy', 'max_leaf_nodes': 87, 'min_impurity_decrease': 0.38727826185519754, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 322, 'max_depth': 25, 'min_samples_split': 0.6858488370868798, 'min_samples_leaf': 0.49979292286650484, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 2, 'min_impurity_decrease': 0.7362439506239488, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 227, 'max_depth': 6, 'min_samples_split': 0.5546508281798496, 'min_samples_leaf': 0.26125951179052276, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'entropy', 'max_leaf_nodes': 48, 'min_impurity_decrease': 0.9238113013229848, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 395, 'max_depth': 10, 'min_samples_split': 0.18427244742317397, 'min_samples_leaf': 0.32957334639526115, 'max_features': 'log2', 'bootstrap': True, 'criterion': 'gini', 'max_leaf_nodes': 3, 'min_impurity_decrease': 0.5097769349521042, 'random_state': 1225}
+F1 Score: 0.0 
+
+{'n_estimators': 251, 'max_depth': 8, 'min_samples_split': 0.26297292916999393, 'min_samples_leaf': 0.30146909253512205, 'max_features': 'sqrt', 'bootstrap': False, 'criterion': 'gini', 'max_leaf_nodes': 102, 'min_impurity_decrease': 0.0591945488875618, 'random_state': 1225}

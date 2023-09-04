@@ -2,7 +2,8 @@ import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score
-import lightgbm as lgb
+from category_encoders import BinaryEncoder
+from sklearn.ensemble import RandomForestClassifier
 import optuna
 
 # Read "train.csv" file
@@ -60,6 +61,11 @@ df = pd.merge(df, user_avg_amount, on="user_id", how="left")
 df = pd.merge(df, merchant_avg_amount, on="merchant_id", how="left")
 
 
+# BinaryEncoding
+binary_encoder = BinaryEncoder(cols=["merchant_id", "mcc", "merchant_city", "merchant_state", "errors?", "use_chip", "user_id", "card_id", "zip_1"])
+df = binary_encoder.fit_transform(df)
+
+
 # Print Data sample
 print(labels[:5])
 print(df.head(10))
@@ -75,58 +81,49 @@ num_not_fraud = np.count_nonzero(y_train == 0)
 num_fraud = np.count_nonzero(y_train == 1)
 scale_pos_weight = num_not_fraud / num_fraud
 
-# Create LightGBM Dataset
-dtrain = lgb.Dataset(data=X_train, label=y_train, categorical_feature='auto')
-dtest = lgb.Dataset(data=X_test, label=y_test, categorical_feature="auto")
 
 # Define Objective function for Optuna
 def Objective(trial):
     param = {
-        "objective": "binary",
-        "metric": "binary_logloss",
-        "boosting_type": "gbdt",
-        "learning_rate": trial.suggest_float("learning_rate", 1.5e-2, 1.2),
-        "n_estimators": trial.suggest_int("n_estimators", 500, 1500, step=25),
-        "max_depth": trial.suggest_int("max_depth", 5, 15),
-        "min_child_weight": trial.suggest_int("min_child_weight", 1, 201, step=5),
-        "reg_lambda": trial.suggest_float('lambda', 1e-2, 5.0),
-        "reg_alpha": trial.suggest_float('alpha', 1e-3, 0.1),
-        "feature_fraction": trial.suggest_float("feature_fraction", 0.5, 1),
-        "bagging_fraction": trial.suggest_float("bagging_fraction", 0.5, 1, step=0.05),
-        "bagging_freq": trial.suggest_int("bagging_freq", 1, 7),
-        #"num_leaves": trial.suggest_int("num_leaves", 31, 256),
-        "min_split_gain": trial.suggest_float("min_split_gain", 0.1, 1, log=True),
-
-        "scale_pos_weight": scale_pos_weight,
-        "device": "cpu"
+        "n_estimators": trial.suggest_int("n_estimators", 50, 500),
+        "max_depth": trial.suggest_int("max_depth", 2, 32, log=True),
+        "min_samples_split": trial.suggest_float("min_samples_split", 0.1, 1),
+        "min_samples_leaf": trial.suggest_float("min_samples_leaf", 0.1, 0.5),
+        "max_features": trial.suggest_categorical("max_features", ["sqrt", "log2"]),
+        "bootstrap": trial.suggest_categorical("bootstrap", [True, False]),
+        "criterion": trial.suggest_categorical("criterion", ["gini", "entropy"]),
+        "max_leaf_nodes": trial.suggest_int("max_leaf_nodes", 2, 128, log=True),
+        "min_impurity_decrease": trial.suggest_float("min_impurity_decrease", 0.0, 1),
+        "random_state": 1225
     }
     
     # Additional logging, if needed
-    with open("lightgbmdb/LightGBM_Hyper_2.txt", 'a') as f:
+    with open("randomforestdb/Random_2.txt", 'a') as f:
         f.write(str(param) + '\n')
     
-    callbacks = [lgb.early_stopping(stopping_rounds=100, first_metric_only=False, verbose=True)]
-    model = lgb.train(param, dtrain, valid_sets=[dtest, dtrain], callbacks=callbacks)
+    model = RandomForestClassifier(**param)
+    model.fit(X_train, y_train)
+    
     y_pred = np.round(model.predict(X_test))
     model_metric = f1_score(y_test, y_pred)
         
-    with open("lightgbmdb/LightGBM_Hyper_2.txt", 'a') as f:
+    with open("randomforestdb/Random_2.txt", 'a') as f:
         f.write(f"F1 Score: {model_metric} \n\n")
         
-    return np.mean(model_metric)
+    return model_metric
 
 
 # Create Optuna sampler and study object
 sampler = optuna.samplers.TPESampler(n_startup_trials=40)
 study = optuna.create_study(sampler=sampler, 
-                            study_name="lightgbm_for_card_fraud_2", 
+                            study_name="random_for_card_fraud_2", 
                             direction="maximize", 
-                            storage="sqlite:///lightgbmdb/1.db", 
+                            storage="sqlite:///randomforestdb/1.db", 
                             load_if_exists=True)
 study.optimize(Objective, n_trials=440, n_jobs=1)
 
 # Print best hyper-parameter set
-with open("lightgbmdb/LightGBM_Hyper_2.txt",'a') as f:
+with open("randomforestdb/Random_2.txt",'a') as f:
     f.write(f"Best Hyper-parameter set: \n{study.best_params}\n")
     f.write(f"Best value: {study.best_value}")
 
