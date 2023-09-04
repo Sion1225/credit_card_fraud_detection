@@ -102,9 +102,10 @@ train_dataset = train_dataset.map(lambda x, y: (one_hot_encode(x), y))
 test_dataset = test_dataset.map(lambda x, y: (one_hot_encode(x), y))
 
 # print for validate
-for item in X_train.take(1):
+for item, label in train_dataset.take(1):
     for key, value in item.items():
         print(f"{key}: {value.numpy()}")
+    print(label)
 
 
 # Count fraud or not
@@ -177,7 +178,7 @@ def Objective(trial):
         "units": trial.suggest_int("units", 32, 2500),
         "kernel_l2_lambda": trial.suggest_float("kernel_l2_lambda", 1e-4, 1, log=True),
         "activity_l2_lambda": trial.suggest_float("activity_l2_lambda", 1e-4, 1, log=True),
-        "dropout_rate": trial.suggest_float("kernel_l2_lambda", 0.0, 1, step=0.05),
+        "dropout_rate": trial.suggest_float("dropout_rate", 0.0, 1, step=0.05),
         "kernel_initializer": trial.suggest_categorical("kernel_initializer", ["he_normal", "he_uniform"]),
         "lr": trial.suggest_float("activity_l2_lambda", 1e-4, 1, log=True),
         "batch_size": trial.suggest_int("batch_size", 16, 1024, step=8)
