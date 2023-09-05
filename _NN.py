@@ -238,13 +238,13 @@ class Logistic_Model(tf.keras.Model):
 # Define Objective function for Optuna
 def Objective(trial):
     param = {
-        "units": trial.suggest_int("units", 32, 2500),
+        "units": trial.suggest_int("units", 32, 3000),
         "output_dim": trial.suggest_int("output_dim", 1, 500),
         "kernel_l2_lambda": trial.suggest_float("kernel_l2_lambda", 1e-4, 1, log=True),
         "activity_l2_lambda": trial.suggest_float("activity_l2_lambda", 1e-4, 1, log=True),
         "dropout_rate": trial.suggest_float("dropout_rate", 0.0, 1, step=0.05),
         "kernel_initializer": trial.suggest_categorical("kernel_initializer", ["he_normal", "he_uniform"]),
-        "lr": trial.suggest_float("activity_l2_lambda", 1e-4, 1, log=True),
+        "lr": trial.suggest_float("activity_l2_lambda", 1e-4, 0.1, log=True),
         "batch_size": trial.suggest_int("batch_size", 16, 1024, step=8)
     }
 
