@@ -10,6 +10,8 @@ class F1Score(tf.keras.metrics.Metric):
         
     def update_state(self, y_true, y_pred, sample_weight=None):
         threshold = 0.5
+        y_true = tf.cast(y_true, tf.float32)
+        y_pred = tf.cast(y_pred, tf.float32)
         y_pred = tf.cast(y_pred >= threshold, tf.float32)
         
         self.true_positives.assign_add(tf.reduce_sum(y_true * y_pred))

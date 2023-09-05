@@ -116,9 +116,9 @@ def reshape_scalars(x, y):
     reshaped_x = {}
     for key, value in x.items():
         if len(value.shape) == 0:  # 스칼라 값인 경우
-            reshaped_x[key] = tf.reshape(value, (1,))
+            reshaped_x[key] = tf.cast(tf.reshape(value, (1,)), dtype=tf.float32)
         else:
-            reshaped_x[key] = value
+            reshaped_x[key] = tf.cast(value, dtype=tf.float32)
     return reshaped_x, y
 
 # Dataset 객체에 map 함수 적용
@@ -185,19 +185,42 @@ class Logistic_Model(tf.keras.Model):
     def call(self, inputs: tf.data.Dataset):
 
         user_id_out = self.input_user_id(inputs["user_id"])
+        user_id_out = tf.squeeze(user_id_out, axis=1)
+        print(tf.shape(user_id_out))
         amount_out = self.input_amount(inputs["amount"])
+        amount_out = tf.squeeze(amount_out, axis=1)
+        print(tf.shape(amount_out))
         mer_id_out = self.input_mer_id(inputs["merchant_id"])
+        mer_id_out = tf.squeeze(mer_id_out, axis=1)
+        print(tf.shape(mer_id_out))
         mer_ct_out = self.input_mer_ct(inputs["merchant_city"])
+        mer_ct_out = tf.squeeze(mer_ct_out, axis=1)
+        print(tf.shape(mer_ct_out))
         mer_st_out = self.input_mer_st(inputs["merchant_state"])
+        mer_st_out = tf.squeeze(mer_st_out, axis=1)
+        print(tf.shape(mer_st_out))
         mcc_out = self.input_mcc(inputs["mcc"])
+        mcc_out = tf.squeeze(mcc_out, axis=1)
+        print(tf.shape(mcc_out))
         zip2_out = self.input_zip2(inputs["zip_2"])
+        zip2_out = tf.squeeze(zip2_out, axis=1)
+        print(tf.shape(zip2_out))
         zip4_out = self.input_zip4(inputs["zip_4"])
+        zip4_out = tf.squeeze(zip4_out, axis=1)
+        print(tf.shape(zip4_out))
         user_avg_out = self.input_user_avg(inputs["user_avg_amount"])
+        user_avg_out = tf.squeeze(user_avg_out, axis=1)
+        print(tf.shape(user_avg_out))
         mer_avg_out = self.input_mer_avg(inputs["merchant_avg_amount"])
+        mer_avg_out = tf.squeeze(mer_avg_out, axis=1)
+        print(tf.shape(mer_avg_out))
 
         card_id_out = self.input_card_id(inputs["card_id"])
+        print(tf.shape(card_id_out))
         use_chip_out = self.input_use_chip(inputs["use_chip"])
+        print(tf.shape(use_chip_out))
         zip1_out = self.input_zip1(inputs["zip_1"])
+        print(tf.shape(zip1_out))
         
         x = tf.concat([user_id_out, card_id_out, amount_out, inputs["errors?"], mer_id_out, mer_ct_out, mer_st_out, 
                        mcc_out, mcc_out, use_chip_out, zip1_out, zip2_out, zip4_out, user_avg_out, mer_avg_out], axis=1)
