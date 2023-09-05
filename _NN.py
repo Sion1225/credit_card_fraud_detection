@@ -2,9 +2,11 @@ import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score
-from category_encoders import BinaryEncoder
+from sklearn.preprocessing import LabelEncoder
 import tensorflow as tf
 import optuna
+
+import f_score_metrics
 
 # Read "train.csv" file
 df = pd.read_csv("DataSet/train.csv")
@@ -26,34 +28,37 @@ df["zip_4"] = df["zip"] % 100
 # Drop "zip"
 df = df.drop("zip", axis=1)
 
-# Replace NaN with -1
+# Replace NaN 
+df["merchant_state"] = df["merchant_state"].fillna("Online")
 df = df.fillna(-1)
 
 # Change float64 with int64
-df["amount"] = round(df["amount"] * 100)
+df["amount"] = round(df["amount"] * 10)
 df["amount"] = df["amount"].astype("int64")
 df["zip_2"] = df["zip_2"].astype("int64")
 df["zip_4"] = df["zip_4"].astype("int64")
 
-df["merchant_id"] = df["merchant_id"].astype("category")
-df["mcc"] = df["mcc"].astype("category")
+df["merchant_id"] = df["merchant_id"].astype("int64")
+df["mcc"] = df["mcc"].astype("int64")
 df["merchant_city"] = df["merchant_city"].astype("category")
 df["merchant_state"] = df["merchant_state"].astype("category")
 df["errors?"] = df["errors?"].astype("category")
 df["use_chip"] = df["use_chip"].astype("category")
-df["user_id"] = df["user_id"].astype("category")
-df["card_id"] = df["card_id"].astype("category")
+df["user_id"] = df["user_id"].astype("int64")
+df["card_id"] = df["card_id"].astype("int64")
 df["zip_1"] = df["zip_1"].astype("int64")
-df["zip_1"] = df["zip_1"].astype("category")
 
+print(df.head(5))
 
 # Create additional data
 # User average amount
 user_avg_amount = df.groupby("user_id")["amount"].mean().reset_index()
+user_avg_amount['amount'] = np.round(user_avg_amount['amount'])
 user_avg_amount.columns = ['user_id', 'user_avg_amount']
 
 # Merchant average amount
 merchant_avg_amount = df.groupby("merchant_id")["amount"].mean().reset_index()
+merchant_avg_amount['amount'] = np.round(merchant_avg_amount['amount'])
 merchant_avg_amount.columns = ["merchant_id", "merchant_avg_amount"]
 
 # Add to Original Dataset
@@ -61,26 +66,30 @@ df = pd.merge(df, user_avg_amount, on="user_id", how="left")
 df = pd.merge(df, merchant_avg_amount, on="merchant_id", how="left")
 
 
-# BinaryEncoding
-print("BinaryEncoding")
-category_vars = ["merchant_id", "mcc", "merchant_city", "merchant_state", "errors?", "use_chip", "user_id"]
-binary_encoder = BinaryEncoder(cols=category_vars)
-df = binary_encoder.fit_transform(df)
+# Labeling to categorical datas
+le_city = LabelEncoder()
+le_city.fit(df["merchant_city"])
+df["merchant_city"] = le_city.transform(df["merchant_city"])
 
-# Combine encodered column
-print("Combine encodered column")
-for var in category_vars:
-    cols_to_combine = [col for col in df.columns if col.startswith(var)]
-    sub_data = df[cols_to_combine].to_numpy(dtype=str)
-    combined = np.apply_along_axis(''.join, axis=1, arr=sub_data)
-    df[var] = combined
-    df[var] = df[var].astype("int64")
-    df.drop(cols_to_combine, axis=1, inplace=True)
-    
+le_state = LabelEncoder()
+le_state.fit(df["merchant_state"])
+df["merchant_state"] = le_state.transform(df["merchant_state"])
+
+le_errors = LabelEncoder()
+le_errors.fit(df["errors?"])
+df["errors?"] = le_errors.transform(df["errors?"])
+
+le_chip = LabelEncoder()
+le_chip.fit(df["use_chip"])
+df["use_chip"] = le_chip.transform(df["use_chip"])
+
 
 # Print Data sample
+print(f"\n{df.head(5)}\n")
 print(labels[:5])
-print(df.head(10))
+print()
+print(le_errors.classes_)
+print()
 
 # Validate
 print(df.dtypes)
@@ -89,24 +98,38 @@ print(df.dtypes)
 X_train, X_test, y_train, y_test = train_test_split(df, labels, test_size=0.1, random_state=1225)
 
 # Shift to tf.data.Dataset
-train_dataset = tf.data.Dataset.from_tensor_slices((dict(X_train), y_train))
-test_dataset = tf.data.Dataset.from_tensor_slices((dict(X_test), y_test))
+train_dataset = tf.data.Dataset.from_tensor_slices((dict(X_train.to_dict('list')), y_train))
+test_dataset = tf.data.Dataset.from_tensor_slices((dict(X_test.to_dict("list")), y_test))
 
 # One-hot encoding to "card_id", "zip_1"
 def one_hot_encode(features):
     features["card_id"] = tf.one_hot(features["card_id"], depth=10)
     features["zip_1"] = tf.one_hot(features["zip_1"], depth=10)
+    features["use_chip"] = tf.one_hot(features["use_chip"], depth=3)
     return features
 
 train_dataset = train_dataset.map(lambda x, y: (one_hot_encode(x), y))
 test_dataset = test_dataset.map(lambda x, y: (one_hot_encode(x), y))
+
+# Change to vector
+def reshape_scalars(x, y):
+    reshaped_x = {}
+    for key, value in x.items():
+        if len(value.shape) == 0:  # 스칼라 값인 경우
+            reshaped_x[key] = tf.reshape(value, (1,))
+        else:
+            reshaped_x[key] = value
+    return reshaped_x, y
+
+# Dataset 객체에 map 함수 적용
+train_dataset = train_dataset.map(reshape_scalars)
+test_dataset = test_dataset.map(reshape_scalars)
 
 # print for validate
 for item, label in train_dataset.take(1):
     for key, value in item.items():
         print(f"{key}: {value.numpy()}")
     print(label)
-
 
 # Count fraud or not
 total_samples = len(y_train)
@@ -121,14 +144,30 @@ class_weight = {
 
 # Build Neural Network
 class Logistic_Model(tf.keras.Model):
-    def __init__(self, units: int, kernel_l2_lambda: float, activity_l2_lambda: float, dropout_rate: float , kernel_initializer: str):
+    def __init__(self, units: int, output_dim:int, kernel_l2_lambda: float, activity_l2_lambda: float, dropout_rate: float , kernel_initializer: str):
         super(Logistic_Model, self).__init__()
 
         self.units = units
+        self.output_dim = output_dim
         self.kernel_l2_lambda = kernel_l2_lambda
         self.activity_l2_lambda = activity_l2_lambda
         self.dropout_rate = dropout_rate
         self.kernel_initializer = kernel_initializer
+
+        self.input_user_id = tf.keras.layers.Embedding(input_dim=2000, output_dim=self.output_dim, input_length=1, mask_zero=False)
+        self.input_amount = tf.keras.layers.Embedding(input_dim=20000, output_dim=self.output_dim, input_length=1, mask_zero=False)
+        self.input_mer_id = tf.keras.layers.Embedding(input_dim=25076, output_dim=self.output_dim, input_length=1, mask_zero=False)
+        self.input_mer_ct = tf.keras.layers.Embedding(input_dim=4400, output_dim=self.output_dim, input_length=1, mask_zero=False)
+        self.input_mer_st = tf.keras.layers.Embedding(input_dim=130, output_dim=self.output_dim, input_length=1, mask_zero=False)
+        self.input_mcc = tf.keras.layers.Embedding(input_dim=110, output_dim=self.output_dim, input_length=1, mask_zero=False)
+        self.input_zip2 = tf.keras.layers.Embedding(input_dim=1000, output_dim=self.output_dim, input_length=1, mask_zero=False)
+        self.input_zip4 = tf.keras.layers.Embedding(input_dim=100, output_dim=self.output_dim, input_length=1, mask_zero=False)
+        self.input_user_avg = tf.keras.layers.Embedding(input_dim=2000, output_dim=self.output_dim, input_length=1, mask_zero=False)
+        self.input_mer_avg = tf.keras.layers.Embedding(input_dim=2000, output_dim=self.output_dim, input_length=1, mask_zero=False)
+
+        self.input_card_id = tf.keras.layers.Dense(units=output_dim, activation="relu", kernel_initializer="he_normal")
+        self.input_use_chip = tf.keras.layers.Dense(units=output_dim, activation="relu", kernel_initializer="he_normal")
+        self.input_zip1 = tf.keras.layers.Dense(units=output_dim, activation="relu", kernel_initializer="he_normal")
 
         self.hidden = tf.keras.layers.Dense(
             units=self.units,
@@ -144,12 +183,25 @@ class Logistic_Model(tf.keras.Model):
         self.output_layer = tf.keras.layers.Dense(1, activation="sigmoid")
 
     def call(self, inputs: tf.data.Dataset):
-        card_id, amount, zip_1, zip_2, zip_3, user_avg_amount, merchant_avg_amount, \
-        merchant_id, mcc, merchant_city, merchant_state, errors, use_chip, user_id = inputs
 
-        x = tf.concat([card_id, amount, zip_1, zip_2, zip_3, user_avg_amount, merchant_avg_amount, 
-                       merchant_id, mcc, merchant_city, merchant_state, errors, use_chip, user_id], axis=-1)
+        user_id_out = self.input_user_id(inputs["user_id"])
+        amount_out = self.input_amount(inputs["amount"])
+        mer_id_out = self.input_mer_id(inputs["merchant_id"])
+        mer_ct_out = self.input_mer_ct(inputs["merchant_city"])
+        mer_st_out = self.input_mer_st(inputs["merchant_state"])
+        mcc_out = self.input_mcc(inputs["mcc"])
+        zip2_out = self.input_zip2(inputs["zip_2"])
+        zip4_out = self.input_zip4(inputs["zip_4"])
+        user_avg_out = self.input_user_avg(inputs["user_avg_amount"])
+        mer_avg_out = self.input_mer_avg(inputs["merchant_avg_amount"])
+
+        card_id_out = self.input_card_id(inputs["card_id"])
+        use_chip_out = self.input_use_chip(inputs["use_chip"])
+        zip1_out = self.input_zip1(inputs["zip_1"])
         
+        x = tf.concat([user_id_out, card_id_out, amount_out, inputs["errors?"], mer_id_out, mer_ct_out, mer_st_out, 
+                       mcc_out, mcc_out, use_chip_out, zip1_out, zip2_out, zip4_out, user_avg_out, mer_avg_out], axis=1)
+
         x = self.hidden(x)
         x = self.dropout(x)
         output = self.output_layer(x)
@@ -160,6 +212,7 @@ class Logistic_Model(tf.keras.Model):
         config = super().get_config()
         config.update({
             'units': self.units,
+            'output_dim': self.output_dim,
             'kernel_l2_lambda': self.kernel_l2_lambda,
             'activity_l2_lambda': self.activity_l2_lambda,
             'dropout_rate': self.dropout_rate,
@@ -176,6 +229,7 @@ class Logistic_Model(tf.keras.Model):
 def Objective(trial):
     param = {
         "units": trial.suggest_int("units", 32, 2500),
+        "output_dim": trial.suggest_int("units", 1, 500),
         "kernel_l2_lambda": trial.suggest_float("kernel_l2_lambda", 1e-4, 1, log=True),
         "activity_l2_lambda": trial.suggest_float("activity_l2_lambda", 1e-4, 1, log=True),
         "dropout_rate": trial.suggest_float("dropout_rate", 0.0, 1, step=0.05),
@@ -190,13 +244,13 @@ def Objective(trial):
     lr = param.pop("lr")
     batch_size = param.pop("batch_size")
 
-    # try 3 times
+    # try 2 times
     all_scores = []
-    for _ in range(3):
+    for _ in range(2):
         # Build CatBoost Classifier and Training
         early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=10)
         model = Logistic_Model(**param)
-        model.compile(optimizer = tf.keras.optimizers.Adam(learning_rate=lr), loss='binary_crossentropy', metrics=[tf.keras.metrics.F1Score(num_classes=1, threshold=0.5)])
+        model.compile(optimizer = tf.keras.optimizers.Adam(learning_rate=lr), loss='binary_crossentropy', metrics=[f_score_metrics.F1Score()])
         model.fit(train_dataset.batch(batch_size),
               epochs=1000,
               class_weight=class_weight,
@@ -204,7 +258,8 @@ def Objective(trial):
               callbacks=[early_stopping])
 
         # Predict & Validate
-        y_pred = model.predict(X_test)
+        y_pred = model.predict(test_dataset.batch(batch_size))
+        y_pred = (y_pred > 0.5).astype(int).flatten()  # Convert probabilities to binary labels and flatten to 1D array
         model_metric = f1_score(y_test, y_pred)
 
         # Append Metric
