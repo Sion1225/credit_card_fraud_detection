@@ -186,41 +186,28 @@ class Logistic_Model(tf.keras.Model):
 
         user_id_out = self.input_user_id(inputs["user_id"])
         user_id_out = tf.squeeze(user_id_out, axis=1)
-        print(tf.shape(user_id_out))
         amount_out = self.input_amount(inputs["amount"])
         amount_out = tf.squeeze(amount_out, axis=1)
-        print(tf.shape(amount_out))
         mer_id_out = self.input_mer_id(inputs["merchant_id"])
         mer_id_out = tf.squeeze(mer_id_out, axis=1)
-        print(tf.shape(mer_id_out))
         mer_ct_out = self.input_mer_ct(inputs["merchant_city"])
         mer_ct_out = tf.squeeze(mer_ct_out, axis=1)
-        print(tf.shape(mer_ct_out))
         mer_st_out = self.input_mer_st(inputs["merchant_state"])
         mer_st_out = tf.squeeze(mer_st_out, axis=1)
-        print(tf.shape(mer_st_out))
         mcc_out = self.input_mcc(inputs["mcc"])
         mcc_out = tf.squeeze(mcc_out, axis=1)
-        print(tf.shape(mcc_out))
         zip2_out = self.input_zip2(inputs["zip_2"])
         zip2_out = tf.squeeze(zip2_out, axis=1)
-        print(tf.shape(zip2_out))
         zip4_out = self.input_zip4(inputs["zip_4"])
         zip4_out = tf.squeeze(zip4_out, axis=1)
-        print(tf.shape(zip4_out))
         user_avg_out = self.input_user_avg(inputs["user_avg_amount"])
         user_avg_out = tf.squeeze(user_avg_out, axis=1)
-        print(tf.shape(user_avg_out))
         mer_avg_out = self.input_mer_avg(inputs["merchant_avg_amount"])
         mer_avg_out = tf.squeeze(mer_avg_out, axis=1)
-        print(tf.shape(mer_avg_out))
 
         card_id_out = self.input_card_id(inputs["card_id"])
-        print(tf.shape(card_id_out))
         use_chip_out = self.input_use_chip(inputs["use_chip"])
-        print(tf.shape(use_chip_out))
         zip1_out = self.input_zip1(inputs["zip_1"])
-        print(tf.shape(zip1_out))
         
         x = tf.concat([user_id_out, card_id_out, amount_out, inputs["errors?"], mer_id_out, mer_ct_out, mer_st_out, 
                        mcc_out, mcc_out, use_chip_out, zip1_out, zip2_out, zip4_out, user_avg_out, mer_avg_out], axis=1)
@@ -252,7 +239,7 @@ class Logistic_Model(tf.keras.Model):
 def Objective(trial):
     param = {
         "units": trial.suggest_int("units", 32, 2500),
-        "output_dim": trial.suggest_int("units", 1, 500),
+        "output_dim": trial.suggest_int("output_dim", 1, 500),
         "kernel_l2_lambda": trial.suggest_float("kernel_l2_lambda", 1e-4, 1, log=True),
         "activity_l2_lambda": trial.suggest_float("activity_l2_lambda", 1e-4, 1, log=True),
         "dropout_rate": trial.suggest_float("dropout_rate", 0.0, 1, step=0.05),
@@ -271,7 +258,7 @@ def Objective(trial):
     all_scores = []
     for _ in range(2):
         # Build CatBoost Classifier and Training
-        early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=10)
+        early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)
         model = Logistic_Model(**param)
         model.compile(optimizer = tf.keras.optimizers.Adam(learning_rate=lr), loss='binary_crossentropy', metrics=[f_score_metrics.F1Score()])
         model.fit(train_dataset.batch(batch_size),
@@ -298,9 +285,9 @@ def Objective(trial):
 # Create Optuna sampler and study object
 sampler = optuna.samplers.TPESampler(n_startup_trials=30)
 study = optuna.create_study(sampler=sampler, 
-    study_name="catboost_for_card_fraud_11", 
+    study_name="catboost_for_card_fraud_1", 
     direction="maximize", 
-    storage="sqlite:///nndb/11.db", 
+    storage="sqlite:///nndb/1.db", 
     load_if_exists=True)
 study.optimize(Objective, n_trials=330, n_jobs=1)
 
