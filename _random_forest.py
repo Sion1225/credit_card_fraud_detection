@@ -2,7 +2,8 @@ import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score
-import catboost
+from category_encoders import BinaryEncoder
+from sklearn.ensemble import RandomForestClassifier
 import optuna
 
 # Read "train.csv" file
@@ -59,6 +60,12 @@ merchant_avg_amount.columns = ["merchant_id", "merchant_avg_amount"]
 df = pd.merge(df, user_avg_amount, on="user_id", how="left")
 df = pd.merge(df, merchant_avg_amount, on="merchant_id", how="left")
 
+
+# BinaryEncoding
+binary_encoder = BinaryEncoder(cols=["merchant_id", "mcc", "merchant_city", "merchant_state", "errors?", "use_chip", "user_id", "card_id", "zip_1"])
+df = binary_encoder.fit_transform(df)
+
+
 # Print Data sample
 print(labels[:5])
 print(df.head(10))
@@ -75,63 +82,48 @@ num_fraud = np.count_nonzero(y_train == 1)
 scale_pos_weight = num_not_fraud / num_fraud
 
 
-# Define Objective function
+# Define Objective function for Optuna
 def Objective(trial):
-    # Set Hyper-parameter bounds
     param = {
-        'iterations': trial.suggest_int('iterations', 600, 1500, step=25),
-        'learning_rate': trial.suggest_float('learning_rate', 5e-3, 0.045),
-        'depth': trial.suggest_int('depth', 10, 16),
-        'l2_leaf_reg': trial.suggest_float('l2_leaf_reg', 0.5, 2),
-        'border_count': trial.suggest_int('border_count', 250, 450),
-        "bagging_temperature": trial.suggest_float("bagging_temperature", 0, 4),
-        "random_strength": trial.suggest_float("random_strength", 0, 5),
-        'eval_metric': 'F1',
-        "boosting_type": "Plain", # Ordered or Plain
-        #"rsm": trial.suggest_float("rsm", 0.2, 1),
-
-        "cat_features": ["user_id","card_id","errors?","merchant_id","merchant_city","merchant_state","mcc","use_chip","zip_1"],
-        "nan_mode": "Forbidden",
-        'scale_pos_weight': scale_pos_weight,
-        'custom_metric': ['Logloss'],
-        'task_type': 'GPU'
+        "n_estimators": trial.suggest_int("n_estimators", 50, 500),
+        "max_depth": trial.suggest_int("max_depth", 2, 32, log=True),
+        "min_samples_split": trial.suggest_float("min_samples_split", 0.1, 1),
+        "min_samples_leaf": trial.suggest_float("min_samples_leaf", 0.1, 0.5),
+        "max_features": trial.suggest_categorical("max_features", ["sqrt", "log2"]),
+        "bootstrap": trial.suggest_categorical("bootstrap", [True, False]),
+        "criterion": trial.suggest_categorical("criterion", ["gini", "entropy"]),
+        "max_leaf_nodes": trial.suggest_int("max_leaf_nodes", 2, 128, log=True),
+        "min_impurity_decrease": trial.suggest_float("min_impurity_decrease", 0.0, 1),
+        "random_state": 1225
     }
-
-    # Note Hyperparameter set
-    with open("catboostdb/CatBoost_Hyper_11.txt", 'a') as f:
+    
+    # Additional logging, if needed
+    with open("randomforestdb/Random_2.txt", 'a') as f:
         f.write(str(param) + '\n')
+    
+    model = RandomForestClassifier(**param)
+    model.fit(X_train, y_train)
+    
+    y_pred = np.round(model.predict(X_test))
+    model_metric = f1_score(y_test, y_pred)
+        
+    with open("randomforestdb/Random_2.txt", 'a') as f:
+        f.write(f"F1 Score: {model_metric} \n\n")
+        
+    return model_metric
 
-    # try 3 times
-    all_scores = []
-    for _ in range(1):
-        # Build CatBoost Classifier and Training
-        model = catboost.CatBoostClassifier(**param)
-        model.fit(X_train, y_train, eval_set=[(X_test, y_test)], early_stopping_rounds=100, verbose=0)
-
-        # Predict & Validate
-        y_pred = model.predict(X_test)
-        model_metric = f1_score(y_test, y_pred)
-
-        # Append Metric
-        all_scores.append(model_metric)
-
-    # Note Metric
-    with open("catboostdb/CatBoost_Hyper_11.txt", 'a') as f:
-        f.write(f"F1 Score: {np.mean(all_scores)} \n\n")
-
-    return np.mean(all_scores)
 
 # Create Optuna sampler and study object
-sampler = optuna.samplers.TPESampler(n_startup_trials=30)
+sampler = optuna.samplers.TPESampler(n_startup_trials=40)
 study = optuna.create_study(sampler=sampler, 
-    study_name="catboost_for_card_fraud_11", 
-    direction="maximize", 
-    storage="sqlite:///catboostdb/11.db", 
-    load_if_exists=True)
-study.optimize(Objective, n_trials=330, n_jobs=1)
+                            study_name="random_for_card_fraud_2", 
+                            direction="maximize", 
+                            storage="sqlite:///randomforestdb/1.db", 
+                            load_if_exists=True)
+study.optimize(Objective, n_trials=440, n_jobs=1)
 
 # Print best hyper-parameter set
-with open("catboostdb/CatBoost_Hyper_11.txt",'a') as f:
+with open("randomforestdb/Random_2.txt",'a') as f:
     f.write(f"Best Hyper-parameter set: \n{study.best_params}\n")
     f.write(f"Best value: {study.best_value}")
 

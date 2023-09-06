@@ -2,7 +2,8 @@ import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score
-import catboost
+from sklearn.svm import SVC
+from category_encoders import BinaryEncoder
 import optuna
 
 # Read "train.csv" file
@@ -66,6 +67,10 @@ print(df.head(10))
 # Validate
 print(df.dtypes)
 
+# BinaryEncoding
+binary_encoder = BinaryEncoder(cols=["merchant_id", "mcc", "merchant_city", "merchant_state", "errors?", "use_chip", "user_id", "card_id", "zip_1"])
+df = binary_encoder.fit_transform(df)
+
 # Split Datas for train & test
 X_train, X_test, y_train, y_test = train_test_split(df, labels, test_size=0.1, random_state=1225)
 
@@ -75,63 +80,50 @@ num_fraud = np.count_nonzero(y_train == 1)
 scale_pos_weight = num_not_fraud / num_fraud
 
 
-# Define Objective function
+# Define Objective function for SVM
 def Objective(trial):
     # Set Hyper-parameter bounds
     param = {
-        'iterations': trial.suggest_int('iterations', 600, 1500, step=25),
-        'learning_rate': trial.suggest_float('learning_rate', 5e-3, 0.045),
-        'depth': trial.suggest_int('depth', 10, 16),
-        'l2_leaf_reg': trial.suggest_float('l2_leaf_reg', 0.5, 2),
-        'border_count': trial.suggest_int('border_count', 250, 450),
-        "bagging_temperature": trial.suggest_float("bagging_temperature", 0, 4),
-        "random_strength": trial.suggest_float("random_strength", 0, 5),
-        'eval_metric': 'F1',
-        "boosting_type": "Plain", # Ordered or Plain
-        #"rsm": trial.suggest_float("rsm", 0.2, 1),
-
-        "cat_features": ["user_id","card_id","errors?","merchant_id","merchant_city","merchant_state","mcc","use_chip","zip_1"],
-        "nan_mode": "Forbidden",
-        'scale_pos_weight': scale_pos_weight,
-        'custom_metric': ['Logloss'],
-        'task_type': 'GPU'
+        'C': trial.suggest_float('C', 1e-3, 1000, log=True),
+        'kernel': trial.suggest_categorical('kernel', ['linear', 'rbf', 'poly', 'sigmoid']),
+        'degree': trial.suggest_int('degree', 1, 5),
+        'gamma': trial.suggest_categorical('gamma', ['scale', 'auto']),
+        'coef0': trial.suggest_float('coef0', -1, 1),
+        'shrinking': trial.suggest_categorical('shrinking', [True, False]),
+        'probability': False,
+        'tol': trial.suggest_float('tol', 1e-5, 1e-3, log=True),
+        'cache_size': 2000  # Set a large cache size for faster computation
     }
-
+    
     # Note Hyperparameter set
-    with open("catboostdb/CatBoost_Hyper_11.txt", 'a') as f:
+    with open("svmdb/SVM_Hyper_1.txt", 'a') as f:
         f.write(str(param) + '\n')
+        
+    # Build SVM Classifier and Training
+    model = SVC(**param)
+    model.fit(X_train, y_train)
 
-    # try 3 times
-    all_scores = []
-    for _ in range(1):
-        # Build CatBoost Classifier and Training
-        model = catboost.CatBoostClassifier(**param)
-        model.fit(X_train, y_train, eval_set=[(X_test, y_test)], early_stopping_rounds=100, verbose=0)
-
-        # Predict & Validate
-        y_pred = model.predict(X_test)
-        model_metric = f1_score(y_test, y_pred)
-
-        # Append Metric
-        all_scores.append(model_metric)
+    # Predict & Validate
+    y_pred = model.predict(X_test)
+    model_metric = f1_score(y_test, y_pred)
 
     # Note Metric
-    with open("catboostdb/CatBoost_Hyper_11.txt", 'a') as f:
-        f.write(f"F1 Score: {np.mean(all_scores)} \n\n")
+    with open("svmdb/SVM_Hyper_1.txt", 'a') as f:
+        f.write(f"F1 Score: {model_metric} \n\n")
 
-    return np.mean(all_scores)
+    return model_metric
 
 # Create Optuna sampler and study object
-sampler = optuna.samplers.TPESampler(n_startup_trials=30)
+sampler = optuna.samplers.TPESampler(n_startup_trials=15)
 study = optuna.create_study(sampler=sampler, 
-    study_name="catboost_for_card_fraud_11", 
+    study_name="svm_for_card_fraud_1", 
     direction="maximize", 
-    storage="sqlite:///catboostdb/11.db", 
+    storage="sqlite:///svmdb/1.db", 
     load_if_exists=True)
-study.optimize(Objective, n_trials=330, n_jobs=1)
+study.optimize(Objective, n_trials=150, n_jobs=8)
 
 # Print best hyper-parameter set
-with open("catboostdb/CatBoost_Hyper_11.txt",'a') as f:
+with open("svmdb/SVM_Hyper_1.txt",'a') as f:
     f.write(f"Best Hyper-parameter set: \n{study.best_params}\n")
     f.write(f"Best value: {study.best_value}")
 

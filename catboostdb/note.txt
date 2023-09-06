@@ -60,3 +60,8 @@ bagging_temperature 1감소, depth 증가, random_strength 1증가, learning_rat
 "random_strength": trial.suggest_float("random_strength", 0, 5),
 'eval_metric': 'F1',
 "boosting_type": "Plain", # Ordered or Plain
+
+
+
+데이터 확장 구매금액, 판매금액 평균 생성
+11

@@ -2,8 +2,8 @@ import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score
+import lightgbm as lgb
 from datetime import datetime
-import catboost
 
 # Read "train.csv" file
 df = pd.read_csv("DataSet/train.csv")
@@ -75,52 +75,54 @@ num_not_fraud = np.count_nonzero(y_train == 0)
 num_fraud = np.count_nonzero(y_train == 1)
 scale_pos_weight = num_not_fraud / num_fraud
 
+# Create LightGBM Dataset
+dtrain = lgb.Dataset(data=X_train, label=y_train, categorical_feature='auto')
+dtest = lgb.Dataset(data=X_test, label=y_test, categorical_feature="auto")
+
+
 # Set object with optimal hyper-parameter set
-''' Optimal hyper-parameter set
-'iterations': 700, 
-'learning_rate': 0.026067560703260176, 
-'depth': 16, 
-'l2_leaf_reg': 0.6250112975779198, 
-'border_count': 356, 
-'bagging_temperature': 0.09747102534316096, 
-'random_strength': 2.7071847149006034
-
-Best is trial 129 with value: 0.620253164556962
+'''Optimal hyper-parameter set
+'learning_rate': 0.40800370142469505, 
+'n_estimators': 1425, 
+'max_depth': 13, 
+'min_child_weight': 1, 
+'lambda': 2.217118681010151, 
+'alpha': 0.013291781490949256, 
+'feature_fraction': 0.867512174769522, 
+'bagging_fraction': 1.0, 
+'bagging_freq': 3, 
+'min_split_gain': 0.2684006150772534
+F1 Score: 0.5679989784191036
 '''
-model = catboost.CatBoostClassifier(
-    iterations=700, 
-    learning_rate=0.026067560703260176, 
-    depth=16, 
-    l2_leaf_reg=0.6250112975779198,
-    border_count=356,
-    bagging_temperature=0.09747102534316096,
-    random_strength=2.7071847149006034,
-
-    eval_metric="F1",
-    boosting_type="Plain", # Ordered or Plain
-    cat_features=["user_id", "card_id", "errors?", "merchant_id", "merchant_city", "merchant_state", "mcc", "use_chip", "zip_1"],
-    nan_mode="Forbidden",
-    scale_pos_weight=scale_pos_weight,
-    custom_metric=["Logloss"],
-    task_type="GPU"
-    )
-
-# Data Seperated model
-# Train model
-model.fit(X_train, y_train, eval_set=[(X_test, y_test)], early_stopping_rounds=100, verbose=1)
-
-# Predict & Validate
-y_pred = model.predict(X_test)
+params ={
+    "objective": "binary",
+    "metric": "binary_logloss",
+    "boosting_type": "gbdt",
+    'learning_rate': 0.40800370142469505, 
+    'max_depth': 13, 
+    'min_child_weight': 1, 
+    'lambda': 2.217118681010151, 
+    'alpha': 0.013291781490949256, 
+    'feature_fraction': 0.867512174769522, 
+    'bagging_fraction': 1.0, 
+    'bagging_freq': 3, 
+    'min_split_gain': 0.2684006150772534,
+    "scale_pos_weight": scale_pos_weight,
+    "device": "cpu"
+}
+callbacks = [lgb.early_stopping(stopping_rounds=100, first_metric_only=False, verbose=True)]
+model = lgb.train(params, dtrain, num_boost_round=1425, valid_sets=[dtest, dtrain], callbacks=callbacks)
+y_pred = np.round(model.predict(X_test))
 model_metric = f1_score(y_test, y_pred)
 print(model_metric)
 
 # Save Model
-model.save_model("catboostdb/catboost_model_11_" + str(model_metric) + "_" + datetime.now().strftime("%Y%m%d-%H%M%S") + ".cbm")
-
+model.save_model("lightgbmdb/lightgbm_model_1_" + str(model_metric) + "_" + datetime.now().strftime("%Y%m%d-%H%M%S") + ".txt")
 
 # Non data seperated model
+dtest = lgb.Dataset(data=df, label=labels, categorical_feature='auto')
 # Train model
-model.fit(df, labels, eval_set=[(X_test, y_test)], early_stopping_rounds=100, verbose=1)
+model = lgb.train(params, dtest, num_boost_round=1425, valid_sets=[dtest], callbacks=callbacks)
 
 # Save Model
-model.save_model("catboostdb/catboost_full_data_model_11_" + str(model_metric) + "_" + datetime.now().strftime("%Y%m%d-%H%M%S") + ".cbm")
+model.save_model("lightgbmdb/lightgbm_full_data_model_1_" + str(model_metric) + "_" + datetime.now().strftime("%Y%m%d-%H%M%S") + ".txt")
