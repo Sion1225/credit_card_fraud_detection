@@ -26,7 +26,7 @@ class F1Score(tf.keras.metrics.Metric):
         f1_score = 2 * (precision * recall) / (precision + recall + 1e-7)
         return f1_score
     
-    def reset_states(self):
+    def reset_state(self):
         self.true_positives.assign(0.0)
         self.false_positives.assign(0.0)
         self.true_negatives.assign(0.0)

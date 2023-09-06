@@ -144,7 +144,9 @@ class_weight = {
 
 # Build Neural Network
 class Logistic_Model(tf.keras.Model):
-    def __init__(self, units: int, output_dim:int, kernel_l2_lambda: float, activity_l2_lambda: float, dropout_rate: float , kernel_initializer: str):
+    def __init__(self, units: int, output_dim:int, kernel_l2_lambda: float, 
+                 activity_l2_lambda: float, activity_l2_small: float, activity_l2_big: float,
+                 dropout_rate: float , kernel_initializer: str, dropout_small: float, dropout_big: float):
         super(Logistic_Model, self).__init__()
 
         self.units = units
@@ -153,17 +155,31 @@ class Logistic_Model(tf.keras.Model):
         self.activity_l2_lambda = activity_l2_lambda
         self.dropout_rate = dropout_rate
         self.kernel_initializer = kernel_initializer
+        self.activity_l2_small = activity_l2_small
+        self.activity_l2_big = activity_l2_big
+        self.dropout_small = dropout_small
+        self.dropout_big = dropout_big
 
-        self.input_user_id = tf.keras.layers.Embedding(input_dim=2000, output_dim=self.output_dim, input_length=1, mask_zero=False)
-        self.input_amount = tf.keras.layers.Embedding(input_dim=20000, output_dim=self.output_dim, input_length=1, mask_zero=False)
-        self.input_mer_id = tf.keras.layers.Embedding(input_dim=25076, output_dim=self.output_dim, input_length=1, mask_zero=False)
-        self.input_mer_ct = tf.keras.layers.Embedding(input_dim=4400, output_dim=self.output_dim, input_length=1, mask_zero=False)
-        self.input_mer_st = tf.keras.layers.Embedding(input_dim=130, output_dim=self.output_dim, input_length=1, mask_zero=False)
-        self.input_mcc = tf.keras.layers.Embedding(input_dim=110, output_dim=self.output_dim, input_length=1, mask_zero=False)
-        self.input_zip2 = tf.keras.layers.Embedding(input_dim=1000, output_dim=self.output_dim, input_length=1, mask_zero=False)
-        self.input_zip4 = tf.keras.layers.Embedding(input_dim=100, output_dim=self.output_dim, input_length=1, mask_zero=False)
-        self.input_user_avg = tf.keras.layers.Embedding(input_dim=2000, output_dim=self.output_dim, input_length=1, mask_zero=False)
-        self.input_mer_avg = tf.keras.layers.Embedding(input_dim=2000, output_dim=self.output_dim, input_length=1, mask_zero=False)
+        self.input_user_id = tf.keras.layers.Embedding(
+            input_dim=2000, output_dim=self.output_dim, input_length=1, activity_regularizer=tf.keras.regularizers.l2(self.activity_l2_small), mask_zero=False)
+        self.input_amount = tf.keras.layers.Embedding(
+            input_dim=20000, output_dim=self.output_dim, input_length=1, activity_regularizer=tf.keras.regularizers.l2(self.activity_l2_big), mask_zero=False)
+        self.input_mer_id = tf.keras.layers.Embedding(
+            input_dim=25076, output_dim=self.output_dim, input_length=1, activity_regularizer=tf.keras.regularizers.l2(self.activity_l2_big), mask_zero=False)
+        self.input_mer_ct = tf.keras.layers.Embedding(
+            input_dim=4400, output_dim=self.output_dim, input_length=1, activity_regularizer=tf.keras.regularizers.l2(self.activity_l2_small), mask_zero=False)
+        self.input_mer_st = tf.keras.layers.Embedding(
+            input_dim=130, output_dim=self.output_dim, input_length=1, activity_regularizer=tf.keras.regularizers.l2(self.activity_l2_small), mask_zero=False)
+        self.input_mcc = tf.keras.layers.Embedding(
+            input_dim=110, output_dim=self.output_dim, input_length=1, activity_regularizer=tf.keras.regularizers.l2(self.activity_l2_small), mask_zero=False)
+        self.input_zip2 = tf.keras.layers.Embedding(
+            input_dim=1000, output_dim=self.output_dim, input_length=1, activity_regularizer=tf.keras.regularizers.l2(self.activity_l2_small), mask_zero=False)
+        self.input_zip4 = tf.keras.layers.Embedding(
+            input_dim=100, output_dim=self.output_dim, input_length=1, activity_regularizer=tf.keras.regularizers.l2(self.activity_l2_small), mask_zero=False)
+        self.input_user_avg = tf.keras.layers.Embedding(
+            input_dim=2000, output_dim=self.output_dim, input_length=1, activity_regularizer=tf.keras.regularizers.l2(self.activity_l2_small), mask_zero=False)
+        self.input_mer_avg = tf.keras.layers.Embedding(
+            input_dim=2000, output_dim=self.output_dim, input_length=1, activity_regularizer=tf.keras.regularizers.l2(self.activity_l2_small), mask_zero=False)
 
         self.input_card_id = tf.keras.layers.Dense(units=output_dim, activation="relu", kernel_initializer="he_normal")
         self.input_use_chip = tf.keras.layers.Dense(units=output_dim, activation="relu", kernel_initializer="he_normal")
@@ -179,6 +195,8 @@ class Logistic_Model(tf.keras.Model):
         )
 
         self.dropout = tf.keras.layers.Dropout(self.dropout_rate)
+        self.dropout_small_layer = tf.keras.layers.Dropout(self.dropout_small)
+        self.dropout_big_layer = tf.keras.layers.Dropout(self.dropout_big)
 
         self.output_layer = tf.keras.layers.Dense(1, activation="sigmoid")
 
@@ -208,6 +226,17 @@ class Logistic_Model(tf.keras.Model):
         card_id_out = self.input_card_id(inputs["card_id"])
         use_chip_out = self.input_use_chip(inputs["use_chip"])
         zip1_out = self.input_zip1(inputs["zip_1"])
+
+        user_id_out = self.dropout_small_layer(user_id_out)
+        amount_out = self.dropout_big_layer(amount_out)
+        mer_id_out = self.dropout_big_layer(mer_id_out)
+        mer_ct_out = self.dropout_small_layer(mer_ct_out)
+        mer_st_out = self.dropout_small_layer(mer_st_out)
+        mcc_out = self.dropout_small_layer(mcc_out)
+        zip2_out = self.dropout_small_layer(zip2_out)
+        zip4_out = self.dropout_small_layer(zip4_out)
+        user_avg_out = self.dropout_small_layer(user_avg_out)
+        mer_avg_out = self.dropout_small_layer(mer_avg_out)
         
         x = tf.concat([user_id_out, card_id_out, amount_out, inputs["errors?"], mer_id_out, mer_ct_out, mer_st_out, 
                        mcc_out, mcc_out, use_chip_out, zip1_out, zip2_out, zip4_out, user_avg_out, mer_avg_out], axis=1)
@@ -225,7 +254,11 @@ class Logistic_Model(tf.keras.Model):
             'output_dim': self.output_dim,
             'kernel_l2_lambda': self.kernel_l2_lambda,
             'activity_l2_lambda': self.activity_l2_lambda,
+            "activity_l2_small": self.activity_l2_small,
+            "activity_l2_big": self.activity_l2_big,
             'dropout_rate': self.dropout_rate,
+            "dropout_small": self.dropout_small,
+            "dropout_big": self.dropout_big,
             'kernel_initializer': self.kernel_initializer
         })
         return config
@@ -238,17 +271,22 @@ class Logistic_Model(tf.keras.Model):
 # Define Objective function for Optuna
 def Objective(trial):
     param = {
-        "units": trial.suggest_int("units", 32, 3000),
+        "units": trial.suggest_int("units", 16, 3000),
         "output_dim": trial.suggest_int("output_dim", 1, 500),
-        "kernel_l2_lambda": trial.suggest_float("kernel_l2_lambda", 1e-4, 1, log=True),
+        "kernel_l2_lambda": trial.suggest_float("kernel_l2_lambda", 0, 0.001),
         "activity_l2_lambda": trial.suggest_float("activity_l2_lambda", 1e-4, 1, log=True),
-        "dropout_rate": trial.suggest_float("dropout_rate", 0.0, 1, step=0.05),
-        "kernel_initializer": trial.suggest_categorical("kernel_initializer", ["he_normal", "he_uniform"]),
-        "lr": trial.suggest_float("activity_l2_lambda", 1e-4, 0.1, log=True),
-        "batch_size": trial.suggest_int("batch_size", 16, 1024, step=8)
+        "dropout_rate": trial.suggest_float("dropout_rate", 0.0, 0.5, step=0.05),
+        "kernel_initializer": "he_normal",
+        "lr": trial.suggest_float("learning_rate", 5e-5, 0.05, step=1e-5),
+        "batch_size": trial.suggest_int("batch_size", 64, 1024),
+
+        "activity_l2_small": trial.suggest_float("activity_l2_lambda", 1e-4, 1, log=True),
+        "activity_l2_big": trial.suggest_float("activity_l2_lambda", 1e-4, 1, log=True),
+        "dropout_small": trial.suggest_float("dropout_rate", 0.0, 0.5, step=0.05),
+        "dropout_big": trial.suggest_float("dropout_rate", 0.0, 0.5, step=0.05),
     }
 
-    with open("nndb/nn_Hyper_1.txt", 'a') as f:
+    with open("nndb/nn_Hyper_2.txt", 'a') as f:
         f.write(str(param) + '\n')
     
     lr = param.pop("lr")
@@ -256,9 +294,9 @@ def Objective(trial):
 
     # try 2 times
     all_scores = []
-    for _ in range(2):
+    for _ in range(1):
         # Build CatBoost Classifier and Training
-        early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)
+        early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=8, restore_best_weights=True)
         model = Logistic_Model(**param)
         model.compile(optimizer = tf.keras.optimizers.Adam(learning_rate=lr), loss='binary_crossentropy', metrics=[f_score_metrics.F1Score()])
         model.fit(train_dataset.batch(batch_size),
@@ -276,23 +314,23 @@ def Objective(trial):
         all_scores.append(model_metric)
 
     # Note Metric
-    with open("nndb/nn_Hyper_1.txt", 'a') as f:
+    with open("nndb/nn_Hyper_2.txt", 'a') as f:
         f.write(f"F1 Score: {np.mean(all_scores)} \n\n")
 
     return np.mean(all_scores)
 
 
 # Create Optuna sampler and study object
-sampler = optuna.samplers.TPESampler(n_startup_trials=30)
+sampler = optuna.samplers.TPESampler(n_startup_trials=20)
 study = optuna.create_study(sampler=sampler, 
     study_name="catboost_for_card_fraud_1", 
     direction="maximize", 
     storage="sqlite:///nndb/1.db", 
     load_if_exists=True)
-study.optimize(Objective, n_trials=330, n_jobs=1)
+study.optimize(Objective, n_trials=220, n_jobs=1)
 
 # Print best hyper-parameter set
-with open("nndb/nn_Hyper_1.txt",'a') as f:
+with open("nndb/nn_Hyper_2.txt",'a') as f:
     f.write(f"Best Hyper-parameter set: \n{study.best_params}\n")
     f.write(f"Best value: {study.best_value}")
 
