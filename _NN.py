@@ -144,13 +144,15 @@ class_weight = {
 
 # Build Neural Network
 class Logistic_Model(tf.keras.Model):
-    def __init__(self, units: int, output_dim:int, kernel_l2_lambda: float, 
+    def __init__(self, units: int, output_dim:int, output_dim_small:int, output_dim_large:int, kernel_l2_lambda: float, 
                  activity_l2_lambda: float, activity_l2_small: float, activity_l2_big: float,
                  dropout_rate: float , kernel_initializer: str, dropout_small: float, dropout_big: float):
         super(Logistic_Model, self).__init__()
 
         self.units = units
         self.output_dim = output_dim
+        self.output_dim_small = output_dim_small
+        self.output_dim_large = output_dim_large
         self.kernel_l2_lambda = kernel_l2_lambda
         self.activity_l2_lambda = activity_l2_lambda
         self.dropout_rate = dropout_rate
@@ -163,9 +165,9 @@ class Logistic_Model(tf.keras.Model):
         self.input_user_id = tf.keras.layers.Embedding(
             input_dim=2000, output_dim=self.output_dim, input_length=1, activity_regularizer=tf.keras.regularizers.l2(self.activity_l2_small), mask_zero=False)
         self.input_amount = tf.keras.layers.Embedding(
-            input_dim=20000, output_dim=self.output_dim, input_length=1, activity_regularizer=tf.keras.regularizers.l2(self.activity_l2_big), mask_zero=False)
+            input_dim=20000, output_dim=self.output_dim_large, input_length=1, activity_regularizer=tf.keras.regularizers.l2(self.activity_l2_big), mask_zero=False)
         self.input_mer_id = tf.keras.layers.Embedding(
-            input_dim=25076, output_dim=self.output_dim, input_length=1, activity_regularizer=tf.keras.regularizers.l2(self.activity_l2_big), mask_zero=False)
+            input_dim=25076, output_dim=self.output_dim_large, input_length=1, activity_regularizer=tf.keras.regularizers.l2(self.activity_l2_big), mask_zero=False)
         self.input_mer_ct = tf.keras.layers.Embedding(
             input_dim=4400, output_dim=self.output_dim, input_length=1, activity_regularizer=tf.keras.regularizers.l2(self.activity_l2_small), mask_zero=False)
         self.input_mer_st = tf.keras.layers.Embedding(
@@ -181,9 +183,9 @@ class Logistic_Model(tf.keras.Model):
         self.input_mer_avg = tf.keras.layers.Embedding(
             input_dim=2000, output_dim=self.output_dim, input_length=1, activity_regularizer=tf.keras.regularizers.l2(self.activity_l2_small), mask_zero=False)
 
-        self.input_card_id = tf.keras.layers.Dense(units=output_dim, activation="relu", kernel_initializer="he_normal")
-        self.input_use_chip = tf.keras.layers.Dense(units=output_dim, activation="relu", kernel_initializer="he_normal")
-        self.input_zip1 = tf.keras.layers.Dense(units=output_dim, activation="relu", kernel_initializer="he_normal")
+        self.input_card_id = tf.keras.layers.Dense(units=output_dim_small, activation="relu", kernel_initializer="he_normal")
+        self.input_use_chip = tf.keras.layers.Dense(units=output_dim_small, activation="relu", kernel_initializer="he_normal")
+        self.input_zip1 = tf.keras.layers.Dense(units=output_dim_small, activation="relu", kernel_initializer="he_normal")
 
         self.hidden = tf.keras.layers.Dense(
             units=self.units,
@@ -252,6 +254,8 @@ class Logistic_Model(tf.keras.Model):
         config.update({
             'units': self.units,
             'output_dim': self.output_dim,
+            'output_dim_small': self.output_dim_small,
+            'output_dim_large': self.output_dim_large,
             'kernel_l2_lambda': self.kernel_l2_lambda,
             'activity_l2_lambda': self.activity_l2_lambda,
             "activity_l2_small": self.activity_l2_small,
@@ -273,6 +277,8 @@ def Objective(trial):
     param = {
         "units": trial.suggest_int("units", 16, 3000),
         "output_dim": trial.suggest_int("output_dim", 1, 500),
+        'output_dim_small': trial.suggest_int("output_dim_small", 1, 50),
+        'output_dim_large': trial.suggest_int("output_dim_large", 1, 1000),
         "kernel_l2_lambda": trial.suggest_float("kernel_l2_lambda", 0, 0.001),
         "activity_l2_lambda": trial.suggest_float("activity_l2_lambda", 1e-4, 1, log=True),
         "dropout_rate": trial.suggest_float("dropout_rate", 0.0, 0.5, step=0.05),
@@ -280,10 +286,10 @@ def Objective(trial):
         "lr": trial.suggest_float("learning_rate", 5e-5, 0.05, step=1e-5),
         "batch_size": trial.suggest_int("batch_size", 64, 1024),
 
-        "activity_l2_small": trial.suggest_float("activity_l2_lambda", 1e-4, 1, log=True),
-        "activity_l2_big": trial.suggest_float("activity_l2_lambda", 1e-4, 1, log=True),
-        "dropout_small": trial.suggest_float("dropout_rate", 0.0, 0.5, step=0.05),
-        "dropout_big": trial.suggest_float("dropout_rate", 0.0, 0.5, step=0.05),
+        "activity_l2_small": trial.suggest_float("activity_l2_small", 1e-4, 1, log=True),
+        "activity_l2_big": trial.suggest_float("activity_l2_big", 1e-4, 1, log=True),
+        "dropout_small": trial.suggest_float("dropout_small", 0.0, 0.5, step=0.05),
+        "dropout_big": trial.suggest_float("dropout_big", 0.0, 0.5, step=0.05),
     }
 
     with open("nndb/nn_Hyper_2.txt", 'a') as f:
@@ -296,11 +302,11 @@ def Objective(trial):
     all_scores = []
     for _ in range(1):
         # Build CatBoost Classifier and Training
-        early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=8, restore_best_weights=True)
+        early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=6, restore_best_weights=True)
         model = Logistic_Model(**param)
         model.compile(optimizer = tf.keras.optimizers.Adam(learning_rate=lr), loss='binary_crossentropy', metrics=[f_score_metrics.F1Score()])
         model.fit(train_dataset.batch(batch_size),
-              epochs=1000,
+              epochs=100,
               class_weight=class_weight,
               validation_data=test_dataset.batch(batch_size),
               callbacks=[early_stopping])
@@ -323,7 +329,7 @@ def Objective(trial):
 # Create Optuna sampler and study object
 sampler = optuna.samplers.TPESampler(n_startup_trials=20)
 study = optuna.create_study(sampler=sampler, 
-    study_name="catboost_for_card_fraud_1", 
+    study_name="NN_for_card_fraud_2", 
     direction="maximize", 
     storage="sqlite:///nndb/1.db", 
     load_if_exists=True)
