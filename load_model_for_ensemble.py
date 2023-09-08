@@ -13,8 +13,6 @@ df = pd.read_csv("DataSet/train.csv")
 labels = df["is_fraud?"].copy().to_numpy()
 labels = labels.astype(int)
 df = df.drop("is_fraud?", axis=1)
-output = pd.DataFrame(index=df["index"])
-df = df.set_index(df.columns[0])
 
 # Delete $ symbol from amount column
 df['amount'] = df['amount'].str.replace('$', '').astype(float)
@@ -58,6 +56,10 @@ print(df.dtypes)
 # Split Datas for train & test
 X_train, X_test, y_train, y_test = train_test_split(df, labels, test_size=0.1, random_state=1225)
 
+# Drop index
+output = pd.DataFrame(index=X_test["index"])
+X_train = X_train.set_index(df.columns[0])
+X_test = X_test.set_index(df.columns[0])
 
 # Catboost
 def catboost_function(X_test):
@@ -101,8 +103,7 @@ def add_data(df):
 # LightGBM
 def lightgbm_fucntion(X_test):
     print("===========LightGBM===========")
-    model = lgb.Booster()
-    model.load_model('lightgbmdb/lightgbm_model_1_0.565894417014812_20230904-041101.txt')
+    model = lgb.Booster(model_file='lightgbmdb/lightgbm_model_1_0.565894417014812_20230904-041101.txt')
 
     # Test loaded model
     y_pred = np.round(model.predict(X_test))
@@ -120,14 +121,20 @@ def lightgbm_fucntion(X_test):
 
 # Catboost
 y_pred = catboost_function(X_test)
-output["catboost"] = y_pred
-print(output.head(5))
+output["catboost"] = y_pred[:,1]
 
 # Add data
 df = add_data(df)
 print(df.head(5))
+# Split Datas for train & test again
+X_train, X_test, y_train, y_test = train_test_split(df, labels, test_size=0.1, random_state=1225)
+# Drop index
+X_train = X_train.set_index(df.columns[0])
+X_test = X_test.set_index(df.columns[0])
 
 # LightGBM
 y_pred = lightgbm_fucntion(X_test)
 output["lightgbm"] = y_pred
-print(output.head(5))
+
+
+print(output.head(10))
