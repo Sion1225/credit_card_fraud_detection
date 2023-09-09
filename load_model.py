@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score
 from datetime import datetime
+from sklearn.preprocessing import LabelEncoder
 import catboost
 
 # Read "train.csv" file
