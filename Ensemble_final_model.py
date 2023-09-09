@@ -50,7 +50,7 @@ dtrain = xgboost.DMatrix(data=X_train, label=y_train)
 
 # ====================================================================================================================
 # XGBoost
-
+'''
 # Define Objective function
 def Objective(trial):
     # Set Hyper-parameter bounds
@@ -115,3 +115,12 @@ with open("ensembledb/XGBoost_Hyper_2.txt",'a') as f:
 
 print(f"Best Hyper-parameter set: \n{study.best_params}\n")
 print(f"Best value: {study.best_value}")
+'''
+
+'''
+'eval_metric': 'error', 'learning_rate': 1.6976825434195568, 
+'n_estimators': 1480, 'max_depth': 6, 'subsample': 0.6, 'colsample_bytree': 0.6960530711166596, 
+'gamma': 0.04255797223759952, 'min_child_weight': 1, 'lambda': 0.581940202244358, 'alpha': 3.8032669324705797
+# Best value: 0.6221281741233373
+'''
+
