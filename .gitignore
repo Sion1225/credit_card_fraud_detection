@@ -1,5 +1,6 @@
 catboost_info/
 nndb/nn_model_1/
+nndb/nn_full_model_1/
 *.tsv
 *.cbm
 *.tsv

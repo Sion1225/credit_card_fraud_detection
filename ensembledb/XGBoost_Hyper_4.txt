@@ -1,0 +1,1001 @@
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 0.256983665562114, 'n_estimators': 640, 'max_depth': 3, 'subsample': 0.95, 'colsample_bytree': 0.6081808970397593, 'gamma': 0.00720696408142514, 'min_child_weight': 4, 'lambda': 4.170688611420905, 'alpha': 4.013789131422447, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.47967091113918}
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 0.5187763004582486, 'n_estimators': 1000, 'max_depth': 2, 'subsample': 0.55, 'colsample_bytree': 0.6033069218887549, 'gamma': 0.04454958343611771, 'min_child_weight': 157, 'lambda': 3.9317002032640507, 'alpha': 0.8260620042620458, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.47967091113918}
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 4.231059223420378, 'n_estimators': 1460, 'max_depth': 6, 'subsample': 0.5, 'colsample_bytree': 0.9883255432878764, 'gamma': 0.04036619549277805, 'min_child_weight': 23, 'lambda': 5.389922736930836, 'alpha': 1.204976507783893, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 0.25598673836715446, 'n_estimators': 1020, 'max_depth': 7, 'subsample': 0.75, 'colsample_bytree': 0.6262597718313834, 'gamma': 0.005052241651631989, 'min_child_weight': 46, 'lambda': 5.528134590349891, 'alpha': 0.17394796862774345, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 0.5066280442115675, 'n_estimators': 700, 'max_depth': 7, 'subsample': 0.7, 'colsample_bytree': 0.9764704571438269, 'gamma': 0.029993782865968908, 'min_child_weight': 130, 'lambda': 4.233424772409117, 'alpha': 8.405962392325453, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 7.588799842151245, 'n_estimators': 1160, 'max_depth': 7, 'subsample': 0.95, 'colsample_bytree': 0.788947573123475, 'gamma': 0.030734330823466056, 'min_child_weight': 109, 'lambda': 6.101030898159581, 'alpha': 9.650497448265982, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 4.381508517340369, 'n_estimators': 760, 'max_depth': 7, 'subsample': 0.55, 'colsample_bytree': 0.9786616219289337, 'gamma': 0.048639971727797555, 'min_child_weight': 167, 'lambda': 9.851600663651968, 'alpha': 6.37219936732336, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.9239125274253775, 'n_estimators': 1320, 'max_depth': 2, 'subsample': 1.0, 'colsample_bytree': 0.9767526317198877, 'gamma': 0.022265281184338598, 'min_child_weight': 127, 'lambda': 2.9365098105694027, 'alpha': 2.406541324669076, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 2.267413553252018, 'n_estimators': 1480, 'max_depth': 3, 'subsample': 0.5, 'colsample_bytree': 0.5321624157255358, 'gamma': 0.04768465170189218, 'min_child_weight': 143, 'lambda': 8.60566846776844, 'alpha': 0.9726486861520922, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.5755633255633257 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 2.7149960240687925, 'n_estimators': 960, 'max_depth': 7, 'subsample': 0.7, 'colsample_bytree': 0.7742887835150294, 'gamma': 0.03921306183210388, 'min_child_weight': 163, 'lambda': 8.06266382220554, 'alpha': 9.340245772682598, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.843918191603875 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 2.13381951144567, 'n_estimators': 860, 'max_depth': 2, 'subsample': 1.0, 'colsample_bytree': 0.8227900828161315, 'gamma': 0.04336317196426487, 'min_child_weight': 110, 'lambda': 10.207531579525968, 'alpha': 9.457955590573519, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.22885392756044468, 'n_estimators': 560, 'max_depth': 5, 'subsample': 0.6, 'colsample_bytree': 0.8366217289446707, 'gamma': 0.023850269322014173, 'min_child_weight': 172, 'lambda': 0.9135655341036625, 'alpha': 1.182823354329848, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8264794383149447 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.2953468683389383, 'n_estimators': 900, 'max_depth': 5, 'subsample': 0.9, 'colsample_bytree': 0.6953329360698077, 'gamma': 0.01581051318196712, 'min_child_weight': 51, 'lambda': 3.146738363280757, 'alpha': 5.704984140464713, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8264960481746331 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 4.897382519641566, 'n_estimators': 1220, 'max_depth': 5, 'subsample': 0.95, 'colsample_bytree': 0.5829592613248675, 'gamma': 0.03690171887857467, 'min_child_weight': 63, 'lambda': 10.617218868760217, 'alpha': 8.438917521354368, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.5755633255633257 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 2.877967784343768, 'n_estimators': 720, 'max_depth': 8, 'subsample': 0.7, 'colsample_bytree': 0.8640266895736547, 'gamma': 0.036914328815377706, 'min_child_weight': 22, 'lambda': 8.69292125491914, 'alpha': 9.7602459386158, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8077636296204722 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 1.3958278271135165, 'n_estimators': 840, 'max_depth': 4, 'subsample': 0.95, 'colsample_bytree': 0.9758912507984484, 'gamma': 0.000294873910022239, 'min_child_weight': 25, 'lambda': 4.473830179239176, 'alpha': 3.163692838096674, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8099007412991583 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 0.30208557107433276, 'n_estimators': 1420, 'max_depth': 3, 'subsample': 0.65, 'colsample_bytree': 0.5630936438046338, 'gamma': 0.009150748128449893, 'min_child_weight': 80, 'lambda': 5.708484356907323, 'alpha': 2.595256329305377, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8257271815446339 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.2377482458146003, 'n_estimators': 1240, 'max_depth': 6, 'subsample': 1.0, 'colsample_bytree': 0.6715775102481355, 'gamma': 0.048076104024678545, 'min_child_weight': 36, 'lambda': 7.473263779600604, 'alpha': 8.729602055312217, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8269206667502192 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 8.507310462831317, 'n_estimators': 740, 'max_depth': 4, 'subsample': 0.8, 'colsample_bytree': 0.6898757222968959, 'gamma': 0.01850614803332907, 'min_child_weight': 3, 'lambda': 6.567727659480217, 'alpha': 0.1938106186387721, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.5923393988137127 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 3.0690417000947368, 'n_estimators': 1220, 'max_depth': 6, 'subsample': 0.5, 'colsample_bytree': 0.6462261977924302, 'gamma': 0.028823966719496878, 'min_child_weight': 42, 'lambda': 7.94269910564094, 'alpha': 6.387415992203032, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.5660916801677309 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.38202893113158953, 'n_estimators': 760, 'max_depth': 2, 'subsample': 0.65, 'colsample_bytree': 0.7180295426511163, 'gamma': 0.0015722234602675012, 'min_child_weight': 188, 'lambda': 9.727518760111602, 'alpha': 7.51585842190494, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8295139763283808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 0.4705326970049914, 'n_estimators': 1300, 'max_depth': 4, 'subsample': 0.6, 'colsample_bytree': 0.5992348683212152, 'gamma': 0.0487981366316347, 'min_child_weight': 94, 'lambda': 11.145168251131057, 'alpha': 6.035187228824492, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8250031316547664 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 7.455714743926334, 'n_estimators': 1480, 'max_depth': 7, 'subsample': 0.8, 'colsample_bytree': 0.7491719257014312, 'gamma': 0.005037476759216684, 'min_child_weight': 8, 'lambda': 6.428286244777504, 'alpha': 9.035551256533804, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.6307810611886192 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 0.4504139335172937, 'n_estimators': 1380, 'max_depth': 3, 'subsample': 0.7, 'colsample_bytree': 0.8499877741391089, 'gamma': 0.013890934956298893, 'min_child_weight': 195, 'lambda': 6.025759590360463, 'alpha': 4.547876682082896, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8230586469926223 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 2.7921559946406624, 'n_estimators': 900, 'max_depth': 4, 'subsample': 0.8, 'colsample_bytree': 0.7516149899189757, 'gamma': 0.003989439342719448, 'min_child_weight': 111, 'lambda': 8.268598986577148, 'alpha': 2.487461790258576, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8245169886742172 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 6.182404907795772, 'n_estimators': 640, 'max_depth': 8, 'subsample': 1.0, 'colsample_bytree': 0.6931329896249964, 'gamma': 0.037273416180103144, 'min_child_weight': 48, 'lambda': 3.687839833041015, 'alpha': 6.303460981837759, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.5839012345679012 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.47247632733943146, 'n_estimators': 540, 'max_depth': 6, 'subsample': 0.95, 'colsample_bytree': 0.82267800300597, 'gamma': 0.001525337494893711, 'min_child_weight': 129, 'lambda': 7.719854123170963, 'alpha': 8.090675388217734, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8284023668639053 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.34907663043456494, 'n_estimators': 720, 'max_depth': 2, 'subsample': 0.95, 'colsample_bytree': 0.8653057794307489, 'gamma': 0.036383212746477836, 'min_child_weight': 176, 'lambda': 2.5160833884736347, 'alpha': 8.326438091403926, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8265997490589712 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.006037771508654, 'n_estimators': 900, 'max_depth': 4, 'subsample': 0.55, 'colsample_bytree': 0.7160313312901168, 'gamma': 0.00041397954707469417, 'min_child_weight': 3, 'lambda': 5.331606598007158, 'alpha': 7.649920059930618, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8301743745261562 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.1084790158035618, 'n_estimators': 1120, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.879275438681411, 'gamma': 0.031014666848029938, 'min_child_weight': 189, 'lambda': 10.14355431069512, 'alpha': 1.5041300105726032, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.900438598214622, 'n_estimators': 980, 'max_depth': 7, 'subsample': 0.65, 'colsample_bytree': 0.6067147233680745, 'gamma': 0.013790628178557512, 'min_child_weight': 144, 'lambda': 8.338488221940189, 'alpha': 1.282286490284935, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8300126103404794 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 0.5963286496601474, 'n_estimators': 1040, 'max_depth': 7, 'subsample': 0.95, 'colsample_bytree': 0.9323322111503749, 'gamma': 0.04535331021399787, 'min_child_weight': 28, 'lambda': 0.21639068853696927, 'alpha': 9.804344745338629, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8285066733820197 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.8092121137628172, 'n_estimators': 800, 'max_depth': 2, 'subsample': 0.65, 'colsample_bytree': 0.548845833715625, 'gamma': 0.01602354203724514, 'min_child_weight': 174, 'lambda': 3.818084009208605, 'alpha': 3.2793018357278076, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8464646464646465 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.7577424665609019, 'n_estimators': 1280, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.8206418168153706, 'gamma': 0.04278447893806935, 'min_child_weight': 44, 'lambda': 0.43004022162456235, 'alpha': 6.0350431886119305, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8375893769152196 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 0.35928083653300713, 'n_estimators': 740, 'max_depth': 2, 'subsample': 0.6, 'colsample_bytree': 0.6722034708785475, 'gamma': 0.04186365204188935, 'min_child_weight': 128, 'lambda': 3.076719283820483, 'alpha': 5.333421336545665, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8245153220762977 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 2.378829543307841, 'n_estimators': 1020, 'max_depth': 4, 'subsample': 0.95, 'colsample_bytree': 0.5400107386223775, 'gamma': 0.024782469442136707, 'min_child_weight': 11, 'lambda': 3.342275535062358, 'alpha': 4.0281586273938705, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.7181652213601095 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 2.4219365947171894, 'n_estimators': 1020, 'max_depth': 6, 'subsample': 1.0, 'colsample_bytree': 0.9179279496463224, 'gamma': 0.03426126612694867, 'min_child_weight': 88, 'lambda': 0.7324320926968136, 'alpha': 4.558056170343085, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8251964446734509 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.2461218932395522, 'n_estimators': 1280, 'max_depth': 5, 'subsample': 0.65, 'colsample_bytree': 0.5237918538251554, 'gamma': 0.046842728939155656, 'min_child_weight': 56, 'lambda': 2.3113628499574492, 'alpha': 2.4227892088673113, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8263052208835341 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.8824140796353215, 'n_estimators': 1160, 'max_depth': 3, 'subsample': 0.75, 'colsample_bytree': 0.5048877895981259, 'gamma': 0.040738256894784795, 'min_child_weight': 158, 'lambda': 1.697730462827118, 'alpha': 6.94052157505387, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8216407533813678 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.6337660618544902, 'n_estimators': 820, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7908032714403651, 'gamma': 0.04391556929153742, 'min_child_weight': 109, 'lambda': 9.288090152381026, 'alpha': 9.423236746634315, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8778444785704315 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.6947971331233855, 'n_estimators': 800, 'max_depth': 3, 'subsample': 0.75, 'colsample_bytree': 0.7944762262340466, 'gamma': 0.044095457809302005, 'min_child_weight': 153, 'lambda': 9.160540918644251, 'alpha': 9.258957212952764, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8553658859335714 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5999934529306534, 'n_estimators': 820, 'max_depth': 3, 'subsample': 0.75, 'colsample_bytree': 0.7828504678369849, 'gamma': 0.04454419903599997, 'min_child_weight': 156, 'lambda': 9.226388439427776, 'alpha': 9.084831102995013, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8334831172165875 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.3724965128587976, 'n_estimators': 640, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.76813083108068, 'gamma': 0.04967823046866742, 'min_child_weight': 165, 'lambda': 9.208884742673726, 'alpha': 9.822985249423558, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8473089700996678 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.425974279289436, 'n_estimators': 620, 'max_depth': 2, 'subsample': 0.8500000000000001, 'colsample_bytree': 0.7901408472793229, 'gamma': 0.04981330714471964, 'min_child_weight': 135, 'lambda': 9.17889494841153, 'alpha': 9.85120757482388, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.3495280198296342, 'n_estimators': 620, 'max_depth': 3, 'subsample': 0.8500000000000001, 'colsample_bytree': 0.7941799161809877, 'gamma': 0.049846000738192106, 'min_child_weight': 131, 'lambda': 11.570287742113141, 'alpha': 9.415230733813695, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8369049146670089 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2223574249203277, 'n_estimators': 640, 'max_depth': 2, 'subsample': 0.8500000000000001, 'colsample_bytree': 0.8011957196913103, 'gamma': 0.0458336794291627, 'min_child_weight': 110, 'lambda': 9.11806890354069, 'alpha': 9.93655271950946, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8660385088078656 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2323753742955421, 'n_estimators': 580, 'max_depth': 3, 'subsample': 0.8500000000000001, 'colsample_bytree': 0.7995531100968694, 'gamma': 0.045672058624470574, 'min_child_weight': 111, 'lambda': 10.759523919610928, 'alpha': 9.97022216642535, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8364755675259715 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.6268723606223248, 'n_estimators': 500, 'max_depth': 3, 'subsample': 0.8500000000000001, 'colsample_bytree': 0.8083302708008351, 'gamma': 0.04029640235403903, 'min_child_weight': 71, 'lambda': 9.84725977920264, 'alpha': 8.916497352062825, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8140055284980914 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 2.0551629426396145, 'n_estimators': 660, 'max_depth': 2, 'subsample': 0.9, 'colsample_bytree': 0.8322923925607064, 'gamma': 0.04360145322407334, 'min_child_weight': 118, 'lambda': 8.925813666162647, 'alpha': 9.404085886193727, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8485555879778232 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 2.0473640157206887, 'n_estimators': 660, 'max_depth': 2, 'subsample': 0.9, 'colsample_bytree': 0.8346462239761362, 'gamma': 0.04330011968916343, 'min_child_weight': 120, 'lambda': 8.914573096882874, 'alpha': 9.380935051843908, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8304568527918782 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.6068207019337064, 'n_estimators': 700, 'max_depth': 2, 'subsample': 0.9, 'colsample_bytree': 0.775813271433002, 'gamma': 0.04510631352811816, 'min_child_weight': 145, 'lambda': 9.560156866392346, 'alpha': 8.735038129839355, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8806675938803894 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2001250174568379, 'n_estimators': 700, 'max_depth': 3, 'subsample': 0.8500000000000001, 'colsample_bytree': 0.769944650538083, 'gamma': 0.047127659556670774, 'min_child_weight': 145, 'lambda': 11.998052512425087, 'alpha': 8.634694251417763, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8364755675259715 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.655270610809182, 'n_estimators': 780, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7972638155851034, 'gamma': 0.04677927205229354, 'min_child_weight': 102, 'lambda': 9.674396186259628, 'alpha': 8.796314036827203, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8907342657342657 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 3.4178107473904027, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.9, 'colsample_bytree': 0.7414773037380724, 'gamma': 0.04708398953957279, 'min_child_weight': 103, 'lambda': 10.492157622777667, 'alpha': 9.999536130075683, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.5755633255633257 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.8906617022332493, 'n_estimators': 880, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7798515699850729, 'gamma': 0.03998198413901215, 'min_child_weight': 100, 'lambda': 10.019113797208314, 'alpha': 8.7666410593195, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5769076752537934, 'n_estimators': 520, 'max_depth': 2, 'subsample': 0.8500000000000001, 'colsample_bytree': 0.8069456107287085, 'gamma': 0.04770008679282766, 'min_child_weight': 137, 'lambda': 7.36309530792622, 'alpha': 8.125651550988112, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8803335649756777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4816287465432916, 'n_estimators': 500, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.7293603196744687, 'gamma': 0.0480042309441026, 'min_child_weight': 137, 'lambda': 7.356604695687593, 'alpha': 7.823290860241464, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5396624558590344, 'n_estimators': 520, 'max_depth': 3, 'subsample': 0.7, 'colsample_bytree': 0.7236326438785787, 'gamma': 0.04854684901897452, 'min_child_weight': 140, 'lambda': 7.433827992712642, 'alpha': 8.196640591707318, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8613834422657952 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 2.1129493909903894, 'n_estimators': 560, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.75880875394645, 'gamma': 0.04776045344466408, 'min_child_weight': 132, 'lambda': 7.146591339723576, 'alpha': 7.969644974162013, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.51178503040935, 'n_estimators': 500, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.7783487985017638, 'gamma': 0.049566831335917744, 'min_child_weight': 120, 'lambda': 8.399035099027627, 'alpha': 8.519678606816234, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4151393295417463, 'n_estimators': 500, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.7390025879977816, 'gamma': 0.04978985996237101, 'min_child_weight': 138, 'lambda': 8.06518399978135, 'alpha': 8.533408890181752, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8532761624011791 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.8534081440130914, 'n_estimators': 560, 'max_depth': 3, 'subsample': 0.7, 'colsample_bytree': 0.767716730230037, 'gamma': 0.04675823765780523, 'min_child_weight': 118, 'lambda': 8.587381354826013, 'alpha': 7.526342645214956, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8437622983077528 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.0530377667154296, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.9, 'colsample_bytree': 0.8164591412480829, 'gamma': 0.04191899828217328, 'min_child_weight': 150, 'lambda': 8.451240830876277, 'alpha': 8.454904944205293, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8496508103834497 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 2.3846107485916557, 'n_estimators': 700, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.7503294893891901, 'gamma': 0.04993883093584601, 'min_child_weight': 122, 'lambda': 6.928922674681584, 'alpha': 7.086579813503048, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.431047830340808, 'n_estimators': 540, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7312773609713095, 'gamma': 0.04808591448784129, 'min_child_weight': 85, 'lambda': 7.833410940007761, 'alpha': 8.938766454283549, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2616925269084251, 'n_estimators': 680, 'max_depth': 3, 'subsample': 0.7, 'colsample_bytree': 0.7281033800935557, 'gamma': 0.04555119247436088, 'min_child_weight': 82, 'lambda': 7.943225850634251, 'alpha': 8.911659100620923, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.835125448028674 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.412476465279317, 'n_estimators': 760, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7070162275351534, 'gamma': 0.0482756471887199, 'min_child_weight': 93, 'lambda': 9.637267065439561, 'alpha': 7.837629996406735, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8743397275507366 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.9364268435540329, 'n_estimators': 560, 'max_depth': 2, 'subsample': 0.65, 'colsample_bytree': 0.7392621377517621, 'gamma': 0.03857145788280615, 'min_child_weight': 77, 'lambda': 7.8238219708735235, 'alpha': 9.02416126408709, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.1001589106293315, 'n_estimators': 940, 'max_depth': 3, 'subsample': 0.8, 'colsample_bytree': 0.7033425760955339, 'gamma': 0.042010132913978024, 'min_child_weight': 101, 'lambda': 8.417446757063514, 'alpha': 8.534795663318368, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8365693712228367 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4821334713445666, 'n_estimators': 520, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7757779652502794, 'gamma': 0.048279955869681, 'min_child_weight': 137, 'lambda': 7.478576662801951, 'alpha': 8.203006113206838, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.9010974402480474, 'n_estimators': 540, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7596903549589611, 'gamma': 0.04510156432155076, 'min_child_weight': 168, 'lambda': 6.752049795731126, 'alpha': 8.298174708611647, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8746379809681423 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4567838402240891, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.774720212580603, 'gamma': 0.04876118866874383, 'min_child_weight': 150, 'lambda': 7.752418925535266, 'alpha': 9.643813702433276, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.410588824780791, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.7313359348830488, 'gamma': 0.04849450189870063, 'min_child_weight': 160, 'lambda': 7.673469808817741, 'alpha': 9.623683330180297, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8532761624011791 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.1317095172888951, 'n_estimators': 500, 'max_depth': 2, 'subsample': 0.6, 'colsample_bytree': 0.7525803836931553, 'gamma': 0.046340982142554464, 'min_child_weight': 125, 'lambda': 7.081523166114255, 'alpha': 9.573627915063474, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8300884955752214 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.7788097315288496, 'n_estimators': 540, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.7825185699256146, 'gamma': 0.048848092025335944, 'min_child_weight': 181, 'lambda': 6.385194745303185, 'alpha': 9.084976885515182, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 0.8206844418157435, 'n_estimators': 580, 'max_depth': 5, 'subsample': 0.65, 'colsample_bytree': 0.7161589677774421, 'gamma': 0.04716947443949787, 'min_child_weight': 65, 'lambda': 8.091913340326862, 'alpha': 7.813301453318772, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8291761148904007 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.0322565775329828, 'n_estimators': 620, 'max_depth': 3, 'subsample': 0.75, 'colsample_bytree': 0.8464964883069899, 'gamma': 0.0499425999188048, 'min_child_weight': 89, 'lambda': 8.596359162614009, 'alpha': 9.622751356513547, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8358666496359687 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 2.5756051140714873, 'n_estimators': 540, 'max_depth': 3, 'subsample': 0.75, 'colsample_bytree': 0.6838349818219874, 'gamma': 0.04378494995685254, 'min_child_weight': 148, 'lambda': 7.586084892156285, 'alpha': 9.103210142772161, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8105716041794714 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 2.276485799081364, 'n_estimators': 500, 'max_depth': 8, 'subsample': 0.7, 'colsample_bytree': 0.8153420664491902, 'gamma': 0.04207127148732957, 'min_child_weight': 133, 'lambda': 8.747342871302376, 'alpha': 8.318974918530456, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8296603577910293 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2853403480889447, 'n_estimators': 760, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7757369960784243, 'gamma': 0.04552708749569005, 'min_child_weight': 143, 'lambda': 8.18481127911532, 'alpha': 8.781659896976535, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8505471043501468 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5245348899522357, 'n_estimators': 580, 'max_depth': 2, 'subsample': 0.65, 'colsample_bytree': 0.7607538040670926, 'gamma': 0.04824196444822532, 'min_child_weight': 115, 'lambda': 9.615957822077496, 'alpha': 8.707816019327588, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4879519839906683, 'n_estimators': 580, 'max_depth': 2, 'subsample': 0.55, 'colsample_bytree': 0.7619366439164035, 'gamma': 0.048170839052624745, 'min_child_weight': 115, 'lambda': 9.538949777802511, 'alpha': 9.254092522552364, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8870257211880062 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.7592165896804395, 'n_estimators': 620, 'max_depth': 2, 'subsample': 0.65, 'colsample_bytree': 0.7856303704320322, 'gamma': 0.04659631876470721, 'min_child_weight': 127, 'lambda': 8.874054766615888, 'alpha': 8.064218895333102, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.1862830465308414, 'n_estimators': 520, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.7457263292785288, 'gamma': 0.04864018589930641, 'min_child_weight': 135, 'lambda': 10.194027608508922, 'alpha': 9.693000770420836, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8364258455059875 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 1.461452341807271, 'n_estimators': 580, 'max_depth': 2, 'subsample': 0.65, 'colsample_bytree': 0.7336423659887018, 'gamma': 0.044673638549859486, 'min_child_weight': 95, 'lambda': 7.340099209739133, 'alpha': 7.241501777021701, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8858278898040329 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.9847856882861508, 'n_estimators': 660, 'max_depth': 2, 'subsample': 0.6, 'colsample_bytree': 0.7931562180586458, 'gamma': 0.04328881710254598, 'min_child_weight': 104, 'lambda': 7.72467118533447, 'alpha': 9.208166146471287, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.3571916181544064, 'n_estimators': 620, 'max_depth': 3, 'subsample': 0.7, 'colsample_bytree': 0.7594059539998592, 'gamma': 0.04646360857985319, 'min_child_weight': 114, 'lambda': 8.176119624338588, 'alpha': 8.665626012262853, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8341061308603813 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.8136370178809762, 'n_estimators': 540, 'max_depth': 5, 'subsample': 0.75, 'colsample_bytree': 0.8067882828445835, 'gamma': 0.048600276739474285, 'min_child_weight': 126, 'lambda': 9.883161292816458, 'alpha': 7.606668962129151, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8396116504854368 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 2.162030570610264, 'n_estimators': 500, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.8240081209552811, 'gamma': 0.04464773973610529, 'min_child_weight': 153, 'lambda': 9.400352712832015, 'alpha': 8.403940638449448, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4727431174673882, 'n_estimators': 580, 'max_depth': 2, 'subsample': 0.5, 'colsample_bytree': 0.7647527192389614, 'gamma': 0.04771298824117752, 'min_child_weight': 106, 'lambda': 9.547716209708659, 'alpha': 9.222089079193795, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.668350739040065, 'n_estimators': 580, 'max_depth': 2, 'subsample': 0.55, 'colsample_bytree': 0.7728151687666315, 'gamma': 0.047380005579033366, 'min_child_weight': 106, 'lambda': 8.782512364068165, 'alpha': 8.920673357599654, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8772663877266387 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2608123730924914, 'n_estimators': 560, 'max_depth': 2, 'subsample': 0.5, 'colsample_bytree': 0.7896995242053902, 'gamma': 0.049260357661892296, 'min_child_weight': 96, 'lambda': 9.046269748960086, 'alpha': 9.459241198609153, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8552736982643525 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5365980555571295, 'n_estimators': 640, 'max_depth': 2, 'subsample': 0.5, 'colsample_bytree': 0.7200046634543578, 'gamma': 0.04575839668000906, 'min_child_weight': 123, 'lambda': 10.35160168018087, 'alpha': 9.282488302295672, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.892929292929293 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.103669760005371, 'n_estimators': 660, 'max_depth': 4, 'subsample': 0.5, 'colsample_bytree': 0.7231604504567734, 'gamma': 0.04565258508872409, 'min_child_weight': 81, 'lambda': 10.479886158727586, 'alpha': 9.793313316071652, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.830532035890307 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.3210499178152098, 'n_estimators': 520, 'max_depth': 3, 'subsample': 0.55, 'colsample_bytree': 0.708875901372344, 'gamma': 0.04985799202820789, 'min_child_weight': 121, 'lambda': 8.496818547350136, 'alpha': 9.26477548178116, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8335241002162026 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.542888954445973, 'n_estimators': 720, 'max_depth': 2, 'subsample': 0.5, 'colsample_bytree': 0.752160181355964, 'gamma': 0.043168827774593924, 'min_child_weight': 139, 'lambda': 9.322557114835584, 'alpha': 9.996489357542718, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8742147552958364 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 1.7057428302923836, 'n_estimators': 640, 'max_depth': 2, 'subsample': 0.5, 'colsample_bytree': 0.7429545564668355, 'gamma': 0.044409353871434305, 'min_child_weight': 87, 'lambda': 8.325061637845932, 'alpha': 9.616485501838163, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.9584161289499586, 'n_estimators': 680, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.6945101625607738, 'gamma': 0.047323997477129696, 'min_child_weight': 109, 'lambda': 9.951899769992403, 'alpha': 8.977985274761991, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.1975475981971158, 'n_estimators': 1080, 'max_depth': 3, 'subsample': 0.75, 'colsample_bytree': 0.7246828628615786, 'gamma': 0.046316351674207674, 'min_child_weight': 74, 'lambda': 7.924049910431075, 'alpha': 9.353100487140342, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8381785438641626 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.497703938374143, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.7689942511181646, 'gamma': 0.04788548099200382, 'min_child_weight': 130, 'lambda': 9.65296372870791, 'alpha': 8.63576406589736, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5435263788574756, 'n_estimators': 620, 'max_depth': 2, 'subsample': 0.65, 'colsample_bytree': 0.783539840291465, 'gamma': 0.0490022528647046, 'min_child_weight': 115, 'lambda': 10.920714582648081, 'alpha': 8.303565370118676, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.7396004575339366, 'n_estimators': 560, 'max_depth': 2, 'subsample': 0.55, 'colsample_bytree': 0.8055153871785767, 'gamma': 0.04755220773716729, 'min_child_weight': 123, 'lambda': 10.102223273253278, 'alpha': 8.863331869202593, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 2.174260778773838, 'n_estimators': 520, 'max_depth': 2, 'subsample': 0.6, 'colsample_bytree': 0.7377236661513824, 'gamma': 0.04609260134015578, 'min_child_weight': 99, 'lambda': 10.272215169440047, 'alpha': 8.577761544543401, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.3500145322603423, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7618691188609472, 'gamma': 0.04885967417149301, 'min_child_weight': 107, 'lambda': 9.39416889200765, 'alpha': 9.154514469552852, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8498666666666667 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4455200492493947, 'n_estimators': 540, 'max_depth': 2, 'subsample': 0.5, 'colsample_bytree': 0.7928488026977257, 'gamma': 0.04091633292121738, 'min_child_weight': 141, 'lambda': 9.11912293304351, 'alpha': 9.77225862732447, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.9911995323271416, 'n_estimators': 540, 'max_depth': 2, 'subsample': 0.5, 'colsample_bytree': 0.7924709864202251, 'gamma': 0.042792882298183295, 'min_child_weight': 141, 'lambda': 9.02591194602343, 'alpha': 9.755033213624564, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8349218452154022 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.1449230956247607, 'n_estimators': 500, 'max_depth': 2, 'subsample': 0.5, 'colsample_bytree': 0.7763058345897318, 'gamma': 0.0413606316243951, 'min_child_weight': 148, 'lambda': 8.691558972896113, 'alpha': 9.47930871197032, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8363779734524904 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2909758604200752, 'n_estimators': 560, 'max_depth': 3, 'subsample': 0.55, 'colsample_bytree': 0.7471099625310366, 'gamma': 0.044914056769072806, 'min_child_weight': 163, 'lambda': 7.258585245919823, 'alpha': 9.836625937807407, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8328690807799444 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.954388900721929, 'n_estimators': 1380, 'max_depth': 2, 'subsample': 0.5, 'colsample_bytree': 0.7993741048339443, 'gamma': 0.04692882297373428, 'min_child_weight': 135, 'lambda': 7.452065332141972, 'alpha': 9.246387038541606, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4391090120985204, 'n_estimators': 580, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.7554345092523479, 'gamma': 0.0479783232140695, 'min_child_weight': 118, 'lambda': 9.770043765983317, 'alpha': 8.798684922745693, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.6433664913725448, 'n_estimators': 520, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7287795494721813, 'gamma': 0.04908211150051659, 'min_child_weight': 154, 'lambda': 9.13509102640429, 'alpha': 9.553084799455545, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8882610538211612 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.6184484231226037, 'n_estimators': 520, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7154909160502363, 'gamma': 0.049777176867216534, 'min_child_weight': 151, 'lambda': 7.947686025036871, 'alpha': 9.512649240446109, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8865717908975623 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.6278789666288798, 'n_estimators': 540, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.7341846731664468, 'gamma': 0.04583555533402634, 'min_child_weight': 158, 'lambda': 8.321191349768505, 'alpha': 9.709890842793259, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8865717908975623 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.7979383987355866, 'n_estimators': 640, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7741936910599282, 'gamma': 0.043968497265228015, 'min_child_weight': 155, 'lambda': 9.165928525273918, 'alpha': 9.104329716497105, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4274454389790345, 'n_estimators': 680, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7826092388817997, 'gamma': 0.048939725427354114, 'min_child_weight': 170, 'lambda': 8.833307726992722, 'alpha': 9.381216609390576, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 1.3361590357526771, 'n_estimators': 680, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.7994497185751704, 'gamma': 0.049280589490669394, 'min_child_weight': 181, 'lambda': 8.92770595259548, 'alpha': 9.995441849271323, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8209085252022403 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2038783695029758, 'n_estimators': 720, 'max_depth': 7, 'subsample': 0.55, 'colsample_bytree': 0.7280309901755497, 'gamma': 0.046650202871898916, 'min_child_weight': 169, 'lambda': 8.596242650865838, 'alpha': 9.45722091771747, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8311392405063291 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.8788847488923972, 'n_estimators': 780, 'max_depth': 6, 'subsample': 0.75, 'colsample_bytree': 0.8125018370359234, 'gamma': 0.04530364128409158, 'min_child_weight': 161, 'lambda': 9.37681467328098, 'alpha': 8.985929810007201, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8676730586155309 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.046744821421911, 'n_estimators': 740, 'max_depth': 2, 'subsample': 0.5, 'colsample_bytree': 0.7871165607564166, 'gamma': 0.047534960933773705, 'min_child_weight': 146, 'lambda': 8.780534557981358, 'alpha': 9.260134180168015, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4455961147928005, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7657372055126352, 'gamma': 0.049178483166277494, 'min_child_weight': 130, 'lambda': 7.743055794630606, 'alpha': 9.612070878970721, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4173410222106586, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.7475479282008307, 'gamma': 0.04931374365014141, 'min_child_weight': 130, 'lambda': 7.670065286463172, 'alpha': 9.761180278016434, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4029240290215736, 'n_estimators': 620, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.7505690071336151, 'gamma': 0.04991974349745439, 'min_child_weight': 197, 'lambda': 8.116552325791515, 'alpha': 9.694269827161081, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8665706051873198 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.6650401677650113, 'n_estimators': 680, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7636672304395024, 'gamma': 0.049105271369144124, 'min_child_weight': 127, 'lambda': 9.142982198958224, 'alpha': 9.858735267668578, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8907342657342657 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.695316665910167, 'n_estimators': 660, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7410944298358118, 'gamma': 0.0488705997782728, 'min_child_weight': 130, 'lambda': 8.4951816014408, 'alpha': 9.550266065891215, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8907342657342657 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 2.0502482759149614, 'n_estimators': 680, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.7683142765752087, 'gamma': 0.046413611796726345, 'min_child_weight': 130, 'lambda': 7.690762828652835, 'alpha': 9.845796848271785, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.7404434441444245, 'n_estimators': 640, 'max_depth': 3, 'subsample': 0.75, 'colsample_bytree': 0.7648112569388847, 'gamma': 0.04876982240911688, 'min_child_weight': 125, 'lambda': 8.399085392954934, 'alpha': 9.405142710557849, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8352288488210818 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2659298292398908, 'n_estimators': 660, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7399204442625116, 'gamma': 0.04728054311607784, 'min_child_weight': 128, 'lambda': 7.942322339916905, 'alpha': 9.109886454557294, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.1394273863249287, 'n_estimators': 700, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.7824033319470066, 'gamma': 0.044188096526174434, 'min_child_weight': 113, 'lambda': 8.211958893215145, 'alpha': 9.61678176667238, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8496508103834497 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5404612543203262, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7520497502591543, 'gamma': 0.04584400747489276, 'min_child_weight': 119, 'lambda': 8.523951947583358, 'alpha': 9.291899639422171, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.6663558198888464, 'n_estimators': 560, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7160637616405866, 'gamma': 0.048997511050503456, 'min_child_weight': 142, 'lambda': 8.968415158840116, 'alpha': 9.626190661572473, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8907342657342657 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.8745412444596778, 'n_estimators': 660, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7043225329595612, 'gamma': 0.047965102837305956, 'min_child_weight': 132, 'lambda': 8.910372844569604, 'alpha': 9.842746669955712, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.7068639977989257, 'n_estimators': 720, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.7113903497535574, 'gamma': 0.04988662072787984, 'min_child_weight': 124, 'lambda': 9.837099987777073, 'alpha': 9.418822015014763, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8907342657342657 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.38833254878408, 'n_estimators': 860, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7176349640352073, 'gamma': 0.04869499334244586, 'min_child_weight': 91, 'lambda': 9.511444443891762, 'alpha': 8.910620298347641, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8498666666666667 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5978927091953439, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.7431663263942397, 'gamma': 0.0469492840335662, 'min_child_weight': 85, 'lambda': 7.801215271329933, 'alpha': 9.991389440967229, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8803335649756777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2672921498351322, 'n_estimators': 560, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.7629576452398196, 'gamma': 0.04533248154401248, 'min_child_weight': 139, 'lambda': 8.61261558957117, 'alpha': 9.677456744771765, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 2.2552208469816426, 'n_estimators': 640, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7794567340733801, 'gamma': 0.04800746352440191, 'min_child_weight': 143, 'lambda': 6.968836659949353, 'alpha': 9.26029543528257, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4538823249060386, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.8266995352458918, 'gamma': 0.049074695911732344, 'min_child_weight': 99, 'lambda': 9.294620919033601, 'alpha': 9.534036024495904, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4654384599710575, 'n_estimators': 620, 'max_depth': 3, 'subsample': 0.8, 'colsample_bytree': 0.8239729904133263, 'gamma': 0.046584285181604485, 'min_child_weight': 98, 'lambda': 10.307014227746496, 'alpha': 9.03890452662186, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8403967538322813 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.341305159513617, 'n_estimators': 940, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.8050447165359021, 'gamma': 0.049957324220484184, 'min_child_weight': 103, 'lambda': 9.247103706266104, 'alpha': 8.803667338826793, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8498666666666667 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.6890355939714965, 'n_estimators': 580, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7673852585942001, 'gamma': 0.04905614582139382, 'min_child_weight': 111, 'lambda': 8.93784203504077, 'alpha': 9.554724832897444, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8907342657342657 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.511374446482654, 'n_estimators': 680, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7959810073218422, 'gamma': 0.047599619829299285, 'min_child_weight': 122, 'lambda': 9.700942300073875, 'alpha': 9.741035162478086, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5160817462865697, 'n_estimators': 700, 'max_depth': 2, 'subsample': 0.5, 'colsample_bytree': 0.7944755835642668, 'gamma': 0.04759994355722362, 'min_child_weight': 121, 'lambda': 10.014093658622546, 'alpha': 9.415340064027252, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8868058514415567 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.192575965489945, 'n_estimators': 760, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8193296951907522, 'gamma': 0.0458897712014117, 'min_child_weight': 128, 'lambda': 9.83931147009839, 'alpha': 9.810625283398696, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8372644617209118 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.8574475138695121, 'n_estimators': 680, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.8302722474479146, 'gamma': 0.04277022793609488, 'min_child_weight': 116, 'lambda': 9.326554284644839, 'alpha': 9.17470901157185, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4004867976149962, 'n_estimators': 640, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.784135637969725, 'gamma': 0.047354769056857794, 'min_child_weight': 107, 'lambda': 9.627952469708752, 'alpha': 9.861238707415403, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8647443933695501 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 2.056191795616346, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.8500000000000001, 'colsample_bytree': 0.807323031873965, 'gamma': 0.0449150655099323, 'min_child_weight': 123, 'lambda': 10.602586748638654, 'alpha': 8.53033620727603, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5137672470187946, 'n_estimators': 620, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8397502668961807, 'gamma': 0.04848346879309869, 'min_child_weight': 134, 'lambda': 8.32574659239654, 'alpha': 9.346061781098996, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.521269929214706, 'n_estimators': 620, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8507668449225081, 'gamma': 0.04795502277013618, 'min_child_weight': 93, 'lambda': 8.265826170724567, 'alpha': 9.062946097840358, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.291983349601788, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.8166231567563197, 'gamma': 0.046568061551446306, 'min_child_weight': 136, 'lambda': 7.6437449448101376, 'alpha': 9.33546750042589, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8505471043501468 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4541922323479455, 'n_estimators': 660, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7989204814071859, 'gamma': 0.04885919209756922, 'min_child_weight': 132, 'lambda': 8.743658654784243, 'alpha': 9.998986944988742, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4230152344956886, 'n_estimators': 640, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7969935714277921, 'gamma': 0.048833828403975856, 'min_child_weight': 190, 'lambda': 9.433965560929732, 'alpha': 9.760554047502769, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2117855922600989, 'n_estimators': 740, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8286410930912079, 'gamma': 0.048092327123067685, 'min_child_weight': 133, 'lambda': 8.091278722404667, 'alpha': 9.997247115248314, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8605735273343693 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.0885791193507843, 'n_estimators': 680, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8137646305773305, 'gamma': 0.04705036842914694, 'min_child_weight': 120, 'lambda': 8.799573093814868, 'alpha': 9.478577122635501, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8496508103834497 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.563954981080115, 'n_estimators': 580, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.7878763560216568, 'gamma': 0.044323847520826944, 'min_child_weight': 111, 'lambda': 9.160675988902673, 'alpha': 9.747413087612639, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.353719607604549, 'n_estimators': 540, 'max_depth': 2, 'subsample': 0.5, 'colsample_bytree': 0.8364387062847661, 'gamma': 0.049758198989945594, 'min_child_weight': 126, 'lambda': 9.68941273022543, 'alpha': 8.901136285156653, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8531746031746033 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.7948862588964358, 'n_estimators': 620, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7751781334840442, 'gamma': 0.03390257465035143, 'min_child_weight': 176, 'lambda': 8.373049612620212, 'alpha': 9.265539403952422, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4613652137486584, 'n_estimators': 700, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.7994322143141843, 'gamma': 0.04596689198034061, 'min_child_weight': 100, 'lambda': 8.67245762334458, 'alpha': 8.672638295289763, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 1.4572401500643768, 'n_estimators': 720, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.8044235694476826, 'gamma': 0.0393511254762901, 'min_child_weight': 68, 'lambda': 8.67146178677759, 'alpha': 8.326627241396316, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8858278898040329 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2594641925225685, 'n_estimators': 800, 'max_depth': 3, 'subsample': 0.8500000000000001, 'colsample_bytree': 0.7985558694169783, 'gamma': 0.04088511512613776, 'min_child_weight': 103, 'lambda': 7.8557267939265385, 'alpha': 8.667912935004788, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8369049146670089 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5606280617171633, 'n_estimators': 660, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.7925692926986079, 'gamma': 0.046104518708131724, 'min_child_weight': 85, 'lambda': 9.04590716673209, 'alpha': 9.60774034355622, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.359108088780982, 'n_estimators': 1180, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7560619572312822, 'gamma': 0.048310971244839844, 'min_child_weight': 133, 'lambda': 8.720242394239996, 'alpha': 9.131579888805982, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8498666666666667 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.1443597030522918, 'n_estimators': 700, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.7747851432621617, 'gamma': 0.04722922807527124, 'min_child_weight': 98, 'lambda': 10.14989902269558, 'alpha': 8.789162306730216, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8496508103834497 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.470861449873021, 'n_estimators': 1500, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8104679124756207, 'gamma': 0.049977662828659425, 'min_child_weight': 78, 'lambda': 9.498861676489172, 'alpha': 9.398251701308443, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4486485743120194, 'n_estimators': 1300, 'max_depth': 6, 'subsample': 0.5, 'colsample_bytree': 0.8423878557295669, 'gamma': 0.045282498232061534, 'min_child_weight': 89, 'lambda': 7.516516430314343, 'alpha': 8.446734549684166, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8286731062531774 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2973887896015261, 'n_estimators': 1240, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.8113987334944295, 'gamma': 0.048233885774318586, 'min_child_weight': 75, 'lambda': 7.181083755117832, 'alpha': 9.44156461379331, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8505471043501468 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5849517249188, 'n_estimators': 1100, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8204318295176632, 'gamma': 0.04987914940492715, 'min_child_weight': 100, 'lambda': 9.658609811501526, 'alpha': 8.967985558988591, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8803335649756777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.7825018946274656, 'n_estimators': 560, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8282645692541074, 'gamma': 0.027220156331816923, 'min_child_weight': 82, 'lambda': 9.477741577226471, 'alpha': 9.341789575785041, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8560042507970245 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.9361493107004735, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8568045568137392, 'gamma': 0.043534170182065894, 'min_child_weight': 107, 'lambda': 10.420937353474324, 'alpha': 8.067530677043575, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4565528217532997, 'n_estimators': 1440, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8387572390925389, 'gamma': 0.04632850771988441, 'min_child_weight': 93, 'lambda': 8.091671985520096, 'alpha': 9.142726550165987, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.452826994129744, 'n_estimators': 1420, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8411528359578633, 'gamma': 0.04660514106373494, 'min_child_weight': 96, 'lambda': 8.10797935199803, 'alpha': 9.225271567203041, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.3734143664443748, 'n_estimators': 1460, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8367034011625981, 'gamma': 0.046249228841958596, 'min_child_weight': 92, 'lambda': 8.094217994247654, 'alpha': 9.566346597627854, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8473089700996678 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2038335308290395, 'n_estimators': 1500, 'max_depth': 2, 'subsample': 0.65, 'colsample_bytree': 0.8683446919552558, 'gamma': 0.049972446552935014, 'min_child_weight': 94, 'lambda': 8.311463261170545, 'alpha': 9.155502140807013, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.875 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4785810315365844, 'n_estimators': 1440, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8406692594547227, 'gamma': 0.04754257834223771, 'min_child_weight': 60, 'lambda': 7.907072979712994, 'alpha': 9.710502767522362, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2698980135769735, 'n_estimators': 1440, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8415375189366914, 'gamma': 0.0476708392750702, 'min_child_weight': 55, 'lambda': 7.824038494503886, 'alpha': 9.733212731719687, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8467134320602754 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4741585073646246, 'n_estimators': 1420, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.85340325461568, 'gamma': 0.04883309948823751, 'min_child_weight': 41, 'lambda': 7.525474790541298, 'alpha': 9.999167453761657, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8947139753801594 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4024205355679056, 'n_estimators': 1420, 'max_depth': 2, 'subsample': 0.65, 'colsample_bytree': 0.856558790798616, 'gamma': 0.04873793352709052, 'min_child_weight': 30, 'lambda': 7.560462202713791, 'alpha': 9.872861600436009, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8501897160800732 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.9958556626585987, 'n_estimators': 1400, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8675633680833829, 'gamma': 0.04913620133247517, 'min_child_weight': 88, 'lambda': 8.188513185454408, 'alpha': 9.982412057117372, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.1040738240457133, 'n_estimators': 1500, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8235769700387338, 'gamma': 0.048425071295209066, 'min_child_weight': 96, 'lambda': 8.565246840926124, 'alpha': 6.473000379586016, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8496508103834497 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.6074575024854034, 'n_estimators': 1480, 'max_depth': 8, 'subsample': 0.65, 'colsample_bytree': 0.8800245335860927, 'gamma': 0.046898870138305, 'min_child_weight': 19, 'lambda': 7.359358124363, 'alpha': 9.46995756599113, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8308004052684903 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.478462843765113, 'n_estimators': 1440, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8351077105250334, 'gamma': 0.047615026289337926, 'min_child_weight': 46, 'lambda': 7.977454139133805, 'alpha': 9.696312307212253, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4335012967469765, 'n_estimators': 1400, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8462620753356406, 'gamma': 0.04862984369304039, 'min_child_weight': 60, 'lambda': 7.724933881534704, 'alpha': 9.571254662868425, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.3093073973420555, 'n_estimators': 1380, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8137844679352715, 'gamma': 0.049989825010677794, 'min_child_weight': 52, 'lambda': 6.811386239927144, 'alpha': 9.262362756982707, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8501897160800732 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5136004574277773, 'n_estimators': 1340, 'max_depth': 4, 'subsample': 0.7, 'colsample_bytree': 0.8460829082419113, 'gamma': 0.04723097192276929, 'min_child_weight': 61, 'lambda': 8.031193721725035, 'alpha': 9.087586488921888, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8301788955146487 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.6588828152677026, 'n_estimators': 1360, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8295803283418501, 'gamma': 0.04455469416249528, 'min_child_weight': 79, 'lambda': 8.41835695856653, 'alpha': 9.980421235328434, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8907342657342657 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.1925102979943707, 'n_estimators': 1440, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7851786968003113, 'gamma': 0.046174231070211715, 'min_child_weight': 139, 'lambda': 7.128009069800513, 'alpha': 9.698264759325465, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8372644617209118 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.3607702097274046, 'n_estimators': 1420, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8029867370645881, 'gamma': 0.04902230134229008, 'min_child_weight': 38, 'lambda': 7.657522037248776, 'alpha': 9.40411940505965, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8501897160800732 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4926201151667726, 'n_estimators': 1460, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8544070298909138, 'gamma': 0.04793316935109456, 'min_child_weight': 101, 'lambda': 8.794967907327507, 'alpha': 8.933271229748785, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 1.7581512758147, 'n_estimators': 1480, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8361293494530874, 'gamma': 0.04671192849010691, 'min_child_weight': 84, 'lambda': 7.920705993430296, 'alpha': 9.647366272481815, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.60340636828224, 'n_estimators': 1460, 'max_depth': 2, 'subsample': 0.65, 'colsample_bytree': 0.8223297141341879, 'gamma': 0.02086537173735313, 'min_child_weight': 66, 'lambda': 8.321550378270127, 'alpha': 9.368806394765208, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8803335649756777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.463837565880485, 'n_estimators': 1440, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8375532724520123, 'gamma': 0.04759185390371452, 'min_child_weight': 39, 'lambda': 7.996244436944746, 'alpha': 9.760407650364598, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8947139753801594 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.3193486663280454, 'n_estimators': 1420, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8450358757436918, 'gamma': 0.0453990081238201, 'min_child_weight': 35, 'lambda': 7.425211186149201, 'alpha': 9.78450459554025, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8501897160800732 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4785283678699066, 'n_estimators': 1400, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.806454147903242, 'gamma': 0.0490914737971363, 'min_child_weight': 46, 'lambda': 8.152400687739235, 'alpha': 9.999179249691663, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4036396299051925, 'n_estimators': 1500, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7913388701898624, 'gamma': 0.0479434687704511, 'min_child_weight': 40, 'lambda': 8.518617330208945, 'alpha': 9.530063704142854, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8598105548037889 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5950764247649705, 'n_estimators': 1460, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8591296326041562, 'gamma': 0.04737123980592064, 'min_child_weight': 33, 'lambda': 7.8121687782897, 'alpha': 5.583703584369351, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8868829337094499 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.261475149373287, 'n_estimators': 1440, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8150613545338888, 'gamma': 0.04898460229609168, 'min_child_weight': 73, 'lambda': 6.567691564865063, 'alpha': 9.203291423175111, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8467134320602754 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.7939344642709438, 'n_estimators': 1480, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.77923196856307, 'gamma': 0.046298850056831674, 'min_child_weight': 25, 'lambda': 8.728051415872608, 'alpha': 9.835648257663358, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4756983196340816, 'n_estimators': 580, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8380926020782297, 'gamma': 0.049976384761859304, 'min_child_weight': 41, 'lambda': 7.294237553666462, 'alpha': 9.567034505509406, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8947139753801594 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.196679564936062, 'n_estimators': 540, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8307228513810491, 'gamma': 0.038109272821301096, 'min_child_weight': 43, 'lambda': 6.980636781416165, 'alpha': 8.716986891187418, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8658452166689741 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.350123666785381, 'n_estimators': 580, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7953579331178996, 'gamma': 0.049426064723668506, 'min_child_weight': 145, 'lambda': 8.99190916791271, 'alpha': 9.050262141612633, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8498666666666667 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4803445963747424, 'n_estimators': 1340, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.848868542430313, 'gamma': 0.049960625701838166, 'min_child_weight': 37, 'lambda': 7.4497571351948615, 'alpha': 9.613765458136063, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8947139753801594 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5823943240541958, 'n_estimators': 1340, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8508938732518483, 'gamma': 0.04991006192076283, 'min_child_weight': 40, 'lambda': 7.720437762246595, 'alpha': 9.479543124468668, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8865717908975623 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.6823155407663406, 'n_estimators': 560, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8676545497832029, 'gamma': 0.0484288906580016, 'min_child_weight': 18, 'lambda': 7.144353655861968, 'alpha': 9.287167192168948, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8907342657342657 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4604403960313317, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8203907770413902, 'gamma': 0.04998069430834008, 'min_child_weight': 36, 'lambda': 7.4387476241733825, 'alpha': 9.567809422156353, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8947139753801594 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.3626222491299917, 'n_estimators': 1000, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.821968505502673, 'gamma': 0.049995045485534004, 'min_child_weight': 37, 'lambda': 7.237966574672835, 'alpha': 9.614633183735899, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8501897160800732 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5267628727307703, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.772209100307719, 'gamma': 0.048802514026453046, 'min_child_weight': 42, 'lambda': 7.471020597029725, 'alpha': 9.814624872514136, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.7108839980168464, 'n_estimators': 580, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8109704315163374, 'gamma': 0.04821831679424343, 'min_child_weight': 46, 'lambda': 7.436252842657431, 'alpha': 4.892374659331844, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8907342657342657 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2423095403434983, 'n_estimators': 540, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.8015454230337956, 'gamma': 0.04904398622674794, 'min_child_weight': 30, 'lambda': 7.564543833957299, 'alpha': 9.518169336191212, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8467134320602754 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4110191822971345, 'n_estimators': 620, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7863526124970885, 'gamma': 0.04991672464006932, 'min_child_weight': 50, 'lambda': 6.730179963228802, 'alpha': 9.406838933109777, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8598105548037889 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5525935367158488, 'n_estimators': 500, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.8262853432357, 'gamma': 0.04822414770930939, 'min_child_weight': 26, 'lambda': 9.277431214706155, 'alpha': 9.771245904436674, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.893721908075975 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4569595234067179, 'n_estimators': 580, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8385876084985546, 'gamma': 0.047124336899181836, 'min_child_weight': 31, 'lambda': 8.090465413086639, 'alpha': 9.131057227292965, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.3287107401344114, 'n_estimators': 640, 'max_depth': 5, 'subsample': 0.75, 'colsample_bytree': 0.8473396165200523, 'gamma': 0.04029239656663856, 'min_child_weight': 33, 'lambda': 7.660688925564618, 'alpha': 9.323760029217137, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.828499369482976 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4521317781786103, 'n_estimators': 620, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8616177828333162, 'gamma': 0.049983261052785416, 'min_child_weight': 135, 'lambda': 8.359124506675562, 'alpha': 9.623638009798405, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.6459264990404243, 'n_estimators': 560, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8146287098656163, 'gamma': 0.04786887153279287, 'min_child_weight': 91, 'lambda': 7.260217096104961, 'alpha': 8.915259437167196, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8778444785704315 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.3245742878682827, 'n_estimators': 520, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8351464674972674, 'gamma': 0.04892451616056757, 'min_child_weight': 201, 'lambda': 7.949171115630417, 'alpha': 7.4702082212136265, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8498666666666667 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.868072123156781, 'n_estimators': 660, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8769019191474825, 'gamma': 0.046694705655819325, 'min_child_weight': 96, 'lambda': 8.226221334752891, 'alpha': 9.975366640359546, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.1491704992702283, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.7653059215209503, 'gamma': 0.03531673875598655, 'min_child_weight': 36, 'lambda': 5.643181331938585, 'alpha': 9.229596485183086, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8496508103834497 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5459619525754276, 'n_estimators': 1400, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.7814447387867411, 'gamma': 0.0453630775415537, 'min_child_weight': 129, 'lambda': 8.518758880823068, 'alpha': 9.502440679990944, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.425412844074717, 'n_estimators': 1180, 'max_depth': 2, 'subsample': 0.95, 'colsample_bytree': 0.8243454609383182, 'gamma': 0.042575805147659865, 'min_child_weight': 132, 'lambda': 6.925404584331734, 'alpha': 8.594033075917359, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 1.2782670052007343, 'n_estimators': 580, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8518648451142605, 'gamma': 0.048274135051680135, 'min_child_weight': 104, 'lambda': 6.3298184066451535, 'alpha': 9.763628746371195, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8218835873095178 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5049889336136633, 'n_estimators': 1440, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8408030898347526, 'gamma': 0.04726159348581851, 'min_child_weight': 41, 'lambda': 7.929943429287654, 'alpha': 9.67440096003248, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.453123384880761, 'n_estimators': 1380, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8396583732168051, 'gamma': 0.04770520200267612, 'min_child_weight': 55, 'lambda': 7.766163201750969, 'alpha': 9.998193248171058, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.6743621489962193, 'n_estimators': 1360, 'max_depth': 2, 'subsample': 0.65, 'colsample_bytree': 0.8301256762232109, 'gamma': 0.04901083073964236, 'min_child_weight': 51, 'lambda': 7.541675626482695, 'alpha': 9.395244178379267, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8907342657342657 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5352011209309253, 'n_estimators': 1420, 'max_depth': 2, 'subsample': 1.0, 'colsample_bytree': 0.7523736203830607, 'gamma': 0.04909386939617615, 'min_child_weight': 79, 'lambda': 8.018904087219937, 'alpha': 9.649962841756762, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.3892785120828788, 'n_estimators': 1460, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8049060996246157, 'gamma': 0.04112923016255801, 'min_child_weight': 172, 'lambda': 7.343440824936432, 'alpha': 9.803887964103605, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8647443933695501 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2581988401508695, 'n_estimators': 1060, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8477425047618659, 'gamma': 0.04734325439093665, 'min_child_weight': 180, 'lambda': 8.217687493461169, 'alpha': 6.765849067921787, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.609914394514304, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.7945828753226408, 'gamma': 0.04568095933442536, 'min_child_weight': 70, 'lambda': 7.852479024071156, 'alpha': 9.042282253932214, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8803335649756777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.7471112370568107, 'n_estimators': 1480, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.6245513018231363, 'gamma': 0.03167731126767487, 'min_child_weight': 88, 'lambda': 8.986717969631123, 'alpha': 4.295292115402414, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8135036034896952 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4567102694050065, 'n_estimators': 560, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8580378235142072, 'gamma': 0.048208886331701506, 'min_child_weight': 97, 'lambda': 8.479455804993126, 'alpha': 9.512913323075182, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.3391773601966779, 'n_estimators': 640, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.819953673840847, 'gamma': 0.03921722276729322, 'min_child_weight': 36, 'lambda': 8.751972504200833, 'alpha': 3.7681298305946536, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8501897160800732 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4822299902509486, 'n_estimators': 1420, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8344893813525983, 'gamma': 0.047366532372213846, 'min_child_weight': 48, 'lambda': 8.010826219400164, 'alpha': 9.685661607289568, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8858278898040329 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5055909004893075, 'n_estimators': 1440, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8413052451143421, 'gamma': 0.0463621089592348, 'min_child_weight': 38, 'lambda': 7.789952972188674, 'alpha': 9.76000798430684, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4035899681618824, 'n_estimators': 1440, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8321414489364264, 'gamma': 0.049129456016018175, 'min_child_weight': 40, 'lambda': 8.172777865799846, 'alpha': 9.308814590992796, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8588807785888078 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5957574326776338, 'n_estimators': 1460, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.7707236077937213, 'gamma': 0.04786907013333282, 'min_child_weight': 43, 'lambda': 7.578299204440002, 'alpha': 9.611408462011376, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8865717908975623 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2920040927514647, 'n_estimators': 1500, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8164209655313531, 'gamma': 0.049880527144988494, 'min_child_weight': 47, 'lambda': 4.812439211939955, 'alpha': 9.99247805370051, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8467134320602754 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4507843246338064, 'n_estimators': 1420, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8075287241081553, 'gamma': 0.037633895742288766, 'min_child_weight': 92, 'lambda': 9.307323512716591, 'alpha': 9.43879587213178, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.7047340914368636, 'n_estimators': 620, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8497341071265204, 'gamma': 0.04401816962984408, 'min_child_weight': 139, 'lambda': 7.1131075173468155, 'alpha': 9.194770083346103, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8907342657342657 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.20017931646297982, 'n_estimators': 1400, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8289682486991746, 'gamma': 0.04810271774810606, 'min_child_weight': 124, 'lambda': 8.017225488118417, 'alpha': 9.82624476264561, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8253253253253253 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 5.05294508881531, 'n_estimators': 540, 'max_depth': 2, 'subsample': 0.6, 'colsample_bytree': 0.7893277893356049, 'gamma': 0.04998860357138175, 'min_child_weight': 43, 'lambda': 7.693135448471756, 'alpha': 8.831793049333319, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.1728994657600777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.589262008826402, 'n_estimators': 1300, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.759942243242217, 'gamma': 0.04644737651647773, 'min_child_weight': 134, 'lambda': 8.338438104611363, 'alpha': 9.58474256940533, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8304934999368926 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4115268835208692, 'n_estimators': 1400, 'max_depth': 2, 'subsample': 0.8500000000000001, 'colsample_bytree': 0.8394629154361827, 'gamma': 0.048754869124584974, 'min_child_weight': 54, 'lambda': 7.6671806061800485, 'alpha': 9.581499083725053, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8598105548037889 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5496662905323786, 'n_estimators': 1380, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8493554868658829, 'gamma': 0.04872693501864898, 'min_child_weight': 60, 'lambda': 7.8237468138434645, 'alpha': 9.386137596644652, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.3886997444154043, 'n_estimators': 1420, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8645860296769946, 'gamma': 0.04756416860749761, 'min_child_weight': 34, 'lambda': 7.353929761591651, 'alpha': 9.664396248064895, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8501897160800732 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5405225391909978, 'n_estimators': 1440, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8450723749363448, 'gamma': 0.04859730875551805, 'min_child_weight': 47, 'lambda': 8.652665635923421, 'alpha': 9.832323237303982, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.20779123923124, 'n_estimators': 1460, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8537332712068784, 'gamma': 0.04688841794818729, 'min_child_weight': 57, 'lambda': 9.506851944089616, 'alpha': 1.8154804028949147, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8496508103834497 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.333500793116164, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.8342433420316353, 'gamma': 0.04884785746185864, 'min_child_weight': 62, 'lambda': 7.992781166147361, 'alpha': 9.133105341312445, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8501897160800732 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.625947676567407, 'n_estimators': 1360, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.5780270589803849, 'gamma': 0.04999158326946984, 'min_child_weight': 99, 'lambda': 7.494387301005654, 'alpha': 9.443085466809062, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.7776450919512778 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4576641222980744, 'n_estimators': 1400, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8238146798133436, 'gamma': 0.04189656864990915, 'min_child_weight': 130, 'lambda': 9.06226825465109, 'alpha': 9.756878347884163, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.7905310133105228, 'n_estimators': 580, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7788075697997133, 'gamma': 0.012198814420365373, 'min_child_weight': 149, 'lambda': 8.228143453731168, 'alpha': 7.905026826174913, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.3260092797322647, 'n_estimators': 560, 'max_depth': 2, 'subsample': 0.65, 'colsample_bytree': 0.8144461871251311, 'gamma': 0.04780964989012823, 'min_child_weight': 142, 'lambda': 7.830550293750882, 'alpha': 9.248547216447296, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8647443933695501 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4841003927809282, 'n_estimators': 1460, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8549339795045751, 'gamma': 0.04775391075533645, 'min_child_weight': 101, 'lambda': 8.652344868111587, 'alpha': 6.177491184137233, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4874619273530025, 'n_estimators': 1440, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8784715583127686, 'gamma': 0.049068473033989056, 'min_child_weight': 107, 'lambda': 8.821603690758979, 'alpha': 8.903114551819296, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.600529496910416, 'n_estimators': 1460, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8382883826010279, 'gamma': 0.04812596146630795, 'min_child_weight': 95, 'lambda': 9.21684292800318, 'alpha': 0.49035299668401944, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8803335649756777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4055051975465158, 'n_estimators': 1480, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8630727507014392, 'gamma': 0.04691597287776107, 'min_child_weight': 99, 'lambda': 8.892895604076756, 'alpha': 8.60638078624663, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8647443933695501 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5120621127939042, 'n_estimators': 1480, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8427934271182438, 'gamma': 0.045776431147674095, 'min_child_weight': 104, 'lambda': 9.89161535483202, 'alpha': 9.04116763879188, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 7.897640983385836, 'n_estimators': 680, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8571662164100675, 'gamma': 0.02516774503902954, 'min_child_weight': 119, 'lambda': 8.442515471972564, 'alpha': 9.564599098769968, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.5755633255633257 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 1.2733764291184018, 'n_estimators': 1420, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7942043766841662, 'gamma': 0.049126992277624675, 'min_child_weight': 136, 'lambda': 1.0697210822903296, 'alpha': 8.156501368210577, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8200024878716258 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.6604690006875515, 'n_estimators': 620, 'max_depth': 7, 'subsample': 0.8, 'colsample_bytree': 0.7477514701755508, 'gamma': 0.03710138063373067, 'min_child_weight': 112, 'lambda': 7.236520691879251, 'alpha': 8.912985370685641, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8180044593088072 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4002630184268607, 'n_estimators': 1500, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.848539068697275, 'gamma': 0.04801297181042743, 'min_child_weight': 85, 'lambda': 7.611875789468642, 'alpha': 5.73168979940366, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8647443933695501 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5399711162680547, 'n_estimators': 1440, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8730589680919167, 'gamma': 0.044929887208240996, 'min_child_weight': 102, 'lambda': 8.099502512314535, 'alpha': 9.307952748577934, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.3373060212770238, 'n_estimators': 660, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8870853906132714, 'gamma': 0.047137946345752135, 'min_child_weight': 91, 'lambda': 9.473190891323274, 'alpha': 7.249231242823302, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8498666666666667 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.1984808197141301, 'n_estimators': 1140, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8289521284580716, 'gamma': 0.04914408770426138, 'min_child_weight': 38, 'lambda': 8.410615572540204, 'alpha': 8.460725545872394, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8496508103834497 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4443782222276293, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.65, 'colsample_bytree': 0.8016592511977483, 'gamma': 0.03955766308909792, 'min_child_weight': 30, 'lambda': 7.880186695083281, 'alpha': 9.850814676993748, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.664448430873814, 'n_estimators': 520, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.771099411454891, 'gamma': 0.04830537641142846, 'min_child_weight': 44, 'lambda': 9.104058135103225, 'alpha': 9.535488856727582, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8907342657342657 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.3400432341621544, 'n_estimators': 920, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.780608041167515, 'gamma': 0.04604038327787348, 'min_child_weight': 165, 'lambda': 8.74480356288911, 'alpha': 9.986382664605292, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8259180348414589 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.8524124773952821, 'n_estimators': 500, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8599399332954055, 'gamma': 0.04998135685203952, 'min_child_weight': 130, 'lambda': 7.5796989277284705, 'alpha': 9.386783151132349, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.541353763392819, 'n_estimators': 640, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8211117551100355, 'gamma': 0.038610498837229265, 'min_child_weight': 95, 'lambda': 8.175928876174128, 'alpha': 9.672424284853104, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2714161092765188, 'n_estimators': 1460, 'max_depth': 2, 'subsample': 0.65, 'colsample_bytree': 0.5396512793200285, 'gamma': 0.04721253320311954, 'min_child_weight': 75, 'lambda': 7.003418854119941, 'alpha': 9.058708457306018, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8405349794238683 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.3812553060232573, 'n_estimators': 580, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8381191885415441, 'gamma': 0.04829729347916386, 'min_child_weight': 125, 'lambda': 9.736458170278611, 'alpha': 5.008090437236622, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8532761624011791 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.7354927030387775, 'n_estimators': 620, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.9965877744506478, 'gamma': 0.04912714572208138, 'min_child_weight': 40, 'lambda': 7.401854074322359, 'alpha': 8.787128515640898, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8907342657342657 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.476793307543378, 'n_estimators': 560, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.5041276051443092, 'gamma': 0.043220614643273245, 'min_child_weight': 186, 'lambda': 7.839850764038709, 'alpha': 9.178541427295423, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8227752639517346 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.6246175436747379, 'n_estimators': 1400, 'max_depth': 4, 'subsample': 0.7, 'colsample_bytree': 0.5178727980530706, 'gamma': 0.04657253118590752, 'min_child_weight': 34, 'lambda': 8.628130941642802, 'alpha': 9.706627729832192, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8189471039075262 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.3525516237977462, 'n_estimators': 540, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7563750993600192, 'gamma': 0.04471027721428781, 'min_child_weight': 82, 'lambda': 9.296903596187969, 'alpha': 9.48564482648951, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8498666666666667 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.1994853306324464, 'n_estimators': 700, 'max_depth': 2, 'subsample': 0.5, 'colsample_bytree': 0.8082245838185895, 'gamma': 0.04999287420699479, 'min_child_weight': 65, 'lambda': 8.898504183114317, 'alpha': 9.824686422145716, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8537329266675506 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4634590554823859, 'n_estimators': 1440, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.7883508217794302, 'gamma': 0.0477718636391856, 'min_child_weight': 108, 'lambda': 8.29666294293891, 'alpha': 9.28552924645352, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 1.5732891140459904, 'n_estimators': 1420, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8490540307612809, 'gamma': 0.04897169081711417, 'min_child_weight': 89, 'lambda': 8.03286118190729, 'alpha': 9.57724509267227, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.0949032221085917, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8299472763799156, 'gamma': 0.046285912011753715, 'min_child_weight': 117, 'lambda': 3.307101953118123, 'alpha': 3.2134628502847296, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.325694224948227, 'n_estimators': 660, 'max_depth': 2, 'subsample': 0.6, 'colsample_bytree': 0.6816505797691597, 'gamma': 0.04812962953556792, 'min_child_weight': 127, 'lambda': 7.737297921234041, 'alpha': 9.000612795670914, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8498666666666667 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.7310895816417278, 'n_estimators': 1480, 'max_depth': 2, 'subsample': 0.9, 'colsample_bytree': 0.7410203946094936, 'gamma': 0.02865358058003978, 'min_child_weight': 100, 'lambda': 7.265640113177091, 'alpha': 8.374370944788428, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8912219305920094 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4455981285798392, 'n_estimators': 580, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8014839719320872, 'gamma': 0.04727218544133652, 'min_child_weight': 58, 'lambda': 10.013194083508447, 'alpha': 9.392914117255906, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.9584583861124374, 'n_estimators': 620, 'max_depth': 2, 'subsample': 0.55, 'colsample_bytree': 0.8182363730676306, 'gamma': 0.031372092370386566, 'min_child_weight': 50, 'lambda': 11.24824404099708, 'alpha': 9.979210167026785, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5669560731029433, 'n_estimators': 1420, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.7682385413869449, 'gamma': 0.033885397811842084, 'min_child_weight': 27, 'lambda': 8.477186729749338, 'alpha': 9.708712180429684, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2902903678620656, 'n_estimators': 540, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.6660810159580784, 'gamma': 0.04895127293321085, 'min_child_weight': 137, 'lambda': 6.7235197159489495, 'alpha': 8.662183040245996, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8407626900283433 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.2792459270650241, 'n_estimators': 1380, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.8415313276267006, 'gamma': 0.02227119825588772, 'min_child_weight': 122, 'lambda': 7.593925271796115, 'alpha': 9.205280236081721, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8250593972739777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4163200223776187, 'n_estimators': 1460, 'max_depth': 2, 'subsample': 0.8500000000000001, 'colsample_bytree': 0.7830920297333637, 'gamma': 0.045777551162754435, 'min_child_weight': 44, 'lambda': 8.021128887576001, 'alpha': 9.572500850911801, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.637781774223955, 'n_estimators': 840, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7289087600668914, 'gamma': 0.04063181147842779, 'min_child_weight': 69, 'lambda': 9.045991325623122, 'alpha': 9.813635816520526, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8778444785704315 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2378286066332442, 'n_estimators': 1260, 'max_depth': 2, 'subsample': 0.65, 'colsample_bytree': 0.8571370539007503, 'gamma': 0.04920063740163606, 'min_child_weight': 132, 'lambda': 6.098909079936145, 'alpha': 9.380265229798836, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.835691523263225 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5235648112325146, 'n_estimators': 1500, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.83165231185778, 'gamma': 0.04806962336932357, 'min_child_weight': 93, 'lambda': 9.590266061871057, 'alpha': 5.42031455274121, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.7958978879980068, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8689890789544418, 'gamma': 0.049973315378688904, 'min_child_weight': 104, 'lambda': 8.259352188009826, 'alpha': 8.96182409113017, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.3686535383183438, 'n_estimators': 500, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8099935960341456, 'gamma': 0.046957731425684685, 'min_child_weight': 37, 'lambda': 7.046980621372301, 'alpha': 6.796853457965748, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8501897160800732 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.1215462022938503, 'n_estimators': 680, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7953477116928193, 'gamma': 0.04378181098015054, 'min_child_weight': 97, 'lambda': 7.383416874454081, 'alpha': 7.98020756927669, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8496508103834497 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 6.528958271304699, 'n_estimators': 640, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8477009544749966, 'gamma': 0.016910898364939066, 'min_child_weight': 139, 'lambda': 2.3854460884711717, 'alpha': 7.759434350774264, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.5669051025274201 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5327996350072761, 'n_estimators': 560, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.757352444622496, 'gamma': 0.0365973772852737, 'min_child_weight': 143, 'lambda': 8.595553583622532, 'alpha': 9.571446408305576, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.418244765429885, 'n_estimators': 520, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8249358909518455, 'gamma': 0.04828353985337018, 'min_child_weight': 77, 'lambda': 7.746075853703003, 'alpha': 9.837319629629022, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.6594472709362622, 'n_estimators': 1440, 'max_depth': 2, 'subsample': 0.5, 'colsample_bytree': 0.7753573017395375, 'gamma': 0.04521994075519933, 'min_child_weight': 22, 'lambda': 7.941335782559238, 'alpha': 6.06738538610714, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8822068965517242 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 8.765051912347102, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8383611085882537, 'gamma': 0.047093814154818135, 'min_child_weight': 133, 'lambda': 9.378510592312576, 'alpha': 9.144571701047916, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.5755633255633257 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.267533931985136, 'n_estimators': 1460, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8145201673154381, 'gamma': 0.04181755885697841, 'min_child_weight': 47, 'lambda': 8.956735900279677, 'alpha': 9.385118114439154, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8467134320602754 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4934523592784874, 'n_estimators': 580, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.7648779391379859, 'gamma': 0.049170524747911594, 'min_child_weight': 32, 'lambda': 8.169126554896978, 'alpha': 6.442632170480893, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.9324043520293152, 'n_estimators': 980, 'max_depth': 2, 'subsample': 0.8500000000000001, 'colsample_bytree': 0.7926192579749263, 'gamma': 0.005607025806821896, 'min_child_weight': 128, 'lambda': 8.79185535046876, 'alpha': 3.5849253791850613, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.3489477176401012, 'n_estimators': 1400, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8500815100030521, 'gamma': 0.04782331669194558, 'min_child_weight': 87, 'lambda': 7.605348900376215, 'alpha': 8.810444941141029, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8498666666666667 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.8088398466461392, 'n_estimators': 640, 'max_depth': 2, 'subsample': 0.65, 'colsample_bytree': 0.7491657599116502, 'gamma': 0.046320815852898656, 'min_child_weight': 113, 'lambda': 8.503791642497925, 'alpha': 9.978758943332481, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.827456393524909 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 2.653050907415729, 'n_estimators': 700, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8618610240372775, 'gamma': 0.049038074871277544, 'min_child_weight': 40, 'lambda': 5.199593404123707, 'alpha': 7.297429867482766, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.6638397312359372, 'n_estimators': 660, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8941371558736926, 'gamma': 0.048217430182460365, 'min_child_weight': 99, 'lambda': 9.157486537301407, 'alpha': 3.0076692393662583, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8907342657342657 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.1703852049661396, 'n_estimators': 1340, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.8315555871159037, 'gamma': 0.0473055821257947, 'min_child_weight': 146, 'lambda': 7.220151682966483, 'alpha': 7.471331976372167, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8372644617209118 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.8292390282702362, 'n_estimators': 620, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7843141897917261, 'gamma': 0.04988151824282934, 'min_child_weight': 106, 'lambda': 11.983529757954786, 'alpha': 9.70516089789527, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8437375745526839 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4438252089256767, 'n_estimators': 1420, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8027534986190685, 'gamma': 0.042726538392902406, 'min_child_weight': 151, 'lambda': 9.795847834394898, 'alpha': 9.499034851219701, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 3.974935098014764, 'n_estimators': 580, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8434489323513319, 'gamma': 0.044475272283078, 'min_child_weight': 52, 'lambda': 7.940897903743539, 'alpha': 8.197875308635352, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.5755633255633257 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5685259732879293, 'n_estimators': 1480, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.824419650173709, 'gamma': 0.0499781528991241, 'min_child_weight': 122, 'lambda': 8.300320383279374, 'alpha': 9.251503521328624, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2935286461232547, 'n_estimators': 540, 'max_depth': 3, 'subsample': 0.7, 'colsample_bytree': 0.7348768773402599, 'gamma': 0.04863088140871404, 'min_child_weight': 35, 'lambda': 7.480546513040507, 'alpha': 9.762463917226128, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8410041841004184 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.5038457579037985, 'n_estimators': 560, 'max_depth': 5, 'subsample': 0.75, 'colsample_bytree': 0.8558672954906089, 'gamma': 0.04634373218219832, 'min_child_weight': 94, 'lambda': 9.46398357539402, 'alpha': 8.564119549776015, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8291394061399094 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4230977578757502, 'n_estimators': 1440, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8176247036565616, 'gamma': 0.04761729698025157, 'min_child_weight': 42, 'lambda': 3.6149005212768266, 'alpha': 7.6674972021521075, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.7164841670512536, 'n_estimators': 620, 'max_depth': 6, 'subsample': 0.9, 'colsample_bytree': 0.837131746778942, 'gamma': 0.03268426012681099, 'min_child_weight': 156, 'lambda': 6.809226925950476, 'alpha': 6.579605036182148, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8495817907582612 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5591130799141624, 'n_estimators': 580, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7686069972631233, 'gamma': 0.04863795438916532, 'min_child_weight': 135, 'lambda': 7.814978297661402, 'alpha': 9.080426507973062, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 2.0599212229068424, 'n_estimators': 1460, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.5521595518987795, 'gamma': 0.04576934879559698, 'min_child_weight': 110, 'lambda': 8.816103161758418, 'alpha': 9.567459614462777, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942121708079154 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 1.3507204987148957, 'n_estimators': 520, 'max_depth': 3, 'subsample': 0.55, 'colsample_bytree': 0.8015290576586179, 'gamma': 0.030235300552298047, 'min_child_weight': 81, 'lambda': 8.097396221320862, 'alpha': 9.993981126982654, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8127031757939485 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2376088101401546, 'n_estimators': 1500, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.946643037306593, 'gamma': 0.04914891007902875, 'min_child_weight': 101, 'lambda': 8.411211542448333, 'alpha': 9.326367745489971, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8363963500835367 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.0363561163663377, 'n_estimators': 680, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.8693510187544449, 'gamma': 0.03720868705714422, 'min_child_weight': 45, 'lambda': 7.636400411635885, 'alpha': 8.762192762169548, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8496508103834497 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4578272059456903, 'n_estimators': 1400, 'max_depth': 2, 'subsample': 0.5, 'colsample_bytree': 0.7877238162551721, 'gamma': 0.04726866316496909, 'min_child_weight': 128, 'lambda': 4.254067054963912, 'alpha': 9.720222413080613, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.9010348768238743, 'n_estimators': 1440, 'max_depth': 2, 'subsample': 0.65, 'colsample_bytree': 0.7776270274970396, 'gamma': 0.04035543811832113, 'min_child_weight': 37, 'lambda': 10.141107153901324, 'alpha': 9.442910994116472, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.6173501776211023, 'n_estimators': 740, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8435062667857396, 'gamma': 0.04833472833238831, 'min_child_weight': 90, 'lambda': 9.263768689005918, 'alpha': 8.907977002410854, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8778444785704315 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.369812133352993, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.821071249207099, 'gamma': 0.04994068472854906, 'min_child_weight': 116, 'lambda': 8.6563302476471, 'alpha': 9.150552895933743, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8473089700996678 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5024034953042436, 'n_estimators': 640, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.831257100637577, 'gamma': 0.04539528157740384, 'min_child_weight': 168, 'lambda': 7.262425065470508, 'alpha': 9.62913155070456, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 2.9082006648494043, 'n_estimators': 1480, 'max_depth': 2, 'subsample': 1.0, 'colsample_bytree': 0.7022669976084208, 'gamma': 0.04675261766234092, 'min_child_weight': 138, 'lambda': 7.82864421234483, 'alpha': 9.822237909515133, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.219304736185831, 'n_estimators': 540, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8112295144312911, 'gamma': 0.02602566660047502, 'min_child_weight': 29, 'lambda': 5.878370912404586, 'alpha': 7.059913738436293, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8496508103834497 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.6522191777158393, 'n_estimators': 1380, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8510262420121596, 'gamma': 0.04785347071431618, 'min_child_weight': 95, 'lambda': 8.185265395089257, 'alpha': 9.454375525786158, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8907342657342657 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.328040343502217, 'n_estimators': 880, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.7597086665975019, 'gamma': 0.049123473323812006, 'min_child_weight': 72, 'lambda': 1.8925757178114635, 'alpha': 9.304044525318448, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8498666666666667 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4908135020973023, 'n_estimators': 1420, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.7941394328699422, 'gamma': 0.04835887565976239, 'min_child_weight': 87, 'lambda': 9.064190899048935, 'alpha': 4.686278257313012, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.7823387574748875, 'n_estimators': 560, 'max_depth': 2, 'subsample': 0.65, 'colsample_bytree': 0.7394343237448796, 'gamma': 0.04664729695478331, 'min_child_weight': 62, 'lambda': 7.462760445581315, 'alpha': 8.335581521746077, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8323611463352777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.1227102251270697, 'n_estimators': 660, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8370546516978505, 'gamma': 0.02773559399223123, 'min_child_weight': 125, 'lambda': 6.467954577367818, 'alpha': 9.647525388931163, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8496508103834497 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.4183572261180633, 'n_estimators': 620, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8608604364831027, 'gamma': 0.020181643769981064, 'min_child_weight': 132, 'lambda': 9.657644876161648, 'alpha': 4.350193590188217, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8875924871940808 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5846334824953767, 'n_estimators': 1200, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7789968351070259, 'gamma': 0.04376023584297073, 'min_child_weight': 40, 'lambda': 7.014491437062698, 'alpha': 9.997971621174191, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8803335649756777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.2851285887446595, 'n_estimators': 600, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.5933287297347797, 'gamma': 0.030389957741884466, 'min_child_weight': 104, 'lambda': 8.444918159076497, 'alpha': 8.994303104575598, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8407626900283433 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5045809528625498, 'n_estimators': 1440, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.7511734110454873, 'gamma': 0.04902926399775626, 'min_child_weight': 98, 'lambda': 7.990053004369453, 'alpha': 9.805899878371768, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8942265952828824 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'logloss', 'learning_rate': 1.726885739481246, 'n_estimators': 500, 'max_depth': 4, 'subsample': 0.5, 'colsample_bytree': 0.8087492783278228, 'gamma': 0.03968874438000853, 'min_child_weight': 49, 'lambda': 7.730852858774554, 'alpha': 9.222226483185151, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8148795406316315 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.375880312504399, 'n_estimators': 580, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.8267828341766019, 'gamma': 0.0474566082270983, 'min_child_weight': 84, 'lambda': 8.734653216407516, 'alpha': 9.466250164037673, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8498666666666667 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.5780068195500878, 'n_estimators': 1460, 'max_depth': 2, 'subsample': 0.8, 'colsample_bytree': 0.8458475102685831, 'gamma': 0.04479417748484424, 'min_child_weight': 160, 'lambda': 9.865322463833698, 'alpha': 2.53575792080554, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8803335649756777 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 0.7300038476549922, 'n_estimators': 1420, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.8565922898748145, 'gamma': 0.049254501654628725, 'min_child_weight': 141, 'lambda': 8.221144162089413, 'alpha': 9.6115451366351, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8304507006691075 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.1979454116582806, 'n_estimators': 720, 'max_depth': 2, 'subsample': 0.65, 'colsample_bytree': 0.7975572181280972, 'gamma': 0.038145730528769406, 'min_child_weight': 131, 'lambda': 7.42577635506417, 'alpha': 6.961626735212721, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8364258455059875 
+
+{'booster': 'gbtree', 'objective': 'binary:logistic', 'eval_metric': 'error', 'learning_rate': 1.425335798729279, 'n_estimators': 1360, 'max_depth': 2, 'subsample': 0.75, 'colsample_bytree': 0.7704694272952093, 'gamma': 0.04167010505690622, 'min_child_weight': 10, 'lambda': 6.295037115948455, 'alpha': 9.122092065183915, 'device': 'cuda', 'tree_method': 'hist', 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8781647782906701 
+
+Best Hyper-parameter set: 
+{'eval_metric': 'error', 'learning_rate': 1.4741585073646246, 'n_estimators': 1420, 'max_depth': 2, 'subsample': 0.7, 'colsample_bytree': 0.85340325461568, 'gamma': 0.04883309948823751, 'min_child_weight': 41, 'lambda': 7.525474790541298, 'alpha': 9.999167453761657}
+Best value: 0.8947139753801594

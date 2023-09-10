@@ -9,12 +9,12 @@ import lightgbm as lgb
 import tensorflow as tf
 
 # Read "train.csv" file
-df = pd.read_csv("DataSet/train.csv")
+df = pd.read_csv("DataSet/test.csv")
 
 # Splitting the 'is_fraud?' column
-labels = df["is_fraud?"].copy().to_numpy()
-labels = labels.astype(int)
-df = df.drop("is_fraud?", axis=1)
+#labels = df["is_fraud?"].copy().to_numpy()
+#labels = labels.astype(int)
+#df = df.drop("is_fraud?", axis=1)
 
 # Delete $ symbol from amount column
 df['amount'] = df['amount'].str.replace('$', '').astype(float)
@@ -49,32 +49,33 @@ df["zip_1"] = df["zip_1"].astype("category")
 
 
 # Print Data sample
-print(labels[:5])
+#print(labels[:5])
 print(df.head(5))
 
 # Validate
 print(df.dtypes)
 
 # Split Datas for train & test
-X_train, X_test, y_train, y_test = train_test_split(df, labels, test_size=0.1, random_state=1225)
+#X_train, X_test, y_train, y_test = train_test_split(df, labels, test_size=0.1, random_state=1225)
 
 # Drop index
-output = pd.DataFrame(index=X_train["index"]) # <<<<<<<<<<<<<
-X_train = X_train.set_index(df.columns[0])
-X_test = X_test.set_index(df.columns[0])
+output = pd.DataFrame(index=df["index"]) # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+#X_train = X_train.set_index(X_train.columns[0])
+#X_test = X_test.set_index(X_test.columns[0])
+df = df.set_index(df.columns[0])
 
 # Catboost
-def catboost_function(X_test, y_test):
+def catboost_function(X_test): #, y_test
     print("===========CatBoost===========")
     # Load model
     model = catboost.CatBoostClassifier()
     model.load_model("catboostdb/catboost_full_data_model_4_0.6143405134257893_20230829-020535.cbm")
 
     # Test loaded model
-    y_pred = model.predict(X_test)
+    #y_pred = model.predict(X_test)
 
     # Validation model 
-    print(f1_score(y_pred, y_test))
+    #print(f1_score(y_pred, y_test))
 
     # Predict Probability & save to dataframe
     y_pred = model.predict(X_test, prediction_type='Probability')
@@ -103,15 +104,15 @@ def add_data(df):
 
 
 # LightGBM
-def lightgbm_fucntion(X_test, y_test):
+def lightgbm_fucntion(X_test): #, y_test
     print("===========LightGBM===========")
     model = lgb.Booster(model_file='lightgbmdb/lightgbm_full_data_model_1_0.565894417014812_20230904-041116.txt')
 
     # Test loaded model
-    y_pred = np.round(model.predict(X_test))
+    #y_pred = np.round(model.predict(X_test))
 
     # Validation model 
-    print(f1_score(y_pred, y_test))
+    #print(f1_score(y_pred, y_test))
 
     # Predict Probability & save to dataframe
     y_pred = model.predict(X_test)
@@ -124,12 +125,12 @@ def lightgbm_fucntion(X_test, y_test):
 # Pre-processing for NN
 def preprocessing_NN():
     # Read "train.csv" file
-    df = pd.read_csv("DataSet/train.csv")
+    df = pd.read_csv("DataSet/test.csv")
 
     # Splitting the 'is_fraud?' column
-    labels = df["is_fraud?"].copy().to_numpy()
-    labels = labels.astype(int)
-    df = df.drop("is_fraud?", axis=1)
+    #labels = df["is_fraud?"].copy().to_numpy()
+    #labels = labels.astype(int)
+    #df = df.drop("is_fraud?", axis=1)
     df = df.set_index(df.columns[0])
 
     # Delete $ symbol from amount column
@@ -203,7 +204,7 @@ def preprocessing_NN():
 
     # Print Data sample
     print(f"\n{df.head(5)}\n")
-    print(labels[:5])
+    #print(labels[:5])
     print()
     print(le_errors.classes_)
     print()
@@ -212,11 +213,12 @@ def preprocessing_NN():
     print(df.dtypes)
 
     # Split Datas for train & test
-    X_train, X_test, y_train, y_test = train_test_split(df, labels, test_size=0.1, random_state=1225)
+    #X_train, X_test, y_train, y_test = train_test_split(df, labels, test_size=0.1, random_state=1225)
 
     # Shift to tf.data.Dataset
-    train_dataset = tf.data.Dataset.from_tensor_slices((dict(X_train.to_dict('list')), y_train))
-    test_dataset = tf.data.Dataset.from_tensor_slices((dict(X_test.to_dict("list")), y_test))
+    #train_dataset = tf.data.Dataset.from_tensor_slices((dict(X_train.to_dict('list')), y_train))
+    #test_dataset = tf.data.Dataset.from_tensor_slices((dict(X_test.to_dict("list")), y_test))
+    df_dataset = tf.data.Dataset.from_tensor_slices((dict(df.to_dict("list")))) #, labels
 
     # One-hot encoding to "card_id", "zip_1"
     def one_hot_encode(features):
@@ -225,55 +227,48 @@ def preprocessing_NN():
         features["use_chip"] = tf.one_hot(features["use_chip"], depth=3)
         return features
 
-    train_dataset = train_dataset.map(lambda x, y: (one_hot_encode(x), y))
-    test_dataset = test_dataset.map(lambda x, y: (one_hot_encode(x), y))
+    #train_dataset = train_dataset.map(lambda x, y: (one_hot_encode(x), y))
+    #test_dataset = test_dataset.map(lambda x, y: (one_hot_encode(x), y))
+    df_dataset = df_dataset.map(lambda x : (one_hot_encode(x)))
 
     # Change to vector
-    def reshape_scalars(x, y):
+    def reshape_scalars(x): #, y
         reshaped_x = {}
         for key, value in x.items():
             if len(value.shape) == 0:  # 스칼라 값인 경우
                 reshaped_x[key] = tf.cast(tf.reshape(value, (1,)), dtype=tf.float32)
             else:
                 reshaped_x[key] = tf.cast(value, dtype=tf.float32)
-        return reshaped_x, y
+        return reshaped_x #, y
 
     # Dataset 객체에 map 함수 적용
-    train_dataset = train_dataset.map(reshape_scalars)
-    test_dataset = test_dataset.map(reshape_scalars)
+    #train_dataset = train_dataset.map(reshape_scalars)
+    #test_dataset = test_dataset.map(reshape_scalars)
+    df_dataset = df_dataset.map(reshape_scalars)
 
     # print for validate
-    for item, label in train_dataset.take(1):
+    for item in df_dataset.take(1): #, label
         for key, value in item.items():
             print(f"{key}: {value.numpy()}")
-        print(label)
+        #print(label)
 
-    # Count fraud or not
-    total_samples = len(y_train)
-    num_not_fraud = np.count_nonzero(y_train == 0)
-    num_fraud = np.count_nonzero(y_train == 1)
-
-    class_weight = {
-        0: total_samples / (2 * num_not_fraud),
-        1: total_samples / (2 * num_fraud)
-    }
-
-    return train_dataset, test_dataset
+    #return train_dataset, test_dataset, df_dataset
+    return df_dataset
 
 
 # FFNN
-def NN_fucntion(X_test, y_test):
+def NN_fucntion(X_test): #, y_test
     print("===========FFNN===========")
     model = tf.keras.models.load_model('nndb/nn_model_1')
     batch_size = 107
     X_test = X_test.batch(batch_size)
 
     # Test loaded model
-    y_pred = model.predict(X_test)
-    y_pred = (y_pred > 0.5).astype(int).flatten()
+    #y_pred = model.predict(X_test)
+    #y_pred = (y_pred > 0.5).astype(int).flatten()
 
     # Validation model 
-    print(f1_score(y_pred, y_test))
+    #print(f1_score(y_pred, y_test))
 
     # Predict Probability & save to dataframe
     y_pred = model.predict(X_test)
@@ -284,29 +279,29 @@ def NN_fucntion(X_test, y_test):
 
 
 # Catboost
-y_pred = catboost_function(X_train, y_train)
+y_pred = catboost_function(df)
 output["catboost"] = y_pred[:,1]
 
 # Add data
 df = add_data(df)
 print(df.head(5))
 # Split Datas for train & test again
-X_train, X_test, y_train, y_test = train_test_split(df, labels, test_size=0.1, random_state=1225)
+#X_train, X_test, y_train, y_test = train_test_split(df, labels, test_size=0.1, random_state=1225)
 # Drop index
-X_train = X_train.set_index(df.columns[0])
-X_test = X_test.set_index(df.columns[0])
+#X_train = X_train.set_index(X_train.columns[0])
+#X_test = X_test.set_index(X_test.columns[0])
 
 # LightGBM
-y_pred = lightgbm_fucntion(X_train, y_train)
+y_pred = lightgbm_fucntion(df)
 output["lightgbm"] = y_pred
 
 # Pre-processing for FFNN
-train_dataset, test_dataset = preprocessing_NN()
-print(test_dataset)
-y_pred = NN_fucntion(train_dataset, y_train)
+df_dataset = preprocessing_NN()
+print(df_dataset)
+y_pred = NN_fucntion(df_dataset)
 y_pred = y_pred.flatten()
 output["NN"] = y_pred
 
 # Print
 print(output.head(50))
-output.to_csv("ensembledb/train.csv")
+output.to_csv("ensembledb/test_2.csv")

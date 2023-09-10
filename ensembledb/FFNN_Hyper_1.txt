@@ -1,0 +1,1 @@
+{'units1': 225, 'kernel_l2_lambda1': 0.0017237750471617791, 'activity_l2_lambda1': 0.0022703042195270935, 'dropout_rate1': 0.05, 'units2': 463, 'kernel_l2_lambda2': 0.8960114899500415, 'activity_l2_lambda2': 0.17687206267390443, 'dropout_rate2': 0.4, 'batch_size': 475, 'learning_rate': 0.10786006200967774, 'scale_pos_weight': 13.479705048987812}
