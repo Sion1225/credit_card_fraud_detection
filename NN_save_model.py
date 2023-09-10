@@ -101,6 +101,7 @@ X_train, X_test, y_train, y_test = train_test_split(df, labels, test_size=0.1, r
 # Shift to tf.data.Dataset
 train_dataset = tf.data.Dataset.from_tensor_slices((dict(X_train.to_dict('list')), y_train))
 test_dataset = tf.data.Dataset.from_tensor_slices((dict(X_test.to_dict("list")), y_test))
+df_dataset = tf.data.Dataset.from_tensor_slices((dict(df.to_dict("list")), labels))
 
 # One-hot encoding to "card_id", "zip_1"
 def one_hot_encode(features):
@@ -111,6 +112,7 @@ def one_hot_encode(features):
 
 train_dataset = train_dataset.map(lambda x, y: (one_hot_encode(x), y))
 test_dataset = test_dataset.map(lambda x, y: (one_hot_encode(x), y))
+df_dataset = df_dataset.map(lambda x, y: (one_hot_encode(x), y))
 
 # Change to vector
 def reshape_scalars(x, y):
@@ -125,9 +127,10 @@ def reshape_scalars(x, y):
 # Dataset 객체에 map 함수 적용
 train_dataset = train_dataset.map(reshape_scalars)
 test_dataset = test_dataset.map(reshape_scalars)
+df_dataset = df_dataset.map(reshape_scalars)
 
 # print for validate
-for item, label in train_dataset.take(1):
+for item, label in df_dataset.take(1):
     for key, value in item.items():
         print(f"{key}: {value.numpy()}")
     print(label)
@@ -281,16 +284,17 @@ model = Logistic_Model(units=972, output_dim=257, output_dim_small=4, output_dim
 batch_size = 107
 lr = 0.02132
 model.compile(optimizer = tf.keras.optimizers.Adam(learning_rate=lr), loss='binary_crossentropy', metrics=[f_score_metrics.F1Score()])
-model.fit(train_dataset.batch(batch_size),
+model.fit(df_dataset.batch(batch_size),
             epochs=100,
             class_weight=class_weight,
             validation_data=test_dataset.batch(batch_size),
             callbacks=[early_stopping])
+
+# Save model
+model.save("ensembledb/nn_full_model_1")
 
 # Predict & Validate
 y_pred = model.predict(test_dataset.batch(batch_size))
 y_pred = (y_pred > 0.5).astype(int).flatten()  # Convert probabilities to binary labels and flatten to 1D array
 model_metric = f1_score(y_test, y_pred)
 
-# Save model
-model.save("ensembledb/nn_model_1")
