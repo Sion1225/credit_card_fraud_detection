@@ -178,7 +178,7 @@ output.to_csv("ensembledb/submit2_2.csv", header=False)
 
 # ====================================================================================================================
 # NN
-
+'''
 # Define Objective function
 def Objective(trial):
     # Set Hyper-parameter bounds
@@ -193,7 +193,7 @@ def Objective(trial):
         "activity_l2_lambda2": trial.suggest_float("activity_l2_lambda2", 1e-4, 1, log=True),
         "dropout_rate2": trial.suggest_float("dropout_rate2", 0, 0.5, step=0.05),
 
-        "batch_size": trial.suggest_int("batch_size", 32, 500),
+        "batch_size": trial.suggest_int("batch_size", 64, 500),
         "learning_rate": trial.suggest_float("lr", 1e-4, 1, log=True),
         "scale_pos_weight": scale_pos_weight
     }
@@ -237,7 +237,8 @@ def Objective(trial):
 
         # Predict & Validate
         y_pred = model.predict(X_test)
-        model_metric = f1_score(y_test, y_pred)
+        y_pred_binary = np.where(y_pred > 0.5, 1, 0)
+        model_metric = f1_score(y_test, y_pred_binary)
 
         # Append Metric
         all_scores.append(model_metric)
@@ -250,13 +251,13 @@ def Objective(trial):
 
 
 # Create Optuna sampler and study object
-sampler = optuna.samplers.TPESampler(n_startup_trials=30)
+sampler = optuna.samplers.TPESampler(n_startup_trials=15)
 study = optuna.create_study(sampler=sampler, 
     study_name="final_FFNN1_fullmodels", 
     direction="maximize", 
     storage="sqlite:///ensembledb/1.db", 
     load_if_exists=True)
-study.optimize(Objective, n_trials=330, n_jobs=1)
+study.optimize(Objective, n_trials=160, n_jobs=1)
 
 # Print best hyper-parameter set
 with open("ensembledb/FFNN_Hyper_1.txt",'a') as f:
@@ -265,3 +266,38 @@ with open("ensembledb/FFNN_Hyper_1.txt",'a') as f:
 
 print(f"Best Hyper-parameter set: \n{study.best_params}\n")
 print(f"Best value: {study.best_value}")
+'''
+
+inputs = tf.keras.Input(shape=(3,))
+x = tf.keras.layers.Dense(
+    units=372, kernel_regularizer=tf.keras.regularizers.L2(0.9384523692721861), 
+    activity_regularizer=tf.keras.regularizers.L2(0.00028894340611150874), activation="relu", kernel_initializer="he_normal")(inputs)
+x = tf.keras.layers.Dropout(0)(x)
+x = tf.keras.layers.Dense(
+    units=219, kernel_regularizer=tf.keras.regularizers.L2(0.24749294690965096), 
+    activity_regularizer=tf.keras.regularizers.L2(0.028233890382084154), activation="relu", kernel_initializer="he_normal")(x)
+x = tf.keras.layers.Dropout(0.1)(x)
+outputs = tf.keras.layers.Dense(units=1, activation="sigmoid")(x)
+
+model = tf.keras.Model(inputs, outputs)
+
+
+model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.0007248209873320779), loss="binary_crossentropy", metrics=[f_score_metrics.F1Score()])
+early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
+model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=100, callbacks=[early_stopping], class_weight=class_weight)
+
+# Predict & Validate
+y_pred = model.predict(X_test)
+y_pred_binary = np.where(y_pred > 0.5, 1, 0)
+model_metric = f1_score(y_test, y_pred_binary)
+
+# Predict for final
+y_pred = model.predict(X_submit)
+y_pred_binary = np.where(y_pred > 0.5, 1, 0)
+output["ensemble"] = y_pred_binary
+
+# Output to CSV
+output.to_csv("ensembledb/submit5_1.csv", header=False)
+
+# save
+model.save("ensembledb/NN2")

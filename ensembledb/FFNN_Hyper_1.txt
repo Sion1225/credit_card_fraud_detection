@@ -1,1 +1,206 @@
 {'units1': 225, 'kernel_l2_lambda1': 0.0017237750471617791, 'activity_l2_lambda1': 0.0022703042195270935, 'dropout_rate1': 0.05, 'units2': 463, 'kernel_l2_lambda2': 0.8960114899500415, 'activity_l2_lambda2': 0.17687206267390443, 'dropout_rate2': 0.4, 'batch_size': 475, 'learning_rate': 0.10786006200967774, 'scale_pos_weight': 13.479705048987812}
+{'units1': 482, 'kernel_l2_lambda1': 0.028722866332086823, 'activity_l2_lambda1': 0.000304183905586241, 'dropout_rate1': 0.5, 'units2': 452, 'kernel_l2_lambda2': 0.010676124258830634, 'activity_l2_lambda2': 0.0036037020374640235, 'dropout_rate2': 0.2, 'batch_size': 418, 'learning_rate': 0.7269641488629045, 'scale_pos_weight': 13.479705048987812}
+{'units1': 380, 'kernel_l2_lambda1': 0.00010438495973578964, 'activity_l2_lambda1': 0.013142798154211783, 'dropout_rate1': 0.5, 'units2': 436, 'kernel_l2_lambda2': 0.00047898902857294184, 'activity_l2_lambda2': 0.0001460533099519251, 'dropout_rate2': 0.5, 'batch_size': 275, 'learning_rate': 0.000733951150831624, 'scale_pos_weight': 13.479705048987812}
+{'units1': 424, 'kernel_l2_lambda1': 0.12850548228994813, 'activity_l2_lambda1': 0.03410870684095117, 'dropout_rate1': 0.15000000000000002, 'units2': 440, 'kernel_l2_lambda2': 0.02512629114509935, 'activity_l2_lambda2': 0.0003142247997574541, 'dropout_rate2': 0.30000000000000004, 'batch_size': 32, 'learning_rate': 0.054846950908128356, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.0 
+
+{'units1': 111, 'kernel_l2_lambda1': 0.10127473335498507, 'activity_l2_lambda1': 0.6372084941722103, 'dropout_rate1': 0.35000000000000003, 'units2': 227, 'kernel_l2_lambda2': 0.12691828326669652, 'activity_l2_lambda2': 0.014366988871265803, 'dropout_rate2': 0.45, 'batch_size': 243, 'learning_rate': 0.0037446839985109033, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8295210413244029 
+
+{'units1': 25, 'kernel_l2_lambda1': 0.0010135754292405778, 'activity_l2_lambda1': 0.0002027507786016179, 'dropout_rate1': 0.30000000000000004, 'units2': 18, 'kernel_l2_lambda2': 0.0001208422793426053, 'activity_l2_lambda2': 0.002791651042669979, 'dropout_rate2': 0.45, 'batch_size': 224, 'learning_rate': 0.0001192756938457361, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.81230012300123 
+
+{'units1': 438, 'kernel_l2_lambda1': 0.00021309414272112955, 'activity_l2_lambda1': 0.0007141588112702687, 'dropout_rate1': 0.0, 'units2': 435, 'kernel_l2_lambda2': 0.7682078009328548, 'activity_l2_lambda2': 0.0010458627411972358, 'dropout_rate2': 0.15000000000000002, 'batch_size': 414, 'learning_rate': 0.0031286302255199884, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8468608414239482 
+
+{'units1': 258, 'kernel_l2_lambda1': 0.15143487431040958, 'activity_l2_lambda1': 0.33191668295074295, 'dropout_rate1': 0.2, 'units2': 267, 'kernel_l2_lambda2': 0.08478973608912657, 'activity_l2_lambda2': 0.019514048210208926, 'dropout_rate2': 0.35000000000000003, 'batch_size': 489, 'learning_rate': 0.002285941549936952, 'scale_pos_weight': 13.479705048987812}
+{'units1': 5, 'kernel_l2_lambda1': 0.00037057375629263894, 'activity_l2_lambda1': 0.0006690757949014175, 'dropout_rate1': 0.1, 'units2': 140, 'kernel_l2_lambda2': 0.06997232632401554, 'activity_l2_lambda2': 0.0878512578435117, 'dropout_rate2': 0.2, 'batch_size': 183, 'learning_rate': 0.15031878043111913, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.0 
+
+{'units1': 97, 'kernel_l2_lambda1': 0.10769698854054387, 'activity_l2_lambda1': 0.001106411447710405, 'dropout_rate1': 0.1, 'units2': 365, 'kernel_l2_lambda2': 0.00019021621937192652, 'activity_l2_lambda2': 0.014523431681543818, 'dropout_rate2': 0.15000000000000002, 'batch_size': 231, 'learning_rate': 0.01994035665028398, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.7751285647498832 
+
+{'units1': 459, 'kernel_l2_lambda1': 0.5066022500821907, 'activity_l2_lambda1': 0.00025944108074339966, 'dropout_rate1': 0.5, 'units2': 392, 'kernel_l2_lambda2': 0.0019196528652098957, 'activity_l2_lambda2': 0.003490822432621136, 'dropout_rate2': 0.30000000000000004, 'batch_size': 317, 'learning_rate': 0.008644421611023674, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8853799520654166 
+
+{'units1': 223, 'kernel_l2_lambda1': 0.000373432213671607, 'activity_l2_lambda1': 0.0006632472991396634, 'dropout_rate1': 0.2, 'units2': 171, 'kernel_l2_lambda2': 0.0035942588967856717, 'activity_l2_lambda2': 0.01435376030882905, 'dropout_rate2': 0.25, 'batch_size': 155, 'learning_rate': 0.00021617476485465928, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8479274611398965 
+
+{'units1': 69, 'kernel_l2_lambda1': 0.0024784710009953578, 'activity_l2_lambda1': 0.24236557987864588, 'dropout_rate1': 0.2, 'units2': 124, 'kernel_l2_lambda2': 0.01988401369579263, 'activity_l2_lambda2': 0.0005716856042651357, 'dropout_rate2': 0.0, 'batch_size': 308, 'learning_rate': 0.3142795790439216, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.0 
+
+{'units1': 316, 'kernel_l2_lambda1': 0.0770270272476351, 'activity_l2_lambda1': 0.0007600607475142638, 'dropout_rate1': 0.15000000000000002, 'units2': 422, 'kernel_l2_lambda2': 0.00012120159064694977, 'activity_l2_lambda2': 0.0002578482744866279, 'dropout_rate2': 0.5, 'batch_size': 440, 'learning_rate': 0.00011635793187837947, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8524119947848761 
+
+{'units1': 359, 'kernel_l2_lambda1': 0.0046926932578509085, 'activity_l2_lambda1': 0.6452323149381156, 'dropout_rate1': 0.15000000000000002, 'units2': 352, 'kernel_l2_lambda2': 0.00019739254165057634, 'activity_l2_lambda2': 0.07519682399750256, 'dropout_rate2': 0.25, 'batch_size': 352, 'learning_rate': 0.11457319186366363, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.0 
+
+{'units1': 439, 'kernel_l2_lambda1': 0.0019276855908601253, 'activity_l2_lambda1': 0.0005227043954162896, 'dropout_rate1': 0.05, 'units2': 315, 'kernel_l2_lambda2': 0.25859133384770466, 'activity_l2_lambda2': 0.004705383684932298, 'dropout_rate2': 0.15000000000000002, 'batch_size': 482, 'learning_rate': 0.0008238676943338629, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8719611021069692 
+
+{'units1': 141, 'kernel_l2_lambda1': 0.0013055789362759174, 'activity_l2_lambda1': 0.06321076856656385, 'dropout_rate1': 0.1, 'units2': 168, 'kernel_l2_lambda2': 0.031887617303877604, 'activity_l2_lambda2': 0.1099956848830522, 'dropout_rate2': 0.0, 'batch_size': 198, 'learning_rate': 0.0002081197363971092, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8565063556545669 
+
+{'units1': 77, 'kernel_l2_lambda1': 0.009487919650724038, 'activity_l2_lambda1': 0.004282097190997129, 'dropout_rate1': 0.05, 'units2': 160, 'kernel_l2_lambda2': 0.08321164078531795, 'activity_l2_lambda2': 0.0015011502380220742, 'dropout_rate2': 0.0, 'batch_size': 404, 'learning_rate': 0.07907529298495661, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8670363857703233 
+
+{'units1': 312, 'kernel_l2_lambda1': 0.00010693367817425413, 'activity_l2_lambda1': 0.02210574615982692, 'dropout_rate1': 0.35000000000000003, 'units2': 78, 'kernel_l2_lambda2': 0.018818176394451464, 'activity_l2_lambda2': 0.0031115033155902994, 'dropout_rate2': 0.30000000000000004, 'batch_size': 203, 'learning_rate': 0.1609096021413783, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.7656141968195438 
+
+{'units1': 499, 'kernel_l2_lambda1': 0.628077942779965, 'activity_l2_lambda1': 0.00010707457341321678, 'dropout_rate1': 0.5, 'units2': 303, 'kernel_l2_lambda2': 0.0032403346346366892, 'activity_l2_lambda2': 0.00010279569167587159, 'dropout_rate2': 0.35000000000000003, 'batch_size': 493, 'learning_rate': 0.0008731815477228736, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8632202477113624 
+
+{'units1': 484, 'kernel_l2_lambda1': 0.021566524279111567, 'activity_l2_lambda1': 0.0020831777885865575, 'dropout_rate1': 0.5, 'units2': 496, 'kernel_l2_lambda2': 0.8232204939603106, 'activity_l2_lambda2': 0.005505431069800621, 'dropout_rate2': 0.1, 'batch_size': 486, 'learning_rate': 0.008118437792880824, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8432307097771481 
+
+{'units1': 397, 'kernel_l2_lambda1': 0.6730232911402594, 'activity_l2_lambda1': 0.0002065334122410954, 'dropout_rate1': 0.4, 'units2': 267, 'kernel_l2_lambda2': 0.004028169543878727, 'activity_l2_lambda2': 0.3414289960283936, 'dropout_rate2': 0.1, 'batch_size': 343, 'learning_rate': 0.0011668798486009597, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8498827208756842 
+
+{'units1': 222, 'kernel_l2_lambda1': 0.017362500867181545, 'activity_l2_lambda1': 0.009696976589405677, 'dropout_rate1': 0.45, 'units2': 352, 'kernel_l2_lambda2': 0.0008660583136848831, 'activity_l2_lambda2': 0.005024755781931956, 'dropout_rate2': 0.4, 'batch_size': 99, 'learning_rate': 0.02092407852916488, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.7983050847457628 
+
+{'units1': 280, 'kernel_l2_lambda1': 0.006832205201606184, 'activity_l2_lambda1': 0.002981966783012012, 'dropout_rate1': 0.25, 'units2': 283, 'kernel_l2_lambda2': 0.21585890732386653, 'activity_l2_lambda2': 0.0014264013275798943, 'dropout_rate2': 0.35000000000000003, 'batch_size': 283, 'learning_rate': 0.6117394330790382, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.0 
+
+{'units1': 372, 'kernel_l2_lambda1': 0.9384523692721861, 'activity_l2_lambda1': 0.00028894340611150874, 'dropout_rate1': 0.0, 'units2': 219, 'kernel_l2_lambda2': 0.24749294690965096, 'activity_l2_lambda2': 0.028233890382084154, 'dropout_rate2': 0.1, 'batch_size': 366, 'learning_rate': 0.0007248209873320779, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8883033230859316 
+
+{'units1': 376, 'kernel_l2_lambda1': 0.9081835767328487, 'activity_l2_lambda1': 0.00026638067055292567, 'dropout_rate1': 0.0, 'units2': 230, 'kernel_l2_lambda2': 0.30645411573505144, 'activity_l2_lambda2': 0.030985325680114254, 'dropout_rate2': 0.1, 'batch_size': 362, 'learning_rate': 0.0007341823121144603, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8654339317046835 
+
+{'units1': 454, 'kernel_l2_lambda1': 0.2933564698301895, 'activity_l2_lambda1': 0.00010044546085753783, 'dropout_rate1': 0.0, 'units2': 388, 'kernel_l2_lambda2': 0.44282013929548225, 'activity_l2_lambda2': 0.007025163584513311, 'dropout_rate2': 0.2, 'batch_size': 449, 'learning_rate': 0.0021792620605695996, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.836034196758964 
+
+{'units1': 342, 'kernel_l2_lambda1': 0.28548686905590426, 'activity_l2_lambda1': 0.00033457435004223866, 'dropout_rate1': 0.05, 'units2': 310, 'kernel_l2_lambda2': 0.15467307851845372, 'activity_l2_lambda2': 0.030353972188692114, 'dropout_rate2': 0.05, 'batch_size': 394, 'learning_rate': 0.0004315098689161136, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.871195652173913 
+
+{'units1': 416, 'kernel_l2_lambda1': 0.043114020326620046, 'activity_l2_lambda1': 0.0016786218857808915, 'dropout_rate1': 0.05, 'units2': 209, 'kernel_l2_lambda2': 0.40252524071108203, 'activity_l2_lambda2': 0.0029919629979362895, 'dropout_rate2': 0.2, 'batch_size': 288, 'learning_rate': 0.007266735561082066, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8870422535211268 
+
+{'units1': 404, 'kernel_l2_lambda1': 0.04655022388691392, 'activity_l2_lambda1': 0.0017186103245164382, 'dropout_rate1': 0.25, 'units2': 213, 'kernel_l2_lambda2': 0.06302581156122193, 'activity_l2_lambda2': 0.002086456797146822, 'dropout_rate2': 0.2, 'batch_size': 312, 'learning_rate': 0.007235462400562169, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8846208564518424 
+
+{'units1': 458, 'kernel_l2_lambda1': 0.2716007204752277, 'activity_l2_lambda1': 0.0016091231712137939, 'dropout_rate1': 0.4, 'units2': 204, 'kernel_l2_lambda2': 0.38811843023131076, 'activity_l2_lambda2': 0.008181438664958398, 'dropout_rate2': 0.30000000000000004, 'batch_size': 267, 'learning_rate': 0.00207422090805121, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8675487655163007 
+
+{'units1': 257, 'kernel_l2_lambda1': 0.9979315108720107, 'activity_l2_lambda1': 0.00036949711031296654, 'dropout_rate1': 0.05, 'units2': 100, 'kernel_l2_lambda2': 0.8146943168718093, 'activity_l2_lambda2': 0.0011026986492848059, 'dropout_rate2': 0.2, 'batch_size': 318, 'learning_rate': 0.004700139782925097, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8667571234735414 
+
+{'units1': 378, 'kernel_l2_lambda1': 0.39973510457405553, 'activity_l2_lambda1': 0.005275552545420945, 'dropout_rate1': 0.30000000000000004, 'units2': 245, 'kernel_l2_lambda2': 0.00996463545943255, 'activity_l2_lambda2': 0.8601081582462359, 'dropout_rate2': 0.05, 'batch_size': 374, 'learning_rate': 0.019910392204853605, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.0 
+
+{'units1': 423, 'kernel_l2_lambda1': 0.17880658807682986, 'activity_l2_lambda1': 0.0011879820559953338, 'dropout_rate1': 0.2, 'units2': 46, 'kernel_l2_lambda2': 0.12382386973914129, 'activity_l2_lambda2': 0.003121464955942024, 'dropout_rate2': 0.30000000000000004, 'batch_size': 272, 'learning_rate': 0.03729334388808845, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.7871858997260927 
+
+{'units1': 330, 'kernel_l2_lambda1': 0.4535058196505739, 'activity_l2_lambda1': 0.00016503558402740734, 'dropout_rate1': 0.0, 'units2': 482, 'kernel_l2_lambda2': 0.04054935249841599, 'activity_l2_lambda2': 0.0008555167402679575, 'dropout_rate2': 0.35000000000000003, 'batch_size': 319, 'learning_rate': 0.01136391174199428, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8458753555727955 
+
+{'units1': 402, 'kernel_l2_lambda1': 0.05002393717001743, 'activity_l2_lambda1': 0.001897273756317126, 'dropout_rate1': 0.25, 'units2': 198, 'kernel_l2_lambda2': 0.06289743769166069, 'activity_l2_lambda2': 0.002049941413417932, 'dropout_rate2': 0.2, 'batch_size': 295, 'learning_rate': 0.009949010546300463, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8767123287671234 
+
+{'units1': 409, 'kernel_l2_lambda1': 0.15736579014179145, 'activity_l2_lambda1': 0.00043077631183577596, 'dropout_rate1': 0.45, 'units2': 202, 'kernel_l2_lambda2': 0.1531625576737543, 'activity_l2_lambda2': 0.002012582902315701, 'dropout_rate2': 0.25, 'batch_size': 257, 'learning_rate': 0.006582102412870431, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8499605159252436 
+
+{'units1': 479, 'kernel_l2_lambda1': 0.03195291119172045, 'activity_l2_lambda1': 0.00028598394255813854, 'dropout_rate1': 0.30000000000000004, 'units2': 262, 'kernel_l2_lambda2': 0.21140295987028682, 'activity_l2_lambda2': 0.0033839302440057, 'dropout_rate2': 0.15000000000000002, 'batch_size': 338, 'learning_rate': 0.004639103448933495, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8785458551363261 
+
+{'units1': 459, 'kernel_l2_lambda1': 0.05768875981543806, 'activity_l2_lambda1': 0.0012769996083673285, 'dropout_rate1': 0.35000000000000003, 'units2': 229, 'kernel_l2_lambda2': 0.538035796373437, 'activity_l2_lambda2': 0.01071020803805948, 'dropout_rate2': 0.25, 'batch_size': 388, 'learning_rate': 0.0026056569327256927, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8789187682875853 
+
+{'units1': 290, 'kernel_l2_lambda1': 0.1580610378444084, 'activity_l2_lambda1': 0.000990073253827333, 'dropout_rate1': 0.1, 'units2': 186, 'kernel_l2_lambda2': 0.492422761878034, 'activity_l2_lambda2': 0.0019300714314923835, 'dropout_rate2': 0.05, 'batch_size': 335, 'learning_rate': 0.04512569317618322, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.6868937048503612 
+
+{'units1': 373, 'kernel_l2_lambda1': 0.08379328413998449, 'activity_l2_lambda1': 0.0004925285806033057, 'dropout_rate1': 0.15000000000000002, 'units2': 132, 'kernel_l2_lambda2': 0.1320090063515483, 'activity_l2_lambda2': 0.0006891668833497876, 'dropout_rate2': 0.2, 'batch_size': 236, 'learning_rate': 0.004499358401829381, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8780689655172413 
+
+{'units1': 425, 'kernel_l2_lambda1': 0.040537865572153525, 'activity_l2_lambda1': 0.0008092898631956322, 'dropout_rate1': 0.25, 'units2': 274, 'kernel_l2_lambda2': 0.9393744413284701, 'activity_l2_lambda2': 0.004079765411685663, 'dropout_rate2': 0.4, 'batch_size': 425, 'learning_rate': 0.0015828263843602219, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8348401884630078 
+
+{'units1': 169, 'kernel_l2_lambda1': 0.10680257755038082, 'activity_l2_lambda1': 0.002564974851373616, 'dropout_rate1': 0.4, 'units2': 399, 'kernel_l2_lambda2': 0.08325089796439224, 'activity_l2_lambda2': 0.009396065929383985, 'dropout_rate2': 0.15000000000000002, 'batch_size': 291, 'learning_rate': 0.0034079214531010944, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.865719646207451 
+
+{'units1': 354, 'kernel_l2_lambda1': 0.027249344640849868, 'activity_l2_lambda1': 0.00015463126732371453, 'dropout_rate1': 0.0, 'units2': 464, 'kernel_l2_lambda2': 0.27202827109082744, 'activity_l2_lambda2': 0.01696021316393129, 'dropout_rate2': 0.30000000000000004, 'batch_size': 310, 'learning_rate': 0.01488525836589161, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8414963362900116 
+
+{'units1': 398, 'kernel_l2_lambda1': 0.01752212539828027, 'activity_l2_lambda1': 0.0007258596434396876, 'dropout_rate1': 0.2, 'units2': 332, 'kernel_l2_lambda2': 0.05703124649840815, 'activity_l2_lambda2': 0.0005700095916649891, 'dropout_rate2': 0.1, 'batch_size': 362, 'learning_rate': 0.005901068772023452, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8583498349834984 
+
+{'units1': 457, 'kernel_l2_lambda1': 0.05470648066682629, 'activity_l2_lambda1': 0.001345574463793097, 'dropout_rate1': 0.35000000000000003, 'units2': 223, 'kernel_l2_lambda2': 0.5834042467943179, 'activity_l2_lambda2': 0.01110467792782214, 'dropout_rate2': 0.25, 'batch_size': 385, 'learning_rate': 0.002023875608232936, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8575577557755776 
+
+{'units1': 443, 'kernel_l2_lambda1': 0.060859652419352935, 'activity_l2_lambda1': 0.0015179177727085366, 'dropout_rate1': 0.30000000000000004, 'units2': 232, 'kernel_l2_lambda2': 0.571925655889787, 'activity_l2_lambda2': 0.0056236306973748195, 'dropout_rate2': 0.2, 'batch_size': 254, 'learning_rate': 0.003361828431060181, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8758801601546321 
+
+{'units1': 478, 'kernel_l2_lambda1': 0.08550020165380205, 'activity_l2_lambda1': 0.00043757431656374726, 'dropout_rate1': 0.45, 'units2': 162, 'kernel_l2_lambda2': 0.35576441194472014, 'activity_l2_lambda2': 0.018141824852205224, 'dropout_rate2': 0.25, 'batch_size': 423, 'learning_rate': 0.008040451840966996, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8429644985747604 
+
+{'units1': 499, 'kernel_l2_lambda1': 0.2135261124514639, 'activity_l2_lambda1': 0.0009895703309924027, 'dropout_rate1': 0.35000000000000003, 'units2': 220, 'kernel_l2_lambda2': 0.5380561696427498, 'activity_l2_lambda2': 0.0024174158884885106, 'dropout_rate2': 0.25, 'batch_size': 451, 'learning_rate': 0.0024030899544862463, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8311128029437889 
+
+{'units1': 423, 'kernel_l2_lambda1': 0.038467336640041885, 'activity_l2_lambda1': 0.0006200369715895949, 'dropout_rate1': 0.5, 'units2': 285, 'kernel_l2_lambda2': 0.20747914842354936, 'activity_l2_lambda2': 0.008263478581724921, 'dropout_rate2': 0.15000000000000002, 'batch_size': 375, 'learning_rate': 0.003378179583522026, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8617191671115856 
+
+{'units1': 461, 'kernel_l2_lambda1': 0.11898557968162543, 'activity_l2_lambda1': 0.0002478365532024674, 'dropout_rate1': 0.15000000000000002, 'units2': 250, 'kernel_l2_lambda2': 0.3836427440071608, 'activity_l2_lambda2': 0.003477389023688094, 'dropout_rate2': 0.35000000000000003, 'batch_size': 333, 'learning_rate': 0.0064328488084986445, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8422542460113227 
+
+{'units1': 383, 'kernel_l2_lambda1': 0.43069225725424604, 'activity_l2_lambda1': 0.003829870271423205, 'dropout_rate1': 0.1, 'units2': 149, 'kernel_l2_lambda2': 0.10411414295319056, 'activity_l2_lambda2': 0.011718085148241493, 'dropout_rate2': 0.15000000000000002, 'batch_size': 300, 'learning_rate': 0.01103885465962288, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8602921646746348 
+
+{'units1': 426, 'kernel_l2_lambda1': 0.07003198717081373, 'activity_l2_lambda1': 0.0006675570406065951, 'dropout_rate1': 0.05, 'units2': 112, 'kernel_l2_lambda2': 0.20070468649333942, 'activity_l2_lambda2': 0.006324046944117324, 'dropout_rate2': 0.25, 'batch_size': 213, 'learning_rate': 0.02756164922960667, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.7668477632643623 
+
+{'units1': 354, 'kernel_l2_lambda1': 0.013224530984444443, 'activity_l2_lambda1': 0.002163349840645178, 'dropout_rate1': 0.45, 'units2': 188, 'kernel_l2_lambda2': 0.2903190151697906, 'activity_l2_lambda2': 0.004462704428790806, 'dropout_rate2': 0.30000000000000004, 'batch_size': 136, 'learning_rate': 0.013911616994254448, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8607357859531771 
+
+{'units1': 320, 'kernel_l2_lambda1': 0.0246671024082967, 'activity_l2_lambda1': 0.001329090570576409, 'dropout_rate1': 0.1, 'units2': 175, 'kernel_l2_lambda2': 0.9908496303126502, 'activity_l2_lambda2': 0.002604207671746798, 'dropout_rate2': 0.4, 'batch_size': 402, 'learning_rate': 0.0013341313329382621, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.852317360565593 
+
+{'units1': 469, 'kernel_l2_lambda1': 0.03322322215809595, 'activity_l2_lambda1': 0.00032299774240686705, 'dropout_rate1': 0.30000000000000004, 'units2': 264, 'kernel_l2_lambda2': 0.18913481762164053, 'activity_l2_lambda2': 0.003537470726110356, 'dropout_rate2': 0.15000000000000002, 'batch_size': 345, 'learning_rate': 0.004781617666936435, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8410783055198973 
+
+{'units1': 478, 'kernel_l2_lambda1': 0.12553980871403198, 'activity_l2_lambda1': 0.00018034380656595993, 'dropout_rate1': 0.30000000000000004, 'units2': 212, 'kernel_l2_lambda2': 0.10907880874373994, 'activity_l2_lambda2': 0.001609783110146493, 'dropout_rate2': 0.2, 'batch_size': 328, 'learning_rate': 0.00791672031754691, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8879547760545006 
+
+{'units1': 441, 'kernel_l2_lambda1': 0.6613155198890504, 'activity_l2_lambda1': 0.00015039766032270486, 'dropout_rate1': 0.35000000000000003, 'units2': 214, 'kernel_l2_lambda2': 0.08008144159158168, 'activity_l2_lambda2': 0.0013780653681820573, 'dropout_rate2': 0.2, 'batch_size': 323, 'learning_rate': 0.008165187252612643, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8747433264887063 
+
+{'units1': 499, 'kernel_l2_lambda1': 0.1206723320028668, 'activity_l2_lambda1': 0.00020617111446359656, 'dropout_rate1': 0.4, 'units2': 294, 'kernel_l2_lambda2': 0.10517518122888621, 'activity_l2_lambda2': 0.0016252094551824437, 'dropout_rate2': 0.25, 'batch_size': 353, 'learning_rate': 0.0028864741559555293, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8626765299260255 
+
+{'units1': 413, 'kernel_l2_lambda1': 0.21487578732041762, 'activity_l2_lambda1': 0.0004965519176484918, 'dropout_rate1': 0.25, 'units2': 243, 'kernel_l2_lambda2': 0.6666051178368283, 'activity_l2_lambda2': 0.002558098675011983, 'dropout_rate2': 0.1, 'batch_size': 281, 'learning_rate': 0.018185702209993056, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.7424547283702213 
+
+{'units1': 447, 'kernel_l2_lambda1': 0.08822017220850902, 'activity_l2_lambda1': 0.00011653558969666766, 'dropout_rate1': 0.2, 'units2': 322, 'kernel_l2_lambda2': 0.32277147132561185, 'activity_l2_lambda2': 0.005061174551843594, 'dropout_rate2': 0.2, 'batch_size': 375, 'learning_rate': 0.01092791278082396, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.7666897666897666 
+
+{'units1': 482, 'kernel_l2_lambda1': 0.13866484056661646, 'activity_l2_lambda1': 0.0002405120101528929, 'dropout_rate1': 0.30000000000000004, 'units2': 178, 'kernel_l2_lambda2': 0.041840480266408304, 'activity_l2_lambda2': 0.0011149343263448224, 'dropout_rate2': 0.30000000000000004, 'batch_size': 466, 'learning_rate': 0.02701920954424098, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.0 
+
+{'units1': 384, 'kernel_l2_lambda1': 0.05669455799185426, 'activity_l2_lambda1': 0.0010007752142440773, 'dropout_rate1': 0.5, 'units2': 157, 'kernel_l2_lambda2': 0.1505018537242841, 'activity_l2_lambda2': 0.021334888004840142, 'dropout_rate2': 0.2, 'batch_size': 306, 'learning_rate': 0.0010511809854467091, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8370134014039566 
+
+{'units1': 208, 'kernel_l2_lambda1': 0.35909636622620167, 'activity_l2_lambda1': 0.00035799796464443555, 'dropout_rate1': 0.35000000000000003, 'units2': 234, 'kernel_l2_lambda2': 0.4222576514067881, 'activity_l2_lambda2': 0.006034086187203779, 'dropout_rate2': 0.5, 'batch_size': 246, 'learning_rate': 0.0018459098937154584, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8614602834982615 
+
+{'units1': 470, 'kernel_l2_lambda1': 0.5610689672390528, 'activity_l2_lambda1': 0.00631410045624869, 'dropout_rate1': 0.05, 'units2': 207, 'kernel_l2_lambda2': 0.6515392092632067, 'activity_l2_lambda2': 0.01270665074757616, 'dropout_rate2': 0.25, 'batch_size': 410, 'learning_rate': 0.0026658231734370433, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.880264481816875 
+
+{'units1': 436, 'kernel_l2_lambda1': 0.6893922722759825, 'activity_l2_lambda1': 0.00697819908359037, 'dropout_rate1': 0.05, 'units2': 208, 'kernel_l2_lambda2': 0.5943794503465288, 'activity_l2_lambda2': 0.013024764249362475, 'dropout_rate2': 0.25, 'batch_size': 393, 'learning_rate': 0.003012661207924524, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8714265985361137 
+
+{'units1': 470, 'kernel_l2_lambda1': 0.5112574484731222, 'activity_l2_lambda1': 0.0028559817954666214, 'dropout_rate1': 0.0, 'units2': 253, 'kernel_l2_lambda2': 0.7233167991884127, 'activity_l2_lambda2': 0.02460397650748335, 'dropout_rate2': 0.2, 'batch_size': 363, 'learning_rate': 0.005524312061491714, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8754685547688464 
+
+{'units1': 404, 'kernel_l2_lambda1': 0.8824884232716143, 'activity_l2_lambda1': 0.001704384131221803, 'dropout_rate1': 0.05, 'units2': 192, 'kernel_l2_lambda2': 0.4228260986367648, 'activity_l2_lambda2': 0.04351436557022727, 'dropout_rate2': 0.30000000000000004, 'batch_size': 412, 'learning_rate': 0.0006096269227011644, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8675057517932061 
+
+{'units1': 20, 'kernel_l2_lambda1': 0.2455310928285023, 'activity_l2_lambda1': 0.003605820104507238, 'dropout_rate1': 0.05, 'units2': 139, 'kernel_l2_lambda2': 0.9890011310355955, 'activity_l2_lambda2': 0.008200958889993072, 'dropout_rate2': 0.25, 'batch_size': 429, 'learning_rate': 0.00758368816830489, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8140454995054403 
+
+{'units1': 489, 'kernel_l2_lambda1': 0.3166032638457776, 'activity_l2_lambda1': 0.005390416606996935, 'dropout_rate1': 0.0, 'units2': 218, 'kernel_l2_lambda2': 0.2710783166962758, 'activity_l2_lambda2': 0.013979340232520565, 'dropout_rate2': 0.35000000000000003, 'batch_size': 327, 'learning_rate': 0.0013820403684005015, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8776737033412555 
+
+{'units1': 460, 'kernel_l2_lambda1': 0.5064695330454793, 'activity_l2_lambda1': 0.0023915085332742846, 'dropout_rate1': 0.1, 'units2': 238, 'kernel_l2_lambda2': 0.26206646136914424, 'activity_l2_lambda2': 0.01030076460826438, 'dropout_rate2': 0.2, 'batch_size': 273, 'learning_rate': 0.00252506115529643, 'scale_pos_weight': 13.479705048987812}
+F1 Score: 0.8793796668581275 
+
+{'units1': 434, 'kernel_l2_lambda1': 0.5229410968262659, 'activity_l2_lambda1': 0.0023139638965896945, 'dropout_rate1': 0.1, 'units2': 432, 'kernel_l2_lambda2': 0.1641531478168195, 'activity_l2_lambda2': 0.006823128126249641, 'dropout_rate2': 0.15000000000000002, 'batch_size': 269, 'learning_rate': 0.004031361767976234, 'scale_pos_weight': 13.479705048987812}
